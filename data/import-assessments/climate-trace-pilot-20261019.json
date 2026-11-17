@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "assessment_kind": "read_only_dataset_identity_pilot",
+  "dataset": "Climate TRACE",
+  "assessed_at": "2026-10-19T14:22:11.297099+00:00",
+  "approval_status": "metadata_assessment_only_not_a_candidate_or_review",
+  "source_api_version": "7.2.0",
+  "dataset_release_version": null,
+  "version_note": "7.2.0 is the OpenAPI info.version; no data-release or row-revision field appeared in the source-list schema/selected response. Do not infer the API dataset release from the website download release.",
+  "sources": [
+    {
+      "url": "https://api.climatetrace.org/v7/docs/index.html",
+      "access_method": "full_html",
+      "note": "Scalar configuration points to /v7/docs/openapi.json."
+    },
+    {
+      "url": "https://api.climatetrace.org/v7/docs/openapi.json",
+      "access_method": "full_document",
+      "sha256": "0e5ca474f6497169af1743cf510a2e34d6669fd1e19666eff3acdeb6f143cba5",
+      "note": "Served YAML despite .json URL; OpenAPI 3.1.0, API info.version 7.2.0."
+    },
+    {
+      "url": "https://climatetrace.org/terms",
+      "access_method": "full_page",
+      "observed_on": "2026-10-19",
+      "note": "Terms read via web tool. Climate TRACE data/associated metadata CC BY 4.0 with listed external-source exceptions. No refining-specific exception is listed on this page."
+    },
+    {
+      "url": "https://api.climatetrace.org/v7/definitions/countries/RUS",
+      "access_method": "json_response",
+      "result": {
+        "id": "RUS",
+        "name": "Russian Federation",
+        "continent": "Europe"
+      }
+    },
+    {
+      "url": "https://api.climatetrace.org/v7/admins?name=Russia&level=0&limit=5",
+      "access_method": "json_response",
+      "result_identity": {
+        "id": "RUS",
+        "name": "Russia",
+        "level": 0
+      }
+    },
+    {
+      "url": "https://api.climatetrace.org/v7/definitions/subsectors",
+      "access_method": "json_response",
+      "result_selected_value": "oil-and-gas-refining"
+    },
+    {
+      "url": "https://api.climatetrace.org/v7/definitions/subsectors/oil-and-gas-refining",
+      "access_method": "json_response",
+      "result": {
+        "name": "oil-and-gas-refining",
+        "sector": "fossil-fuel-operations",
+        "subsectorDisplay": "Oil And Gas Refining",
+        "sectorDisplay": "Fossil Fuel Operations",
+        "asset": true,
+        "country": true,
+        "dataLeads": [
+          {
+            "name": "RMI",
+            "url": "https://rmi.org/"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://api.climatetrace.org/v7/owners?name=Lukoil&limit=5",
+      "access_method": "json_response",
+      "selected_owner": {
+        "id": "E100000000869",
+        "name": "LUKOIL PJSC"
+      },
+      "note": "Owner search also returned four non-refining LUKOIL subsidiary names; selected exact parent-name result only."
+    }
+  ],
+  "sample_request": {
+    "url": "https://api.climatetrace.org/v7/sources?gadmId=RUS&subsectors=oil-and-gas-refining&ownerIds=E100000000869&limit=5&offset=0&year=2025",
+    "retrieved_at": "2026-10-19T14:22:11.297099+00:00",
+    "response_sha256": "88807b40a55e7addc5926e847892f6cbb25c52c6dc52cefb134dfd3f517955bf",
+    "response_headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Mon, 19 Oct 2026 14:22:11 GMT"
+    },
+    "requested_limit": 5,
+    "returned_count": 4,
+    "projection_fields": [
+      "id",
+      "name",
+      "country",
+      "sector",
+      "subsector",
+      "sourceType"
+    ],
+    "selection_note": "Filtered owner and country/refining subset. The only documented list endpoint is ranked by emissions; raw metrics/order discarded immediately, projected rows sorted by source ID. This is neither a random nor representative national sample and establishes no complete national or owner coverage. year=2025 is the endpoint data parameter, not an operating-status date.",
+    "raw_response_retained": false,
+    "response_hash_verification": "SHA-256 computed over exact response bytes during retrieval before discarding raw payload. This artifact cannot replay that hash offline; a verifier would have to refetch the live URL, whose bytes/order/content may differ.",
+    "projected_rows_sha256": "7d6549079490d29ad728e0967a4fcd72d40432f4a9bea292eb4572851077262b",
+    "projected_hash_encoding": "UTF-8 JSON of records projected to id/name/country/sector/subsector/sourceType only, list sorted by numeric id; object keys sorted, separators comma/colon, ensure_ascii=false, no trailing newline."
+  },
+  "records": [
+    {
+      "id": 3144076,
+      "name": "LUKOIL-Nizhegorodnefteorgsintez Kstovo Refinery",
+      "country": "RUS",
+      "sector": "fossil-fuel-operations",
+      "subsector": "oil-and-gas-refining",
+      "sourceType": "point-source",
+      "source_url": "https://api.climatetrace.org/v7/sources/3144076",
+      "source_url_access": "documented direct refresh endpoint; not fetched in this pilot",
+      "existing_local_id": "RU-REF-003",
+      "identity_assessment": "potential_match",
+      "identity_note": "Names indicate the Nizhny Novgorod/Kstovo association, but the currently approved directory evidence does not resolve the municipality or Kstovo distinction. Requires exact identity review before binding.",
+      "mapping_recommendation": "hold_exact_site_match"
+    },
+    {
+      "id": 3144080,
+      "name": "LUKOIL Perm Refinery",
+      "country": "RUS",
+      "sector": "fossil-fuel-operations",
+      "subsector": "oil-and-gas-refining",
+      "sourceType": "point-source",
+      "source_url": "https://api.climatetrace.org/v7/sources/3144080",
+      "source_url_access": "documented direct refresh endpoint; not fetched in this pilot",
+      "existing_local_id": "RU-REF-002",
+      "identity_assessment": "potential_match",
+      "identity_note": "Same operator brand and Perm refinery name; not an approved external-ID crosswalk.",
+      "mapping_recommendation": "propose_crosswalk_after_actual_candidate_review"
+    },
+    {
+      "id": 3144085,
+      "name": "LUKOIL Volgograd Refinery",
+      "country": "RUS",
+      "sector": "fossil-fuel-operations",
+      "subsector": "oil-and-gas-refining",
+      "sourceType": "point-source",
+      "source_url": "https://api.climatetrace.org/v7/sources/3144085",
+      "source_url_access": "documented direct refresh endpoint; not fetched in this pilot",
+      "existing_local_id": "RU-REF-001",
+      "identity_assessment": "potential_match",
+      "identity_note": "Same operator brand and Volgograd refinery name; not an approved external-ID crosswalk.",
+      "mapping_recommendation": "propose_crosswalk_after_actual_candidate_review"
+    },
+    {
+      "id": 3144095,
+      "name": "LUKOIL Ukhta Refinery",
+      "country": "RUS",
+      "sector": "fossil-fuel-operations",
+      "subsector": "oil-and-gas-refining",
+      "sourceType": "point-source",
+      "source_url": "https://api.climatetrace.org/v7/sources/3144095",
+      "source_url_access": "documented direct refresh endpoint; not fetched in this pilot",
+      "existing_local_id": "RU-REF-004",
+      "identity_assessment": "potential_match",
+      "identity_note": "Same operator brand and Ukhta refinery name; not an approved external-ID crosswalk.",
+      "mapping_recommendation": "propose_crosswalk_after_actual_candidate_review"
+    }
+  ],
+  "licence": {
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "terms_url": "https://climatetrace.org/terms",
+    "attribution": "Source: Climate TRACE, https://climatetrace.org/; API retrieved 2026-10-19. Changes: retained identity/category fields only, sorted by source ID, added tentative local identity notes.",
+    "exceptions_and_uncertainties": "Terms list external dataset exceptions and separate ownership provenance. This pilot does not copy detailed ownership histories or third-party payloads. Refining is not an explicit exception on the terms page, but the RMI methodology/source chain and any package-specific notices have not been inspected; verify those before production redistribution."
+  },
+  "schema_findings": {
+    "response_shape": "JSON array of models.SourceSummary, observed four objects",
+    "id": "Observed integer internal source IDs. Documentation defines source identity using facility name, country, source type and subsector; do not treat as guaranteed permanent physical-facility UUIDs.",
+    "country": "ISO 3166-1 alpha-3, observed RUS. Preserve existing local territorial labels rather than overwriting with upstream boundaries.",
+    "source_type": "All four observed sourceType values are point-source; not individual wells or oilfields.",
+    "local_category_mapping": "oil-and-gas-refining -> refinery, subject to candidate evidence review.",
+    "missing_fields": "No operating/reopening status, incident history, per-row revision, or verification date supplied by selected identity metadata."
+  },
+  "integration_recommendation": {
+    "decision": "Tiny dependency-free read-only identity adapter, reusing the existing candidate/review gate. No adapter implemented in this assessment.",
+    "reason": "Existing pipeline is a local review gate and has no Climate TRACE network wrapper. The observed API is a simple JSON array with six required identity/category fields; adding a framework or unrelated full wrapper would add unnecessary surface.",
+    "next_adapter_contract": [
+      "Fetch documented definitions and a limited filtered source list; cache request URL, retrieval time, API schema version and exact response hash.",
+      "Immediately whitelist id/name/country/sector/subsector/sourceType; discard metrics and precise geography. Never use upstream ranking as project priority.",
+      "Use the documented /v7/sources/:id route for bounded follow-up refreshes after verifying current schema; those detail routes were not fetched in this pilot.",
+      "Store upstream source ID separately from local facility ID. Preserve current four local IDs and require exact identity evidence before binding crosswalks, especially Kstovo/Nizhny Novgorod.",
+      "New or changed facility snapshots must enter existing stage -> actual AI review -> approval -> export workflow; do not infer current operation or delete incidents from inventory metadata.",
+      "Cache inventories and upstream versions; avoid repeating national downloads every four hours."
+    ],
+    "limitations": [
+      "No maintained third-party Climate TRACE SDK was evaluated; this recommends a tiny adapter relative to this repository, not a claim that no external wrapper exists.",
+      "Upstream source-list endpoint intrinsically returns metrics; projection must occur before persistence or display."
+    ]
+  },
+  "overlap_conclusion": "Four potential existing-record crosswalks and zero new facilities proposed. Perm, Volgograd and Ukhta are strong name/operator matches for a later reviewed crosswalk. Hold the exact Kstovo/Nizhny Novgorod site binding until separate identity evidence resolves the existing local record scope."
+}

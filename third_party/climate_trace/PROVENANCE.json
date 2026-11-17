@@ -1,0 +1,23 @@
+{
+  "upstream_repository": "https://github.com/climatetracecoalition/climate-trace-tools",
+  "commit": "e1d200828051f537945c235ae26b98d50d0ea5ea",
+  "source_path": "climate_trace_tools/api/client.py",
+  "source_url": "https://github.com/climatetracecoalition/climate-trace-tools/blob/e1d200828051f537945c235ae26b98d50d0ea5ea/climate_trace_tools/api/client.py",
+  "upstream_source_sha256": "1bc9bb70e1f4d2b0ef2300a3906d23c7b412f6f427a4898a8ef2344ffbe726f0",
+  "license_url": "https://github.com/climatetracecoalition/climate-trace-tools/blob/e1d200828051f537945c235ae26b98d50d0ea5ea/LICENSE",
+  "license_sha256": "7b4476f9463ea29dbe8bd8decdca51be70989452319aa257ed805f9c0483f832",
+  "license": "CC BY 4.0",
+  "attribution": "Copyright (c) Climate TRACE Coalition. Adapted from the official Climate TRACE Tools API client. No endorsement implied.",
+  "selected_functions": [
+    "_to_csv",
+    "_get",
+    "get_sources"
+  ],
+  "changes": [
+    "Selected only identity-list retrieval helpers; omitted other API and pandas functions.",
+    "Disabled redirects and rejected non-200 responses to keep one HTTP request per command.",
+    "Added explicit get_sources timeout argument rather than treating timeout as API query parameter."
+  ],
+  "review": "Full pinned Python source and license read before adaptation or execution. Original upstream module was not installed or executed; the selected adapted subset was exercised by offline tests.",
+  "data_licence_caveat": "Software reuse attribution does not establish source-chain rights for inventory data; review Climate TRACE terms and RMI methodology/source chain before production redistribution."
+}

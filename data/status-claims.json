@@ -1,0 +1,445 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-27T08:16:30Z",
+  "scope": "Source-attributed operational claims only; separate from canonical approved status and SQLite approvals.",
+  "claims": [
+    {
+      "facility_id": "WB-049",
+      "status": "reopened",
+      "origin": "russia",
+      "as_of": "2026-07-28",
+      "source": {
+        "name": "TV Gubernia — Wildberries press service on Voronezh warehouse resumption",
+        "url": "https://tv-gubernia.ru/novosti/proisshestviya/wildberries-prokommentiroval-rabotu-voronezhskogo-sklada-posle-udara-vsu/"
+      },
+      "verified": false,
+      "summary": "Wildberries press service said normal logistics, sorting and dispatch had resumed at its Voronezh-region facility. This is a Russian operator claim as of July 28; exact building overlap with other Voronezh records is unresolved.",
+      "evidence_artifact": "data/import-assessments/luna-wb049-reopening-jul28-20261020.json"
+    },
+    {
+      "facility_id": "RU-LH-OZON-ORENBURG-ALERT-20260827-001",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2026-08-27",
+      "source": {
+        "name": "Interfax — Ozon reports attack on logistics center in Ufa",
+        "url": "https://www.interfax.ru/russia/1111509"
+      },
+      "verified": false,
+      "claimant": "Ozon",
+      "canonical_status_is_claim": true,
+      "canonical_status_as_of": "2026-08-27",
+      "summary": "The stored source attributes this operating/reopening assertion to Ozon. Under the current user policy it is displayed as an unverified Russian operator claim, not verified operational recovery.",
+      "evidence_artifact": "data/reviewed-facilities.json#RU-LH-OZON-ORENBURG-ALERT-20260827-001/interfax-ozon-orenburg-20260827"
+    },
+    {
+      "facility_id": "RU-LH-OZON-ZELENODOLSK-001",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2026-07-31",
+      "source": {
+        "name": "Kommersant — Ozon comments on attack on logistics center in Tatarstan",
+        "url": "https://www.kommersant.ru/doc/8848818"
+      },
+      "verified": false,
+      "claimant": "Ozon",
+      "canonical_status_is_claim": true,
+      "canonical_status_as_of": "2026-07-31",
+      "summary": "The stored source attributes this operating/reopening assertion to Ozon. Under the current user policy it is displayed as an unverified Russian operator claim, not verified operational recovery.",
+      "evidence_artifact": "data/reviewed-facilities.json#RU-LH-OZON-ZELENODOLSK-001/kommersant-ozon-zelenodolsk-20260731"
+    },
+    {
+      "facility_id": "WB-010",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2026-07-31",
+      "source": {
+        "name": "Meduza — Ukraine hits two more Wildberries warehouses in Russia",
+        "url": "https://meduza.io/en/news/2026/07/31/ukraine-hits-two-more-wildberries-warehouses-in-russia"
+      },
+      "verified": false,
+      "claimant": "Wildberries",
+      "canonical_status_is_claim": true,
+      "canonical_status_as_of": "2026-07-31",
+      "summary": "The stored source attributes this operating/reopening assertion to Wildberries. Under the current user policy it is displayed as an unverified Russian operator claim, not verified operational recovery.",
+      "evidence_artifact": "data/reviewed-facilities.json#WB-010/meduza-zelenodolsk-smoke-status-20260731"
+    },
+    {
+      "facility_id": "WB-045",
+      "status": "reopened",
+      "origin": "russia",
+      "as_of": "2026-10-14",
+      "source": {
+        "name": "Fulfillment Partner — Chashnikovo sorting center resumes work, reporting Wildberries notice",
+        "url": "https://ff-partner.ru/wildberries/sts-chashnikovo-vozobnovil-rabotu"
+      },
+      "verified": false,
+      "claimant": "Wildberries",
+      "canonical_status_is_claim": true,
+      "canonical_status_as_of": "2026-10-14",
+      "summary": "The stored source attributes this operating/reopening assertion to Wildberries. Under the current user policy it is displayed as an unverified Russian operator claim, not verified operational recovery.",
+      "evidence_artifact": "data/reviewed-facilities.json#WB-045/ffpartner-wb-chashnikovo-reopened-20261014"
+    },
+    {
+      "facility_id": "WB-050",
+      "status": "reopened",
+      "origin": "russia",
+      "as_of": "2026-10-18",
+      "source": {
+        "name": "CIFRA Stat — SC Shushary and Shushary KGT+ resume accepting deliveries",
+        "url": "https://cifrastat.ru/news/sc-shushary-i-shushary-kgt-snova-prinimayut-postavki-chto-delat-esli/"
+      },
+      "verified": false,
+      "claimant": "Wildberries",
+      "canonical_status_is_claim": true,
+      "canonical_status_as_of": "2026-10-18",
+      "summary": "The stored source attributes this operating/reopening assertion to Wildberries. Under the current user policy it is displayed as an unverified Russian operator claim, not verified operational recovery.",
+      "evidence_artifact": "data/reviewed-facilities.json#WB-050/cifra-shushary-reopen-20261018"
+    },
+    {
+      "facility_id": "WB-051",
+      "status": "reopened",
+      "origin": "russia",
+      "as_of": "2026-10-18",
+      "source": {
+        "name": "CIFRA Stat — SC Shushary and Shushary KGT+ resume accepting deliveries",
+        "url": "https://cifrastat.ru/news/sc-shushary-i-shushary-kgt-snova-prinimayut-postavki-chto-delat-esli/"
+      },
+      "verified": false,
+      "claimant": "Wildberries",
+      "canonical_status_is_claim": true,
+      "canonical_status_as_of": "2026-10-18",
+      "summary": "The stored source attributes this operating/reopening assertion to Wildberries. Under the current user policy it is displayed as an unverified Russian operator claim, not verified operational recovery.",
+      "evidence_artifact": "data/reviewed-facilities.json#WB-051/cifra-shushary-reopen-20261018"
+    },
+    {
+      "facility_id": "RU-REF-006",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2022-12-15",
+      "source": {
+        "name": "Reuters — Two dead after fire at refinery in Russia’s Angarsk (Asharq Al-Awsat full-text access copy)",
+        "url": "https://english.aawsat.com/home/article/4044776/two-dead-after-fire-refinery-russia%E2%80%99s-angarsk"
+      },
+      "verified": false,
+      "claimant": "TASS",
+      "canonical_status_is_claim": false,
+      "summary": "Reuters reported that TASS said the refinery continued producing motor fuel at full capacity. This is a Russian-source operating claim as of December 15, 2022; it does not establish verified current operation. The canonical facility status remains unknown.",
+      "evidence_artifact": "data/import-assessments/luna-independent-review-angarsk-r3-20261020.json#tass-angarsk-production-20221215"
+    },
+    {
+      "facility_id": "RU-REF-025",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2025-09-18",
+      "source": {
+        "name": "Reuters — Ukrainian drones target Russian petrochemical complex and oil refinery (MarketScreener Reuters republication)",
+        "url": "https://ca.marketscreener.com/news/two-ukrainian-drones-attacked-major-russian-petrochemical-complex-regional-official-says-ce7d58d9d98ef325"
+      },
+      "verified": false,
+      "claimant": "Bashkortostan regional government press service (as reported by TASS and Reuters)",
+      "canonical_status_is_claim": false,
+      "summary": "Reuters reported that TASS cited the regional-government press service saying the complex was operating normally and the fire was contained. This Russian-origin same-day operating statement remains an unverified claim; canonical facility status remains unknown.",
+      "evidence_artifact": "data/import-assessments/luna-independent-review-salavat-merged-r1-20261020.json#reuters-salavat-20250918"
+    },
+    {
+      "facility_id": "RU-LH-MOSCOW-VNUKOVO-AIRPORT",
+      "status": "reopened",
+      "origin": "russia",
+      "as_of": "2026-10-24",
+      "claimant": "Rosaviatsiya",
+      "verified": false,
+      "canonical_status_is_claim": false,
+      "canonical_status_as_of": null,
+      "source": {
+        "name": "Interfax — Moscow-area airports return to normal work, citing Rosaviatsiya",
+        "url": "https://www.interfax.ru/russia/1124685"
+      },
+      "summary": "Interfax reports Rosaviatsiya’s Oct24 statement that Vnukovo returned to normal work and aircraft arrival/departure restrictions were lifted. Russian-origin government claim, not verified operational recovery; canonical operation remains unknown.",
+      "evidence_artifact": "data/import-assessments/luna-review-interfax-airport-status-claims-20261024.json#RU-LH-MOSCOW-VNUKOVO-AIRPORT"
+    },
+    {
+      "facility_id": "RU-LH-MOSCOW-DOMODEDOVO-AIRPORT",
+      "status": "reopened",
+      "origin": "russia",
+      "as_of": "2026-10-24",
+      "claimant": "Rosaviatsiya",
+      "verified": false,
+      "canonical_status_is_claim": false,
+      "canonical_status_as_of": null,
+      "source": {
+        "name": "Interfax — Moscow-area airports return to normal work, citing Rosaviatsiya",
+        "url": "https://www.interfax.ru/russia/1124685"
+      },
+      "summary": "Interfax reports Rosaviatsiya’s Oct24 statement that Domodedovo returned to normal work and aircraft arrival/departure restrictions were lifted. Russian-origin government claim, not verified operational recovery; canonical operation remains unknown.",
+      "evidence_artifact": "data/import-assessments/luna-review-interfax-airport-status-claims-20261024.json#RU-LH-MOSCOW-DOMODEDOVO-AIRPORT"
+    },
+    {
+      "facility_id": "DISC-DEF-TAMBOV-GUNPOWDER-PLANT",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2023-06-20",
+      "source": {
+        "name": "The Moscow Times — 5 Killed in Blast at Russian Explosives Plant",
+        "url": "https://www.themoscowtimes.com/2023/06/20/5-killed-in-blast-at-russian-explosives-plant-a81571"
+      },
+      "verified": false,
+      "claimant": "Tambov Governor Maxim Yegorov",
+      "canonical_status_is_claim": false,
+      "summary": "The regional governor said production continued “as usual” on June 20, 2023, the day of the fatal factory explosion. This is a historical Russian-government operating claim, not evidence of present operation; canonical operation remains unknown.",
+      "evidence_artifact": "data/reviewed-facilities.json#DISC-DEF-TAMBOV-GUNPOWDER-PLANT/mt-tambov-gunpowder-explosion-20230620"
+    },
+    {
+      "facility_id": "DISC-DEF-KAZAN-GUNPOWDER-PLANT",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2026-04-14",
+      "claimant": "Unnamed local authorities (as reported by The Moscow Times)",
+      "verified": false,
+      "canonical_status_is_claim": false,
+      "canonical_status_as_of": null,
+      "source": {
+        "name": "The Moscow Times — 1 Killed in Fire at Kazan Gunpowder Plant",
+        "url": "https://www.themoscowtimes.com/2026/04/15/1-killed-in-fire-at-kazan-gunpowder-plant-a92503"
+      },
+      "summary": "The Moscow Times reported that unnamed local authorities told state media production at the plant continued during the April 14 fire. This is a historical Russian-origin claim, not verified operation or evidence of current production.",
+      "evidence_artifact": "data/reviewed-facilities.json#DISC-DEF-KAZAN-GUNPOWDER-PLANT/mt-kazan-gunpowder-fire-20260414"
+    },
+    {
+      "facility_id": "DISC-DRONE-ALABUGA-YELABUGA",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2024-04-02",
+      "source": {
+        "name": "The Kyiv Independent — How Ukraine hit a Russian drone factory 1,300 kilometers away",
+        "url": "https://kyivindependent.com/ukraine-launches-long-range-attacks-on-russia-setting-shahed-type-drone-factory-as-a-target/"
+      },
+      "verified": false,
+      "claimant": "Tatarstan leader",
+      "canonical_status_is_claim": false,
+      "summary": "The Kyiv Independent relays the Tatarstan leader’s statement that there was no serious damage or disruption to production processes after the reported April 2 attack. This is an attributed Russian-origin claim as of April 2, 2024; it does not establish verified operation. Canonical facility operation remains unknown.",
+      "evidence_artifact": "data/reviewed-facilities.json#DISC-DRONE-ALABUGA-YELABUGA/ki-alabuga-yelabuga-attack-20240402"
+    },
+    {
+      "facility_id": "DISC-IND-NPO-AVTOMATIKI-YEKATERINBURG",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2024-07-31",
+      "source": {
+        "name": "Interfax — NPO Avtomatiki says production resumed after the fire",
+        "url": "https://www.interfax.ru/russia/973315"
+      },
+      "verified": false,
+      "claimant": "NPO Avtomatiki general director",
+      "canonical_status_is_claim": false,
+      "canonical_status_as_of": null,
+      "summary": "Interfax reported the company general director’s July 31 statement that work interrupted by the July 30 fire had resumed and production activity continued for customer commitments. This is a historical Russian operator claim, not verified current operation; canonical facility status remains unknown.",
+      "evidence_artifact": "data/reviewed-facilities.json#DISC-IND-NPO-AVTOMATIKI-YEKATERINBURG/interfax-npo-avtomatiki-resumed-20240731"
+    },
+    {
+      "facility_id": "DISC-IND-MOSKOKS-VIDNOE-PLANT",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2023-03-05",
+      "source": {
+        "name": "Interfax — Fire at Mechel coke plant in Vidnoye did not affect production",
+        "url": "https://www.interfax.ru/russia/889856"
+      },
+      "verified": false,
+      "claimant": "Mechel",
+      "canonical_status_is_claim": false,
+      "canonical_status_as_of": null,
+      "summary": "Interfax reported Mechel’s contemporaneous statement that the March 5 fire did not affect coke production. This is a historical Russian operator claim, not verified current operation; canonical facility status remains unknown.",
+      "evidence_artifact": "data/reviewed-facilities.json#DISC-IND-MOSKOKS-VIDNOE-PLANT/interfax-moskoks-vidnoe-explosion-fire-20230305"
+    },
+    {
+      "facility_id": "DISC-IND-KOLA-MINING-COMPANY-MONCHEGORSK-20220914",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2022-09-15",
+      "source": {
+        "name": "Interfax — Kola Mining Company says production chain operating normally after fire",
+        "url": "https://www.interfax.ru/business/898766"
+      },
+      "verified": false,
+      "claimant": "AO Kola Mining Company",
+      "canonical_status_is_claim": false,
+      "summary": "Interfax reported the company’s Sept. 15, 2022 statement that its platinum-group production chain was operating normally after the fire. This is a dated, unverified Russian operator claim about the chain generally; it does not establish that the affected cobalt-production department had resumed or that the facility is operating now. Canonical operation remains unknown.",
+      "evidence_artifact": "data/reviewed-facilities.json#DISC-IND-KOLA-MINING-COMPANY-MONCHEGORSK-20220914/interfax-kola-mmc-fire-followup-20230502"
+    },
+    {
+      "facility_id": "DISC-IND-MAGNITOGORSK-METALLURGICAL-COMBINE-20221102",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2022-11-02",
+      "source": {
+        "name": "Interfax, reporting MMK press service",
+        "url": "https://www.interfax.ru/amp/870683"
+      },
+      "verified": false,
+      "claimant": "Magnitogorsk Iron and Steel Works (MMK) press service",
+      "canonical_status_is_claim": false,
+      "summary": "Interfax reported MMK press service said the Nov. 2, 2022 incident did not affect production activity. This is a dated, unverified Russian operator claim; it does not establish present operation. Canonical facility status remains unknown.",
+      "evidence_artifact": "data/reviewed-facilities.json#DISC-IND-MAGNITOGORSK-METALLURGICAL-COMBINE-20221102/interfax-mmk-rolling-shop-5-fire-20221102-index"
+    },
+    {
+      "facility_id": "DISC-IND-PETROZAVODSK-ONEGA-SHIPYARD-FIRE-20250403",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2025-04-03",
+      "source": {
+        "name": "Interfax — consequences of fire at Onega Shipbuilding and Ship Repair Plant",
+        "url": "https://www.interfax.ru/russia/1018292"
+      },
+      "verified": false,
+      "claimant": "Regional governor, as quoted by Interfax",
+      "canonical_status_is_claim": true,
+      "canonical_status_as_of": "2025-04-03",
+      "summary": "The governor said the main workshops were unaffected and the plant continued normal work on April 3, 2025. This is a dated Russian official claim; it does not establish present operation.",
+      "evidence_artifact": "data/reviews/reviewer-interfax-onega-shipyard-production-block-fire-20250403-r1.json"
+    },
+    {
+      "facility_id": "DISC-IND-YAKOVLEVSKY-GOK",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2026-10-26",
+      "source": {
+        "name": "Interfax — Severstal press service reports restored electricity and resumed work at Yakovlevsky GOK",
+        "url": "https://www.interfax.ru/business/1125100"
+      },
+      "verified": false,
+      "claimant": "Severstal press service",
+      "canonical_status_is_claim": false,
+      "canonical_status_as_of": null,
+      "summary": "Interfax reported that Severstal’s press service said electricity had been restored and the combine had resumed normal work on Oct. 26, 2026. This Russian-origin operator claim is unverified; canonical operating status remains unknown.",
+      "evidence_artifact": "pipeline/runtime/source-checks/evidence/20261026-interfax-yakovlevsky-gok-r335-context.json"
+    },
+    {
+      "facility_id": "DISC-IND-NEVINNOMYSSK-AZOT",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2023-03-03",
+      "claimant": "Mayor Mikhail Minenkov",
+      "verified": false,
+      "canonical_status_is_claim": false,
+      "canonical_status_as_of": null,
+      "source": {
+        "name": "Interfax — В цехе \"Невинномысского Азота\" горело техническое помещение",
+        "url": "https://www.interfax.ru/russia/889649"
+      },
+      "summary": "Interfax reports Mayor Mikhail Minenkov said Nevinnomyssky Azot was working normally on March 3, 2023. This dated Russian official operating claim is unverified and does not establish present operation; the canonical facility status remains unknown.",
+      "evidence_artifact": "data/reviewed-facilities.json#DISC-IND-NEVINNOMYSSK-AZOT/interfax-nevinnomyssk-azot-workshop-fire-20230303"
+    },
+    {
+      "facility_id": "DISC-IND-NEVINNOMYSSK-AZOT",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2024-04-04",
+      "claimant": "Mayor Mikhail Minenkov",
+      "verified": false,
+      "canonical_status_is_claim": false,
+      "canonical_status_as_of": null,
+      "source": {
+        "name": "Interfax — В ремонтируемом цехе \"Невинномысского Азота\" случился пожар",
+        "url": "https://www.interfax.ru/russia/954088"
+      },
+      "summary": "Interfax reports Mayor Mikhail Minenkov said the plant was operating normally at report time on April 4, 2024. This dated Russian official operating claim is unverified; canonical current operation remains unknown.",
+      "evidence_artifact": "data/reviewed-facilities.json#DISC-IND-NEVINNOMYSSK-AZOT/interfax-nevinnomyssky-azot-cooling-tower-fire-2024-04-04"
+    },
+    {
+      "facility_id": "DISC-IND-NEVINNOMYSSK-AZOT",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2024-04-04",
+      "claimant": "Nevinnomyssky Azot",
+      "verified": false,
+      "canonical_status_is_claim": false,
+      "canonical_status_as_of": null,
+      "source": {
+        "name": "Interfax — В ремонтируемом цехе \"Невинномысского Азота\" случился пожар",
+        "url": "https://www.interfax.ru/russia/954088"
+      },
+      "summary": "Interfax reports Nevinnomyssky Azot separately said it was operating normally at report time on April 4, 2024. This dated Russian operator claim is unverified; canonical current operation remains unknown.",
+      "evidence_artifact": "data/reviewed-facilities.json#DISC-IND-NEVINNOMYSSK-AZOT/interfax-nevinnomyssky-azot-cooling-tower-fire-2024-04-04"
+    },
+    {
+      "facility_id": "DISC-LH-TUAPSE-RAILWAY-STATION",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2026-04-16",
+      "source": {
+        "name": "Interfax — Contact network damaged at Tuapse railway station",
+        "url": "https://www.interfax.ru/business/1084249"
+      },
+      "verified": false,
+      "claimant": "North Caucasus Railway",
+      "canonical_status_is_claim": true,
+      "canonical_status_as_of": "2026-04-16",
+      "summary": "North Caucasus Railway said passenger and suburban trains were moving normally at the time of the April 16 report. This is a dated Russian railway-operator claim, not verified current operation.",
+      "evidence_artifact": "data/reviewed-facilities.json#DISC-LH-TUAPSE-RAILWAY-STATION/interfax-tuapse-railway-contact-network-20260416"
+    },
+    {
+      "facility_id": "DISC-LH-KOTLUBAN-RAILWAY-STATION-DERAILMENT-20240514",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2024-05-16",
+      "source": {
+        "name": "Interfax — В Волгоградской области полностью восстановили движение поездов после аварии",
+        "url": "https://www.interfax.ru/russia/960773"
+      },
+      "verified": false,
+      "claimant": "Privolzhskaya Railway press service",
+      "canonical_status_is_claim": false,
+      "summary": "Interfax reported the Privolzhskaya Railway press service said on May 16, 2024 that movement through Kotluban was fully restored, repairs were complete, and trains ran without restrictions and on schedule in both directions. This is a dated, unverified Russian railway-operator claim; it does not establish current service. Canonical operation remains unknown.",
+      "evidence_artifact": "data/reviewed-facilities.json#DISC-LH-KOTLUBAN-RAILWAY-STATION-DERAILMENT-20240514/interfax-kotluban-station-full-restoration-20240516"
+    },
+    {
+      "facility_id": "DISC-POWER-OLEKMINSK-OVTK-BOILER-HOUSE-20240511",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2024-05-12",
+      "source": {
+        "name": "Interfax — Olekminsk heat supply restored after boiler explosion",
+        "url": "https://www.interfax.ru/russia/959963"
+      },
+      "verified": false,
+      "claimant": "Yakutia Operational Headquarters",
+      "canonical_status_is_claim": false,
+      "canonical_status_as_of": null,
+      "summary": "Interfax reported the Yakutia Operational Headquarters said on May 12, 2024 that the OVTK boiler house in Olekminsk had been started and heat supplied to all consumers. This is a dated, unverified Russian-authority claim, not verified current operation; canonical facility status remains unknown.",
+      "evidence_artifact": "data/reviewed-facilities.json#DISC-POWER-OLEKMINSK-OVTK-BOILER-HOUSE-20240511/interfax-olekminsk-ovtk-boiler-explosion-20240511"
+    },
+    {
+      "facility_id": "DISC-POWER-OLEKMINSK-OVTK-BOILER-HOUSE-20240511",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2024-05-12",
+      "source": {
+        "name": "Interfax — Olekminsk heat supply restored after boiler explosion",
+        "url": "https://www.interfax.ru/russia/959963"
+      },
+      "verified": false,
+      "claimant": "Olekminsk District Head Nikolay Kharbin",
+      "canonical_status_is_claim": false,
+      "canonical_status_as_of": null,
+      "summary": "Interfax reported Olekminsk District Head Nikolay Kharbin said on May 12, 2024 that heat supply to homes and social facilities had been restored and two boilers brought into service. This is a dated, unverified Russian official claim, not verified current operation; canonical facility status remains unknown.",
+      "evidence_artifact": "data/reviewed-facilities.json#DISC-POWER-OLEKMINSK-OVTK-BOILER-HOUSE-20240511/interfax-olekminsk-ovtk-boiler-explosion-20240511"
+    },
+    {
+      "facility_id": "DISC-POWER-KLIMOVSK-KSPZ-BOILER-HOUSE-20240104",
+      "status": "operating",
+      "origin": "russia",
+      "as_of": "2024-01-06",
+      "source": {
+        "name": "Interfax — Boiler-house accident in Klimovsk heat-outage update",
+        "url": "https://www.interfax.ru/russia/939167"
+      },
+      "verified": false,
+      "claimant": "Press service of the Governor and Government of Moscow Oblast",
+      "canonical_status_is_claim": false,
+      "canonical_status_as_of": null,
+      "summary": "Interfax’s Jan. 6 indexed report says the Moscow Oblast Governor and Government press service reported that a reserve boiler had been started and another pressurized after the Jan. 4 Klimovsk boiler-house accident. This is a dated, unverified Russian official claim about limited heat-service recovery; it does not establish full restoration or present operation. Canonical facility status remains unknown.",
+      "evidence_artifact": "pipeline/runtime/source-checks/evidence/20261027-interfax-klimovsk-kspz-boiler-939167-939411-context-r421.json"
+    }
+  ]
+}

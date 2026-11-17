@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Bingo · Project status</title>
+  <link rel="stylesheet" href="project-status.css">
+  <script src="project-status.js" defer></script>
+</head>
+<body>
+  <main>
+    <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">B</span> BINGO <span class="brand-detail">/ project desk</span></a><a class="back-link" href="index.html">Open facility dashboard ↗</a></header>
+    <div class="page-heading"><div><p class="eyebrow">WORK IN PROGRESS · LOCAL SNAPSHOT</p><h1>A clear view of the build.</h1><p class="intro">What exists, what is verified, and what happens next.</p></div><button id="refresh" type="button">↻ Refresh</button></div>
+    <p id="load-status" class="load-status" role="status" aria-live="polite">Loading project snapshot…</p>
+    <div id="dashboard" hidden>
+      <section class="goal-panel"><div><p class="eyebrow">THE GOAL</p><h2 id="goal"></h2><p id="summary"></p></div><div class="phase-pill"><span class="pulse"></span><span id="phase"></span></div></section>
+      <section class="metrics" id="metrics" aria-label="Catalogue metrics"></section>
+      <section class="panel"><div class="section-heading"><h2>Latest findings and imports</h2><a href="research/applied-findings/">Open charts and sources ↗</a></div><p id="application-summary"></p><p id="reviewer-summary" class="note"></p><p id="scout-checkpoint" class="note"></p><p id="quota-summary" class="note"></p></section>
+      <section class="panel coverage-panel"><div class="section-heading"><h2>Category coverage</h2><span class="muted">Current catalogue counts</span></div><div class="coverage-table-wrap"><table class="coverage-table"><thead><tr><th>Category</th><th>Records</th><th>AI reviewed</th><th>Awaiting review</th></tr></thead><tbody id="coverage-targets"></tbody></table></div><p id="missing-summary" class="note"></p><p class="note">These counts do not establish completeness. Missing facts remain unknown. Historical wells and site groups retain their labels; source review does not verify present operation.</p></section>
+      <div class="content-grid">
+        <section class="panel"><div class="section-heading"><h2>Source research</h2><span class="muted">Coverage and access</span></div><p id="source-progress" class="note"></p></section>
+        <section class="panel timeline-panel"><div class="section-heading"><h2>Build milestones</h2><span class="muted">Current work and historical foundations</span></div><ol id="milestones" class="timeline"></ol></section>
+        <section class="panel"><div class="section-heading"><h2>Verification</h2><span class="muted">Evidence, not assumptions</span></div><ul id="checks" class="stack"></ul></section>
+        <section class="panel"><div class="section-heading"><h2>Review desk</h2><span class="muted">Measured snapshot</span></div><div id="review-counts" class="review-grid"></div><p class="note">File counts are artifacts; database counts track proposals, reviews and publication versions. AI-reviewed identity does not establish current operations.</p><p id="database-status" class="note"></p><div class="rule"></div><h3>Catalogue coverage</h3><ul id="categories" class="coverage"></ul></section>
+        <section class="panel"><div class="section-heading"><h2>Next up</h2><span class="muted">Current application and source work</span></div><ol id="next-steps" class="numbered"></ol><div class="rule"></div><h3>Open risks & blockers</h3><ul id="blockers" class="risk-list"></ul></section>
+        <section class="panel"><div class="section-heading"><h2>Working decisions</h2><span class="muted">Current direction</span></div><ul id="decisions" class="decision-list"></ul></section>
+        <section class="panel"><div class="section-heading"><h2>Local delivery</h2><span id="git-state" class="badge"></span></div><dl id="git-details" class="details"></dl><div class="rule"></div><h3>Update worker</h3><p id="automation-status" class="note"></p><p class="note">The saved snapshot reloads every 30 seconds; Refresh reloads it immediately. To recompute local metrics, run <code>python3 scripts/update-project-status.py</code> and refresh.</p></section>
+      </div>
+      <footer><span id="snapshot-date"></span><span>Read-only project view · no live research or test execution</span></footer>
+    </div>
+  </main>
+</body>
+</html>

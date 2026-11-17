@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "warehouse",
+      "label": "Warehouses",
+      "singular": "Warehouse",
+      "symbol": "WH",
+      "description": "Storage and fulfilment facilities, grouped separately from their operators."
+    },
+    {
+      "id": "logistics_hub",
+      "label": "Logistics hubs",
+      "singular": "Logistics hub",
+      "symbol": "LH",
+      "description": "Transport interchanges and distribution hubs."
+    },
+    {
+      "id": "bridge",
+      "label": "Bridges",
+      "singular": "Bridge",
+      "symbol": "BR",
+      "description": "Physical road, rail and other transport bridges."
+    },
+    {
+      "id": "refinery",
+      "label": "Refineries",
+      "singular": "Refinery",
+      "symbol": "RF",
+      "description": "Oil refining facilities."
+    },
+    {
+      "id": "oil_well",
+      "label": "Oil wells",
+      "singular": "Oil well",
+      "symbol": "OW",
+      "description": "Individual extraction wells. Oil fields should not be represented as individual wells."
+    },
+    {
+      "id": "data_center",
+      "label": "Data centers",
+      "singular": "Data center",
+      "symbol": "DC",
+      "description": "Facilities housing computing and network infrastructure."
+    },
+    {
+      "id": "military_facility",
+      "label": "Military facilities",
+      "singular": "Military facility",
+      "symbol": "MF",
+      "description": "Named physical military sites; no operational intelligence is collected."
+    },
+    {
+      "id": "defence_manufacturing",
+      "label": "Defence production",
+      "singular": "Defence production site",
+      "symbol": "DP",
+      "description": "Named physical production sites with a sourced defence connection."
+    },
+    {
+      "id": "government_building",
+      "label": "Government buildings",
+      "singular": "Government building",
+      "symbol": "GB",
+      "description": "Named physical government buildings."
+    },
+    {
+      "id": "drone_facility",
+      "label": "Drone facilities",
+      "singular": "Drone facility",
+      "symbol": "DR",
+      "description": "Named physical drone production sites; category alone does not imply defence."
+    },
+    {
+      "id": "robotics_facility",
+      "label": "Robotics facilities",
+      "singular": "Robotics facility",
+      "symbol": "RB",
+      "description": "Named physical robotics sites; category alone does not imply defence."
+    },
+    {
+      "id": "industrial_facility",
+      "label": "Industrial production",
+      "singular": "Industrial production site",
+      "symbol": "IP",
+      "description": "Named civilian or dual-use production sites, including materials plants, absent a sourced defence link."
+    }
+  ],
+  "datasets": [
+    {
+      "id": "wb-original",
+      "label": "Original Wildberries collection",
+      "path": "facilities.json",
+      "format": "legacy-wb",
+      "defaults": {
+        "facility_type": "warehouse",
+        "operator": "Wildberries"
+      },
+      "source_url": "https://github.com/DrArroway/wb-bingo-web",
+      "revision": "1f085cdc64a5cce8c84b27a40125b210b2eb1f0f",
+      "imported_on": "2026-10-19",
+      "review_status": "unreviewed",
+      "license_note": "Upstream custom MIT-style software licence retained in LICENSE. Third-party media rights have not been independently established.",
+      "notes": "AI-assisted initial research, with human review reported by the original author. This project has not independently verified the entries. Original imagery and confidence labels are inherited."
+    },
+    {
+      "id": "reviewed-facilities",
+      "label": "AI-reviewed records",
+      "path": "data/reviewed-facilities.json",
+      "format": "facilities-v1",
+      "imported_on": "2026-10-19",
+      "notes": "Each addition passes a separate AI source review and a versioned evidence gate. Identity checks do not establish incident completeness or current operating condition.",
+      "license_note": "Minimal factual assertions with linked source attribution, including official directories and Wikipedia. No third-party seed images or bulk databases copied."
+    },
+    {
+      "id": "unreviewed-discovery",
+      "label": "Unapproved discovery entries",
+      "path": "data/unreviewed-facilities.json",
+      "format": "facilities-v1",
+      "notes": "Discovery entries are visible at Cyrill’s request and have not passed evidence approval. Recorded identity/classification/location may be wrong; possible duplicates are labelled. Enable Approved only to hide them.",
+      "license_note": "Local FlareScope discovery names and source-recorded location labels only; no source text or imagery copied."
+    }
+  ]
+}
