@@ -1,0 +1,94 @@
+[
+  {
+    "id": "DISC-FS-surgut_refinery",
+    "name": "Surgut Refinery",
+    "facility_type": "refinery",
+    "operator": "Not recorded",
+    "region": "Khanty-Mansi Autonomous Okrug",
+    "country": "Russia",
+    "footprint_m2": null,
+    "incidents": [],
+    "operational_status": "unknown",
+    "status_as_of": null,
+    "sources": [
+      {
+        "name": "FlareScope local research inventory — not revalidated",
+        "url": null
+      }
+    ],
+    "verification": {
+      "status": "unreviewed"
+    },
+    "provenance_note": "Unapproved discovery entry from FlareScope. Identity and source-recorded location require online review. Not an operating-status assertion. Classification needs review: refinery is the source inventory category, not a validated facility classification. Region reproduces region_as_recorded without independent review. Russia is inherited from the user-supplied original application scope; it has not been independently checked. Empty incidents means no researched history, not an absence of incidents."
+  },
+  {
+    "id": "DISC-FS-astrakhan_refinery",
+    "name": "Astrakhan Refinery",
+    "facility_type": "refinery",
+    "operator": "Not recorded",
+    "region": "Astrakhan Oblast",
+    "country": "Russia",
+    "footprint_m2": null,
+    "incidents": [],
+    "operational_status": "unknown",
+    "status_as_of": null,
+    "sources": [
+      {
+        "name": "FlareScope local research inventory — not revalidated",
+        "url": null
+      }
+    ],
+    "verification": {
+      "status": "unreviewed"
+    },
+    "provenance_note": "Unapproved discovery entry from FlareScope. Identity and source-recorded location require online review. Not an operating-status assertion. Classification needs review: refinery is the source inventory category, not a validated facility classification. Region reproduces region_as_recorded without independent review. Russia is inherited from the user-supplied original application scope; it has not been independently checked. Empty incidents means no researched history, not an absence of incidents."
+  },
+  {
+    "id": "DISC-FS-novy_urengoy_refinery",
+    "name": "Novy Urengoy Refinery",
+    "facility_type": "refinery",
+    "operator": "Not recorded",
+    "region": "Yamalo-Nenets Autonomous Okrug",
+    "country": "Russia",
+    "footprint_m2": null,
+    "incidents": [],
+    "operational_status": "unknown",
+    "status_as_of": null,
+    "sources": [
+      {
+        "name": "FlareScope local research inventory — not revalidated",
+        "url": null
+      }
+    ],
+    "verification": {
+      "status": "unreviewed"
+    },
+    "provenance_note": "Unapproved discovery entry from FlareScope. Identity and source-recorded location require online review. Not an operating-status assertion. Classification needs review: refinery is the source inventory category, not a validated facility classification. Region reproduces region_as_recorded without independent review. Russia is inherited from the user-supplied original application scope; it has not been independently checked. Empty incidents means no researched history, not an absence of incidents."
+  },
+  {
+    "id": "DISC-CT-1753958",
+    "name": "Novatek Ust Luga Refinery",
+    "facility_type": "refinery",
+    "operator": "Not recorded",
+    "region": "Not recorded",
+    "country": "Russia",
+    "footprint_m2": null,
+    "incidents": [],
+    "operational_status": "unknown",
+    "status_as_of": null,
+    "sources": [
+      {
+        "name": "Climate TRACE 2025 inventory, source ID 1753958 — discovery only",
+        "url": "https://api.climatetrace.org/v7/sources?year=2025&subsectors=oil-and-gas-refining&gadmId=RUS&limit=50&offset=0"
+      },
+      {
+        "name": "Climate TRACE data terms and attribution",
+        "url": "https://climatetrace.org/terms-of-use"
+      }
+    ],
+    "verification": {
+      "status": "unreviewed"
+    },
+    "provenance_note": "Unapproved identity from Climate TRACE 2025 inventory, retrieved 2026-10-19T16:45:01.871409+00:00. Name is reproduced as recorded; operator prefix is not accepted as current ownership. Refinery classification follows source name/subsector and needs review, including condensate-processing classification. Region, footprint, current operation and incident history are not researched. Empty incidents does not mean no incidents. No coordinates or capacity imported. Attribution: Climate TRACE; detailed source-chain terms remain to be reviewed before production redistribution."
+  }
+]

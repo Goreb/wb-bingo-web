@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Tatarstan",
+    "path": "img/flags/tatarstan.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Flag_of_Tatarstan.svg",
+    "asset_url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_Tatarstan.svg"
+  },
+  {
+    "name": "Dagestan",
+    "path": "img/flags/dagestan.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Flag_of_Dagestan.svg",
+    "asset_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_Dagestan.svg"
+  },
+  {
+    "name": "Bashkortostan",
+    "path": "img/flags/bashkortostan.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Flag_of_Bashkortostan.svg",
+    "asset_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Flag_of_Bashkortostan.svg"
+  },
+  {
+    "name": "Udmurtia",
+    "path": "img/flags/udmurtia.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Flag_of_Udmurtia.svg",
+    "asset_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Udmurtia.svg"
+  },
+  {
+    "name": "Mari El",
+    "path": "img/flags/mari-el.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Flag_of_Mari_El.svg",
+    "asset_url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Flag_of_Mari_El.svg"
+  },
+  {
+    "name": "Russia",
+    "path": "img/flags/russia.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Flag_of_Russia.svg",
+    "asset_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"
+  },
+  {
+    "name": "Ukraine",
+    "path": "img/flags/ukraine.svg",
+    "source": "https://commons.wikimedia.org/wiki/File:Flag_of_Ukraine.svg",
+    "asset_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg"
+  }
+]

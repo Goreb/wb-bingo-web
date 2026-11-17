@@ -1,0 +1,944 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-17T07:18:31.242657+00:00",
+  "project": {
+    "goal": "Build the most complete practical facility and incident database, including dated operational changes and reopenings.",
+    "phase": "Research, reviews and four-hour maintenance resumed",
+    "task_state": "in_progress",
+    "summary": "Current figures are measured from the catalogue, approved export and research queue. Clear dated Reuters reporting is sufficient; missing cause, damage or operating status does not block a supported incident.",
+    "milestones": [
+      {
+        "title": "Source research and provenance",
+        "status": "in_progress",
+        "detail": "Reuters reports and legitimate Reuters reprints are collected with dates and attribution. Targeted research is not a complete inventory of every Reuters article."
+      },
+      {
+        "title": "Independent Luna review",
+        "status": "verified",
+        "detail": "All 85 frozen groups were reviewed; 13 retain explicit holds. A Luna reviewer checked source-to-facility/date/assertion matching and applies supported candidates through the exact-version SQLite gate. Sol remains stopped."
+      },
+      {
+        "title": "Facility interface and galleries",
+        "status": "verified",
+        "detail": "The local facility page and findings overview rendered in Safari. Cards, map, incident history, favorites, settings and galleries are available; this is not a fresh full UI test."
+      },
+      {
+        "title": "Historical Telegram archive",
+        "status": "verified",
+        "detail": "The supplied 2022–2025 archive was reconciled with the prior text import; dated source posts and selected media were preserved. Photos retain their separate media provenance."
+      },
+      {
+        "title": "Regional expansion",
+        "status": "later",
+        "detail": "Original geographic scope first; Ukraine, NATO countries and worldwide phases are not active."
+      },
+      {
+        "title": "Media inventory · current files",
+        "status": "in_progress",
+        "detail": "158 unique incident-image paths; 51 facility-image entries across 48 facility IDs; 0 missing referenced files. File inventory only; this does not verify image identity or timing."
+      },
+      {
+        "title": "Facility photo-scout research",
+        "status": "in_progress",
+        "detail": "220 of 220 effective facility IDs checked; 76 dated image leads, 80 undated gallery leads, 64 not found in bounded searches, 0 confirmed pre-incident photos. 1 source images visually screened; source attribution remains separate from independent identification. Separate public-source research; no record approval, app/media integration, or deployment."
+      },
+      {
+        "title": "Scout handoff queue",
+        "status": "in_progress",
+        "detail": "1367 ready handoff batches; 979 distinct candidate snapshots. Reviewer: Immediate user-authorized batch complete; awaiting next eligible batch.. These are research handoffs, not approved records or SQLite proposals. Saved mechanical audit (2026-10-20T13:50:11.855236+00:00): 141/141 passed; 17 contain historical enrichments requiring correction review. This is not source approval."
+      },
+      {
+        "title": "Reuters retrospective · Luna",
+        "status": "in_progress",
+        "detail": "Saved state: running; 61 search-window entries, 207 story-ledger entries including leads and corrections. Category follow-up: 6/6 bounded rounds; next: category backlog/correction reconciliation after checkpoint. Older-incident evidence follow-up: 4 bounded rounds saved. Stop at None% account allowance remaining; shared account meter. Targeted searches, not an inventory or review of every Reuters article since February 2022. Coverage is incomplete; ledger entries are not a unique reviewed-article count. The prepared application is complete; source research resumed. Sol remains stopped."
+      },
+      {
+        "title": "Reuters follow-up research",
+        "status": "in_progress",
+        "detail": "86/86 indexed references have saved decisions; checkpoint: 2026-10-20T11:17:24Z. Index entries can repeat or remain unresolved; this is not an incident or approval count. Saved decisions preserve source-access and identity/date holds. The independent application reviewer uses Luna; Sol remains stopped."
+      }
+    ],
+    "checks": [
+      {
+        "title": "Measured dashboard",
+        "status": "verified",
+        "detail": "Catalogue, queue and approved-export figures are recomputed locally. Snapshot generation is not a source review or a new test run."
+      },
+      {
+        "title": "Exact review gate",
+        "status": "verified",
+        "detail": "Imported candidates retain exact hashes, source assertions, reviewer provenance and append-only publication history. Database totals below are measured, not fixed milestone counts."
+      },
+      {
+        "title": "Local Safari preview",
+        "status": "verified",
+        "detail": "Facility interface and the findings overview loaded from the local HTTP server. Public pages.dev delivery is separate."
+      }
+    ],
+    "decisions": [
+      "One clear dated Reuters report suffices; no mandatory second source or additional truth investigation. Preserve attribution and unknown details.",
+      "Independent Luna reviewer and scout remain separate. Sol and Astra remain stopped.",
+      "Luna work has no user-set usage cap under the latest override; platform limits apply, with no paid credits or resets.",
+      "A hit does not alone establish shutdown. Russian government/operator reopening assertions remain separately labelled Russian claims.",
+      "Local imports and overview updates are authorized; no new Git publication or deployment."
+    ],
+    "next_steps": [
+      "Use the current local website and findings overview.",
+      "Revisit held assertions only when new evidence resolves their recorded reason.",
+      "Continue resumed Reuters/source research, independent Luna reviews and four-hour checks from saved cursors."
+    ],
+    "blockers": [
+      "Source coverage is incomplete; public indexes and some source listings have access limits.",
+      "Unknown exact facility identities and concrete date conflicts remain held separately.",
+      "The local schedule requires this Mac and Codex to be available."
+    ]
+  },
+  "metrics": {
+    "legacy_total": 38,
+    "legacy_reviewed": 23,
+    "facilities": 690,
+    "categories_registered": 12,
+    "categories_populated": 10,
+    "operators": 145,
+    "ai_reviewed": 672,
+    "unreviewed": 18,
+    "inherited_unreviewed": 15,
+    "discovery_unreviewed": 3,
+    "category_counts": [
+      {
+        "label": "Warehouses",
+        "count": 138,
+        "reviewed": 123,
+        "awaiting_review": 15
+      },
+      {
+        "label": "Logistics hubs",
+        "count": 200,
+        "reviewed": 200,
+        "awaiting_review": 0
+      },
+      {
+        "label": "Bridges",
+        "count": 0,
+        "reviewed": 0,
+        "awaiting_review": 0
+      },
+      {
+        "label": "Refineries",
+        "count": 52,
+        "reviewed": 49,
+        "awaiting_review": 3
+      },
+      {
+        "label": "Oil wells",
+        "count": 20,
+        "reviewed": 20,
+        "awaiting_review": 0
+      },
+      {
+        "label": "Data centers",
+        "count": 47,
+        "reviewed": 47,
+        "awaiting_review": 0
+      },
+      {
+        "label": "Military facilities",
+        "count": 32,
+        "reviewed": 32,
+        "awaiting_review": 0
+      },
+      {
+        "label": "Defence production",
+        "count": 31,
+        "reviewed": 31,
+        "awaiting_review": 0
+      },
+      {
+        "label": "Government buildings",
+        "count": 8,
+        "reviewed": 8,
+        "awaiting_review": 0
+      },
+      {
+        "label": "Drone facilities",
+        "count": 4,
+        "reviewed": 4,
+        "awaiting_review": 0
+      },
+      {
+        "label": "Robotics facilities",
+        "count": 0,
+        "reviewed": 0,
+        "awaiting_review": 0
+      },
+      {
+        "label": "Industrial production",
+        "count": 158,
+        "reviewed": 158,
+        "awaiting_review": 0
+      }
+    ],
+    "missing_counts": {
+      "operator": 69,
+      "region": 11,
+      "footprint": 675,
+      "current_status": 658
+    },
+    "operator_counts": [
+      {
+        "label": "3data",
+        "count": 14
+      },
+      {
+        "label": "3data (franchise network)",
+        "count": 1
+      },
+      {
+        "label": "AO Kola Mining Company",
+        "count": 1
+      },
+      {
+        "label": "Acron Group",
+        "count": 1
+      },
+      {
+        "label": "Atlant Aero (identified by monitoring groups, as reported by KI)",
+        "count": 1
+      },
+      {
+        "label": "Basalt (as identified by KI)",
+        "count": 1
+      },
+      {
+        "label": "Bashneft",
+        "count": 3
+      },
+      {
+        "label": "Caspian Pipeline Consortium",
+        "count": 1
+      },
+      {
+        "label": "Chelyabinsk City Electric Transport Plant (ChZGT; part of Sinara-Transport Machines)",
+        "count": 1
+      },
+      {
+        "label": "Coal Company Mezhgeyugol",
+        "count": 1
+      },
+      {
+        "label": "DNS",
+        "count": 1
+      },
+      {
+        "label": "Dagenergo (Rosseti North Caucasus branch)",
+        "count": 1
+      },
+      {
+        "label": "DataPro",
+        "count": 4
+      },
+      {
+        "label": "Delo Group",
+        "count": 1
+      },
+      {
+        "label": "Energiya PJSC",
+        "count": 1
+      },
+      {
+        "label": "FKP Avangard",
+        "count": 1
+      },
+      {
+        "label": "FSB Border Directorate for Rostov Region",
+        "count": 1
+      },
+      {
+        "label": "Federal State Enterprise Perm Powder Plant",
+        "count": 1
+      },
+      {
+        "label": "Fix Price",
+        "count": 1
+      },
+      {
+        "label": "Freight Village RU",
+        "count": 1
+      },
+      {
+        "label": "Gazprom Neft",
+        "count": 1
+      },
+      {
+        "label": "Gazprom Neftekhim Salavat",
+        "count": 1
+      },
+      {
+        "label": "Graivoron City District Administration",
+        "count": 1
+      },
+      {
+        "label": "High-Precision Systems, Rostec",
+        "count": 1
+      },
+      {
+        "label": "IXcellerate",
+        "count": 3
+      },
+      {
+        "label": "Inter RAO – Electric Power Plants",
+        "count": 1
+      },
+      {
+        "label": "JSC Aksaikardandetel",
+        "count": 1
+      },
+      {
+        "label": "JSC Apatit (PhosAgro)",
+        "count": 1
+      },
+      {
+        "label": "JSC Krasnozavodsky Chemical Plant",
+        "count": 1
+      },
+      {
+        "label": "JSC Progress Plant",
+        "count": 1
+      },
+      {
+        "label": "JSC Sevastopol Marine Plant named after Sergo Ordzhonikidze",
+        "count": 1
+      },
+      {
+        "label": "JSC VNIIR",
+        "count": 1
+      },
+      {
+        "label": "Key Point",
+        "count": 6
+      },
+      {
+        "label": "Key Point (3data distributor listing)",
+        "count": 2
+      },
+      {
+        "label": "Key Point (management operator; legal operator ООО «НЦСД»)",
+        "count": 1
+      },
+      {
+        "label": "Koledino 3PL",
+        "count": 1
+      },
+      {
+        "label": "Kosobrodsky Oil-Bitumen Plant LLC",
+        "count": 1
+      },
+      {
+        "label": "Krymenergo",
+        "count": 1
+      },
+      {
+        "label": "LLC LD-Trade",
+        "count": 1
+      },
+      {
+        "label": "LLC Laisky Ship Repair Yard",
+        "count": 1
+      },
+      {
+        "label": "LLC Svecha",
+        "count": 1
+      },
+      {
+        "label": "LUKOIL",
+        "count": 4
+      },
+      {
+        "label": "Local administration (not separately named in the cited source)",
+        "count": 1
+      },
+      {
+        "label": "METRO Logistics Group (MGL; source-described)",
+        "count": 1
+      },
+      {
+        "label": "Magnit; unnamed 3PL logistics partner",
+        "count": 1
+      },
+      {
+        "label": "Magnitogorsk Iron and Steel Works (MMK)",
+        "count": 1
+      },
+      {
+        "label": "Main Artillery Directorate of Russia’s Defence Ministry",
+        "count": 1
+      },
+      {
+        "label": "Mariysky Oil Refinery LLC",
+        "count": 1
+      },
+      {
+        "label": "Metalloinvest Holding Co. (identified in KI photo caption)",
+        "count": 1
+      },
+      {
+        "label": "Mikhailovsky GOK (Metalloinvest)",
+        "count": 1
+      },
+      {
+        "label": "Ministry of Defence of the Russian Federation",
+        "count": 1
+      },
+      {
+        "label": "Monocrystal (Energomera subsidiary)",
+        "count": 1
+      },
+      {
+        "label": "Mosenergo",
+        "count": 1
+      },
+      {
+        "label": "Moskoks (Mechel Group)",
+        "count": 1
+      },
+      {
+        "label": "NPO Avtomatiki",
+        "count": 1
+      },
+      {
+        "label": "NefteKhimService",
+        "count": 1
+      },
+      {
+        "label": "Nevinnomyssk Azot (EuroChem Group)",
+        "count": 1
+      },
+      {
+        "label": "Nizhnekamskneftekhim PJSC",
+        "count": 1
+      },
+      {
+        "label": "Not identified in Reuters report",
+        "count": 7
+      },
+      {
+        "label": "Not identified in cited report",
+        "count": 12
+      },
+      {
+        "label": "Not identified in cited reports",
+        "count": 1
+      },
+      {
+        "label": "Not identified in cited source",
+        "count": 89
+      },
+      {
+        "label": "Not identified in cited sources",
+        "count": 10
+      },
+      {
+        "label": "Not identified in the Reuters factbox",
+        "count": 1
+      },
+      {
+        "label": "Not identified in the Reuters report",
+        "count": 1
+      },
+      {
+        "label": "Not identified in the cited report",
+        "count": 1
+      },
+      {
+        "label": "Not identified in the cited source",
+        "count": 48
+      },
+      {
+        "label": "Not identified in the cited source.",
+        "count": 5
+      },
+      {
+        "label": "Not identified in the cited sources",
+        "count": 1
+      },
+      {
+        "label": "Not identified in the cited sources.",
+        "count": 1
+      },
+      {
+        "label": "Not recorded",
+        "count": 69
+      },
+      {
+        "label": "Not recorded in Reuters report",
+        "count": 1
+      },
+      {
+        "label": "Not recorded in the cited source",
+        "count": 10
+      },
+      {
+        "label": "Not recorded in the cited sources",
+        "count": 2
+      },
+      {
+        "label": "Not reported by Reuters",
+        "count": 6
+      },
+      {
+        "label": "Not separately established in cited reports",
+        "count": 1
+      },
+      {
+        "label": "Not separately identified in incident reports",
+        "count": 1
+      },
+      {
+        "label": "Novatek",
+        "count": 1
+      },
+      {
+        "label": "Novotrans",
+        "count": 1
+      },
+      {
+        "label": "Optic Fiber Systems JSC",
+        "count": 1
+      },
+      {
+        "label": "Ozon",
+        "count": 27
+      },
+      {
+        "label": "Ozon logistics partner (not named)",
+        "count": 1
+      },
+      {
+        "label": "PJSC Chelyabinsk Metallurgical Combine",
+        "count": 1
+      },
+      {
+        "label": "PJSC NLMK",
+        "count": 1
+      },
+      {
+        "label": "PJSC OGK-2",
+        "count": 1
+      },
+      {
+        "label": "PJSC Quadra, Smolensk branch (Smolensk Generation)",
+        "count": 1
+      },
+      {
+        "label": "PJSC Unipro",
+        "count": 1
+      },
+      {
+        "label": "RTK-DC",
+        "count": 1
+      },
+      {
+        "label": "Reported as part of EuroChem group by Exilenova+ (as cited by Ukrainska Pravda).",
+        "count": 1
+      },
+      {
+        "label": "Resource LLC",
+        "count": 1
+      },
+      {
+        "label": "Roboavia",
+        "count": 1
+      },
+      {
+        "label": "Rosenergoatom",
+        "count": 1
+      },
+      {
+        "label": "Rosneft",
+        "count": 12
+      },
+      {
+        "label": "Rosneft (reported as controlling operator)",
+        "count": 1
+      },
+      {
+        "label": "Rosseti",
+        "count": 2
+      },
+      {
+        "label": "Rosseti Moscow Region",
+        "count": 1
+      },
+      {
+        "label": "Rosseti subsidiary (name not identified in cited source)",
+        "count": 1
+      },
+      {
+        "label": "Rostec state corporation (plant operator not specified)",
+        "count": 1
+      },
+      {
+        "label": "Rostelecom",
+        "count": 1
+      },
+      {
+        "label": "Rostelecom-DC (Rostelecom subsidiary)",
+        "count": 1
+      },
+      {
+        "label": "Russian Armed Forces",
+        "count": 1
+      },
+      {
+        "label": "Russian Ministry of Defense",
+        "count": 1
+      },
+      {
+        "label": "Russian Ministry of Defense (as identified by KI)",
+        "count": 1
+      },
+      {
+        "label": "Russian Ministry of Defense (as reported by KI)",
+        "count": 1
+      },
+      {
+        "label": "Russian Railways (North Caucasus Railway)",
+        "count": 1
+      },
+      {
+        "label": "Russian Railways (RZD)",
+        "count": 1
+      },
+      {
+        "label": "Russian military",
+        "count": 3
+      },
+      {
+        "label": "SIBUR",
+        "count": 1
+      },
+      {
+        "label": "Sakhalinenergo",
+        "count": 1
+      },
+      {
+        "label": "SamaraTransneft-Terminal",
+        "count": 1
+      },
+      {
+        "label": "Sberbank",
+        "count": 1
+      },
+      {
+        "label": "Selectel",
+        "count": 3
+      },
+      {
+        "label": "Severstal",
+        "count": 1
+      },
+      {
+        "label": "Siberian Generating Company (SGC)",
+        "count": 1
+      },
+      {
+        "label": "Slavneft",
+        "count": 1
+      },
+      {
+        "label": "Slavyansk-EKO LLC",
+        "count": 1
+      },
+      {
+        "label": "Stavrolen (Lukoil subsidiary)",
+        "count": 1
+      },
+      {
+        "label": "Surgutneftegas",
+        "count": 1
+      },
+      {
+        "label": "T Plus Orenburg branch",
+        "count": 1
+      },
+      {
+        "label": "TAIF-NK JSC",
+        "count": 1
+      },
+      {
+        "label": "Tatneft",
+        "count": 2
+      },
+      {
+        "label": "Tomlesdrev LLC",
+        "count": 1
+      },
+      {
+        "label": "TransContainer",
+        "count": 20
+      },
+      {
+        "label": "Transneft (as reported by Reuters)",
+        "count": 1
+      },
+      {
+        "label": "Transneft (identified by KI as parent; operator not separately specified)",
+        "count": 1
+      },
+      {
+        "label": "Transneft (named in UP; specific operating entity not identified)",
+        "count": 1
+      },
+      {
+        "label": "Transport company; name not identified in cited sources",
+        "count": 1
+      },
+      {
+        "label": "Unidentified in the cited Interfax report",
+        "count": 1
+      },
+      {
+        "label": "Unknown",
+        "count": 2
+      },
+      {
+        "label": "Unknown (current operator not established by cited reports)",
+        "count": 1
+      },
+      {
+        "label": "Unknown (not identified by Reuters)",
+        "count": 1
+      },
+      {
+        "label": "Unknown (not identified in the Interfax report)",
+        "count": 3
+      },
+      {
+        "label": "Unknown as of the present; the 2024 report identifies AO SIBUR-Khimprom as the plant involved, but does not establish the current operator.",
+        "count": 1
+      },
+      {
+        "label": "Unknown; MChS describes the fire as on OAO enterprise territory, but exact operator/site relationship is not established beyond that wording.",
+        "count": 1
+      },
+      {
+        "label": "VK",
+        "count": 1
+      },
+      {
+        "label": "VPK-Oil",
+        "count": 1
+      },
+      {
+        "label": "Wildberries",
+        "count": 51
+      },
+      {
+        "label": "Wildberries & Russ",
+        "count": 1
+      },
+      {
+        "label": "X5 Group",
+        "count": 1
+      },
+      {
+        "label": "Yakutugol Holding Company",
+        "count": 1
+      },
+      {
+        "label": "Yandex",
+        "count": 5
+      },
+      {
+        "label": "ZAO Azovproduct",
+        "count": 1
+      },
+      {
+        "label": "Zainsk Grain-Receiving Enterprise",
+        "count": 1
+      },
+      {
+        "label": "unknown",
+        "count": 149
+      },
+      {
+        "label": "ООО «Мазутно-топливный терминал» (as named by Interfax)",
+        "count": 1
+      },
+      {
+        "label": "ООО «Первый завод»",
+        "count": 1
+      }
+    ],
+    "candidate_files": 2471,
+    "archived_candidate_files": 1,
+    "review_files": 678
+  },
+  "git": {
+    "branch": "codex/bingo-foundation",
+    "changed_files": 8061,
+    "state": "Local uncommitted changes",
+    "remotes": [
+      {
+        "name": "origin",
+        "url": "https://github.com/Goreb/wb-bingo-web"
+      },
+      {
+        "name": "upstream",
+        "url": "https://github.com/DrArroway/wb-bingo-web"
+      }
+    ],
+    "delivery": "Snapshot does not establish push, merge or deployment status."
+  },
+  "application": {
+    "available": false
+  },
+  "pipeline": {
+    "available": true,
+    "counts": {
+      "proposals": 1094,
+      "reviews": 1114,
+      "publications": 1005,
+      "approved_facilities": 672,
+      "pending_proposals": 35
+    },
+    "review_decisions": {
+      "approved": 1005,
+      "needs_review": 106,
+      "rejected": 3
+    }
+  },
+  "automation": {
+    "available": true,
+    "status": "partial",
+    "last_run_at": "2026-11-17T07:18:21.663260Z",
+    "last_success_at": "2026-10-26T12:45:33Z",
+    "batch_summary": "Source listing check failed for all seven sources; coverage unknown. Next review batch eligible 10:38:48 UTC.",
+    "checked_facilities": 0,
+    "message": "See recorded run status; schedule metadata is a last-checked snapshot."
+  },
+  "reuse": {
+    "available": true,
+    "approved_links": 5,
+    "held_links": 1,
+    "reviewed_at": "2026-10-19T14:24:34.363997+00:00",
+    "message": "Five identity links independently reviewed, one held. Official client reused and live-tested: 38 identity rows, 34 provisional existing matches, one new unapproved record, three non-refinery processing records held outside refinery display. Nine existing discovery cards gained source references. No current operation inferred. Source-chain terms still need checking before production redistribution."
+  },
+  "source_checks": {
+    "schema_version": 1,
+    "checked_at": "2026-11-17T07:17:24.197928+00:00",
+    "purpose": "Discovery only; no automatic approval",
+    "changed_source_count": 0,
+    "new_lead_count": 0,
+    "new_matched_lead_count": 0,
+    "pending_lead_count": 7,
+    "sources": [
+      {
+        "name": "The Kyiv Independent",
+        "url": "https://kyivindependent.com/",
+        "checked_at": "2026-11-17T07:17:23.097152+00:00",
+        "status": "failed",
+        "pages_checked": 0,
+        "items_observed": 0,
+        "new_leads": 0,
+        "matched_leads": 0,
+        "changed": false,
+        "coverage": "Bounded listing discovery only; completeness and event absence not established.",
+        "cursor_before": null,
+        "error": "URLError: retrieval or parsing failed",
+        "cursor_after": null
+      },
+      {
+        "name": "Reuters",
+        "url": "https://www.reuters.com/",
+        "checked_at": "2026-11-17T07:17:23.946865+00:00",
+        "status": "failed",
+        "pages_checked": 0,
+        "items_observed": 0,
+        "new_leads": 0,
+        "matched_leads": 0,
+        "changed": false,
+        "coverage": "Bounded listing discovery only; completeness and event absence not established.",
+        "cursor_before": null,
+        "error": "URLError: retrieval or parsing failed",
+        "cursor_after": null
+      },
+      {
+        "name": "Associated Press",
+        "url": "https://apnews.com/",
+        "checked_at": "2026-11-17T07:17:23.987854+00:00",
+        "status": "failed",
+        "pages_checked": 0,
+        "items_observed": 0,
+        "new_leads": 0,
+        "matched_leads": 0,
+        "changed": false,
+        "coverage": "Bounded listing discovery only; completeness and event absence not established.",
+        "cursor_before": null,
+        "error": "URLError: retrieval or parsing failed",
+        "cursor_after": null
+      },
+      {
+        "name": "Ukrainska Pravda",
+        "url": "https://www.pravda.com.ua/",
+        "checked_at": "2026-11-17T07:17:24.026956+00:00",
+        "status": "failed",
+        "pages_checked": 0,
+        "items_observed": 0,
+        "new_leads": 0,
+        "matched_leads": 0,
+        "changed": false,
+        "coverage": "Bounded listing discovery only; completeness and event absence not established.",
+        "cursor_before": null,
+        "error": "URLError: retrieval or parsing failed",
+        "cursor_after": null
+      },
+      {
+        "name": "The Moscow Times",
+        "url": "https://www.themoscowtimes.com/",
+        "checked_at": "2026-11-17T07:17:24.069645+00:00",
+        "status": "failed",
+        "pages_checked": 0,
+        "items_observed": 0,
+        "new_leads": 0,
+        "matched_leads": 0,
+        "changed": false,
+        "coverage": "Bounded listing discovery only; completeness and event absence not established.",
+        "cursor_before": null,
+        "error": "URLError: retrieval or parsing failed",
+        "cursor_after": null
+      },
+      {
+        "name": "Interfax",
+        "url": "https://www.interfax.ru/",
+        "checked_at": "2026-11-17T07:17:24.112488+00:00",
+        "status": "failed",
+        "pages_checked": 0,
+        "items_observed": 0,
+        "new_leads": 0,
+        "matched_leads": 0,
+        "changed": false,
+        "coverage": "Bounded listing discovery only; completeness and event absence not established.",
+        "cursor_before": null,
+        "error": "URLError: retrieval or parsing failed",
+        "cursor_after": null
+      },
+      {
+        "name": "Supernova+",
+        "url": "https://t.me/s/supernova_plus",
+        "checked_at": "2026-11-17T07:17:24.155593+00:00",
+        "status": "failed",
+        "pages_checked": 0,
+        "items_observed": 0,
+        "new_leads": 0,
+        "matched_leads": 0,
+        "changed": false,
+        "coverage": "At most two public pages; ?after support, contiguous history and full catch-up are unverified. Gaps, edits and deletions may be missed.",
+        "cursor_before": 62024,
+        "error": "URLError: retrieval or parsing failed",
+        "catchup_complete": false,
+        "cursor_after": 62024
+      }
+    ]
+  }
+}

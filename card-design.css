@@ -1,0 +1,273 @@
+/* Facility cards only. Load after styles.css; no data/status semantics change. */
+.card {
+  border-radius: 9px;
+  background: #192230;
+  box-shadow: inset 4px 0 var(--status-color, #768198), 0 2px 8px #0002;
+}
+.card:hover {
+  background: #202b3b;
+  box-shadow: inset 4px 0 var(--status-color, #768198), 0 0 0 1px #bda3f2;
+}
+.card .card-visual {
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-height: 176px;
+  flex-shrink: 0;
+}
+.card .card-visual:not(:has(> img)) { max-height: 108px; }
+.card .card-visual::after { background: linear-gradient(transparent 48%, #101019dd); }
+.card .visual-label { left: 12px; right: 12px; bottom: 10px; flex-wrap: wrap; }
+.card .type-tag { font-size: 10px; padding: 3px 7px; }
+.card .image-label { font-size: 9px; padding: 3px 5px; }
+.card .visual-fallback { font-size: 33px; letter-spacing: 4px; }
+.card .card-body { padding: 14px 15px 11px; gap: 0; }
+.card .card-meta {
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: .2px;
+  gap: 4px 10px;
+  margin-bottom: 6px;
+  overflow-wrap: anywhere;
+}
+.card .card-meta span:last-child { font-weight: 500; }
+.card h3 { font-size: 18px; line-height: 1.3; font-weight: 650; letter-spacing: -.2px; }
+.card .card-region { font-size: 12px; line-height: 1.5; margin: 4px 0 11px; }
+.card .status-line { align-items: center; gap: 6px 8px; margin: 0 0 8px; }
+.card .status-pill { font-size: 12px; padding: 4px 8px; border-radius: 5px; }
+.card .status-pill::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  border-radius: 50%;
+  background: var(--status-color, #768198);
+}
+.card .status-date { font-size: 10px; line-height: 1.5; }
+.card .status-claim {
+  flex-basis: 100%;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 8px;
+}
+/* The whole-card button overlay must not intercept explicit source links. */
+.card .status-claim a { position: relative; z-index: 3; padding: 4px 0; }
+.card .incident-badge {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 5px 7px;
+  margin: 0 0 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.card .incident-badge::before { align-self: center; }
+.card .incident-badge time { font-variant-numeric: tabular-nums; font-weight: 650; }
+.card .legacy-damage-badge { font-size: 11px; padding: 3px 7px; margin-bottom: 10px; }
+.card .card-bottom {
+  margin-top: auto;
+  padding-top: 6px;
+  gap: 4px 10px;
+  border-color: #48556b;
+}
+.card .review-label { font-size: 10px; line-height: 1.5; }
+.card .detail-button { font-size: 12px; min-height: 38px; }
+.card .favorite-button { min-width: 44px; min-height: 44px; padding: 6px; }
+.card .card-visual > .favorite-button { top: 8px; right: 8px; }
+.compact .card .card-body,
+html[data-density=compact] .card .card-body { padding: 12px 14px 9px; }
+.compact .card h3,
+html[data-density=compact] .card h3 { font-size: 17px; }
+.compact .card .incident-badge,
+html[data-density=compact] .card .incident-badge { margin: 0 0 9px; }
+html[data-density=compact] .card .card-visual { height: auto; max-height: 140px; }
+html[data-font-size=large] .card h3 { font-size: 22px; }
+html[data-font-size=large] .card .card-region,
+html[data-font-size=large] .card .incident-badge,
+html[data-font-size=large] .card .status-pill { font-size: 15px; }
+html[data-font-size=large] .card .card-meta,
+html[data-font-size=large] .card .review-label,
+html[data-font-size=large] .card .status-date { font-size: 12px; }
+@media (max-width: 480px) {
+  .card .card-body { padding: 14px 15px 10px; }
+  .card h3 { font-size: 19px; }
+  .card .card-visual { max-height: 165px; }
+}
+
+/* Compact density keeps thumbnails and the independent favorite control. */
+.compact .card .card-visual { display: flex; max-height: 125px; }
+
+/* Keep the native keyboard target and stretched click area, without a visible button. */
+.card .detail-button { position: static; width: 0; height: 0; min-width: 0; min-height: 0; padding: 0; border: 0; margin: 0; }
+
+.card .card-visual { width: 100%; }
+
+/* Distribute useful information across the card, with compact thumbnail badges. */
+.card .visual-label { display: flex; flex-wrap: nowrap; align-items: center; gap: 6px; z-index: 3; }
+.card .type-tag, .card .operator-tag { display: inline-flex; align-items: center; min-height: 26px; padding: 3px 7px; border-radius: 4px; background: #121a27e8; border: 1px solid #8793a75c; color: #f4f4fa; font-size: 10px; line-height: 1.3; }
+.card .type-tag { flex-shrink: 0; }
+.card .operator-tag { margin-left: auto; max-width: 45%; overflow-wrap: anywhere; }
+.card .visual-label .favorite-button { position: relative; inset: auto; flex: 0 0 28px; width: 28px; height: 28px; min-width: 28px; min-height: 28px; border-radius: 4px; padding: 0; font-size: 19px; line-height: 1; }
+.card .image-label { position: absolute; top: 8px; left: 10px; z-index: 1; background: #121a27c9; border-radius: 4px; }
+.card .card-info-row { display: flex; flex-wrap: wrap; align-items: start; justify-content: space-between; gap: 6px 12px; margin-top: 8px; }
+.card .card-info-row .status-line { flex: 1 1 135px; margin: 0; }
+.card .card-region { flex: 1 1 110px; margin: 0; text-align: right; overflow-wrap: anywhere; }
+.card .card-activity { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 12px; margin-top: auto; padding-top: 10px; }
+.card .card-activity .incident-badge { margin: 0; }
+.card .card-bottom { margin: 0; padding: 0; border: 0; }
+.card .legacy-damage-badge { margin: 10px 0 0; align-self: start; }
+
+.card .visual-label { pointer-events: none; }
+.card .visual-label .favorite-button { pointer-events: auto; }
+
+/* Media totals and place share the thumbnail's upper corners. */
+.card .image-label.media-count, .card .location-tag {
+  position: absolute; top: 8px; z-index: 1; display: inline-flex;
+  align-items: center; min-height: 26px; margin: 0; padding: 3px 7px;
+  border: 1px solid #8793a775; border-radius: 4px;
+  background: #121a27e8; color: #f4f4fa; font-size: 10px; line-height: 1.3;
+}
+.card .image-label.media-count { left: 10px; white-space: nowrap; }
+.card .card-top-badges { position: absolute; top: 8px; left: 10px; right: 10px; z-index: 1; display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; pointer-events: none; }
+.card .card-top-badges .media-count { position: static; flex-shrink: 0; }
+.card .card-top-badges .location-tag { position: static; display: block; min-width: 0; margin-left: auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-align: right; }
+
+.card .card-visual .region-flag { position: static; inset: auto; display: inline-block; width: 18px; height: 12px; object-fit: fill; vertical-align: -2px; opacity: 1; border-radius: 1px; }
+
+/* Incident history sets the card rail; operation badges retain independent colors. */
+[data-incident-status] { --incident-color: #8793a7; }
+[data-incident-status="targeted"] { --incident-color: #f4d35e; }
+[data-incident-status="attacked"] { --incident-color: #fb923c; }
+[data-incident-status="multiple_attacks"] { --incident-color: #f26952; }
+[data-incident-status="destroyed"] { --incident-color: #f04364; }
+.card[data-incident-status] { box-shadow: 0 2px 8px #0002; }
+.card[data-incident-status]:hover { box-shadow: 0 0 0 1px #bda3f2; }
+.card[data-incident-status] .card-body { position: relative; isolation: isolate; }
+.card[data-incident-status] .card-body::before,
+.card[data-incident-status] .card-body::after {
+  content: ""; position: absolute; top: 0; bottom: -1px;
+  width: calc(50% + 1px); pointer-events: none; z-index: -1;
+}
+.card[data-incident-status] .card-body::before {
+  left: -1px; border-left: 4px solid var(--incident-color);
+  background: linear-gradient(to right, color-mix(in srgb, var(--incident-color) 16%, transparent), transparent 36px), linear-gradient(to top, color-mix(in srgb, var(--incident-color) 12%, transparent), transparent 25px);
+  border-bottom: 4px solid var(--incident-color); border-bottom-left-radius: 9px;
+}
+.card[data-incident-status] .card-body::after {
+  right: -1px; border-right: 4px solid var(--status-color, #768198);
+  background: linear-gradient(to left, color-mix(in srgb, var(--status-color, #768198) 16%, transparent), transparent 36px), linear-gradient(to top, color-mix(in srgb, var(--status-color, #768198) 12%, transparent), transparent 25px);
+  border-bottom: 4px solid var(--status-color, #768198); border-bottom-right-radius: 9px;
+}
+.card .incident-state, .status-legend-item[data-incident-status] { --status-color: var(--incident-color); }
+
+[data-incident-status="reported_event"] { --incident-color: #d9aa70; }
+
+/* Company colour frames only the warehouse thumbnail, open along its bottom. */
+.card[data-warehouse-brand] .card-visual::before {
+  content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+  border: 3px solid var(--warehouse-brand-color); border-bottom: 0;
+  border-radius: 8px 8px 0 0;
+  background:
+    linear-gradient(to right, color-mix(in srgb, var(--warehouse-brand-color) 25%, transparent), transparent 24px),
+    linear-gradient(to left, color-mix(in srgb, var(--warehouse-brand-color) 25%, transparent), transparent 24px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--warehouse-brand-color) 22%, transparent), transparent 24px);
+}
+
+/* Match the two rails: incident on the left, operation at the far right. */
+.card .operation-summary{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:6px 8px;margin-left:auto;min-width:0;max-width:100%}
+
+.card .latest-update{display:flex;align-items:center;gap:5px 9px;width:100%;min-width:0}
+.card .latest-update-summary{flex-basis:100%;margin:0;font-weight:400;line-height:1.5;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+.card .latest-update.incident-update{border-color:color-mix(in srgb,var(--incident-color) 65%,transparent);background:color-mix(in srgb,var(--incident-color) 12%,#192230);color:#e0d6c9}
+.card .latest-update-sources{position:relative;z-index:3;min-height:30px;padding:2px 0;color:inherit;font-size:inherit;text-align:left}
+
+.card .facility-name-subtitle,.dialog-content .facility-name-subtitle{margin:4px 0 10px;color:var(--muted);font-size:14px;font-weight:500;line-height:1.4;letter-spacing:0}
+
+/* Keep enough room for both status badges before adding another card column. */
+.grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,26.5rem),1fr))}
+.card .operation-summary{flex-direction:column;align-items:flex-end;gap:3px;flex-wrap:nowrap}
+.card .status-pill{white-space:nowrap}
+
+.card .card-subtitle-row{display:flex;align-items:baseline;justify-content:space-between;gap:6px 12px;margin:4px 0 10px;min-width:0}
+.card .card-name-subtitles{flex:1;min-width:0}
+.card .card-subtitle-row .facility-name-subtitle{margin:0}
+.card .card-subtitle-row>.status-date{margin-left:auto;flex-shrink:0;white-space:nowrap;font-variant-caps:all-small-caps;letter-spacing:.05em;font-size:12px}
+
+/* Subtitle and status date share the original compact As of typography. */
+.card .card-subtitle-row .facility-name-subtitle,
+.card .card-subtitle-row>.status-date{font-size:10px;font-weight:450;font-variant-caps:all-small-caps;letter-spacing:.05em;line-height:1.5}
+
+/* Independent flowing header sides: no shared empty subtitle/date row. */
+.card .card-heading{display:grid;grid-template-columns:minmax(0,1fr) max-content;align-items:end;gap:8px 14px;margin-bottom:8px;min-width:0}
+.card .card-heading-left{display:flex;flex-direction:column;align-items:flex-start;align-self:start;min-width:0;gap:4px}
+.card .card-heading-left h3{overflow-wrap:anywhere}
+.card .card-heading-left>.facility-name-subtitle{margin:0;color:var(--muted);font-size:10px;font-weight:450;font-variant-caps:all-small-caps;letter-spacing:.05em;line-height:1.5}
+.card .card-heading-left>.status-pill{margin-top:6px;max-width:100%;white-space:normal}
+.card .card-heading>.operation-summary{align-self:end;margin:0;gap:3px;max-width:100%}
+.card .card-heading .operation-summary>.status-date{font-size:10px;font-weight:450;font-variant-caps:all-small-caps;letter-spacing:.05em;line-height:1.5;white-space:nowrap}
+@media(max-width:380px){.card .card-heading{column-gap:8px}.card .card-heading .status-pill{font-size:11px;padding:4px 6px}}
+
+/* Original wordmark colours on dark thumbnail overlays. */
+.card .operator-tag.has-logo { flex-shrink: 0; padding: 5px 8px; }
+.card .card-visual .operator-tag .operator-logo {
+  position: static; inset: auto; display: block; width: auto; height: 16px;
+  max-width: 100px; max-height: 16px; object-fit: contain; opacity: 1;
+  filter: none; border-radius: 0; transform: none;
+}
+
+/* Facility detail: the same two status colours and quiet surfaces as the tiles. */
+dialog.facility-detail { width: min(900px, calc(100% - 24px)); padding: 0; background: #192230; border: 1px solid #59667c; border-radius: 18px; }
+.facility-detail .dialog-top { position: sticky; top: 0; z-index: 5; margin: 0; padding: 13px 22px; background: #151d2bf2; backdrop-filter: blur(14px); border-bottom: 1px solid #73809930; }
+.facility-detail .dialog-top .eyebrow { font-size: 9px; letter-spacing: 1.6px; }
+.facility-detail .icon-button { min-height: 34px; min-width: 34px; font-size: 25px; }
+.facility-detail #dialogContent { padding: 0 24px 22px; border-left: 3px solid var(--incident-color); border-right: 3px solid var(--status-color, #768198); border-radius: 0 0 18px 18px; background: linear-gradient(90deg,color-mix(in srgb,var(--incident-color) 10%,transparent),transparent 12%,transparent 88%,color-mix(in srgb,var(--status-color,#768198) 10%,transparent)); }
+.detail-hero { padding: 24px 0 20px; }
+.detail-title-row { display: flex; align-items: start; justify-content: space-between; gap: 16px; }
+.detail-title-row .dialog-title { margin: 0; font-size: clamp(25px,4vw,38px); line-height: 1.15; letter-spacing: -.8px; }
+.detail-title-row .favorite-button { position: static; flex: 0 0 36px; width: 36px; min-height: 36px; height: 36px; padding: 0; border: 1px solid #8391a866; border-radius: 8px; background: #141c28; font-size: 25px; }
+.detail-name-subtitle { margin: 6px 0 0; font-size: 12px; font-variant-caps: all-small-caps; letter-spacing: .08em; color: var(--muted); }
+.detail-identity { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin: 16px 0 18px; }
+.detail-chip { display: inline-flex; align-items: center; gap: 7px; padding: 5px 9px; border: 1px solid #71809755; border-radius: 6px; background: #101a27ad; font-size: 11px; color: #d1d9e7; }
+.detail-location { margin-left: auto; }
+.detail-location .region-flag { width: 18px; height: 12px; object-fit: cover; }
+.detail-states { display: flex; justify-content: space-between; align-items: end; gap: 15px; }
+.detail-state { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+.detail-state .small-label { font-size: 9px; letter-spacing: .09em; }
+.detail-state.operation-summary { margin: 0; align-items: flex-end; text-align: right; }
+.detail-state .status-pill { display: inline-flex; align-items: center; gap: 7px; font-size: 14px; padding: 7px 11px; border-radius: 7px; }
+.detail-incident { --status-color: var(--incident-color); }
+.detail-area { margin: 15px 0 0; color: var(--muted); font-size: 12px; }
+.detail-media { margin: 0 0 20px; border-radius: 12px; overflow: hidden; background: #101721; }
+.detail-media .media-gallery { margin: 0; border: 0; }
+.detail-media .gallery-track { max-height: none; }
+.detail-summary { font-size: 13px; line-height: 1.7; color: #bfcbdc; margin: 0 0 20px; }
+.facility-detail .dialog-section { margin-top: 20px; padding-top: 18px; border-top-color: #73809935; }
+.facility-detail .dialog-section>h3 { font-size: 16px; margin: 0 0 14px; }
+.facility-detail .event { padding: 13px 16px; margin: 10px 0; border: 1px solid #71809740; border-left: 3px solid var(--incident-color); border-radius: 9px; background: #121b28a6; }
+.facility-detail .event strong { color: #ddc9a8; font-size: 11px; letter-spacing: .04em; margin-bottom: 6px; }
+.facility-detail .event p { font-size: 13px; line-height: 1.65; }
+.facility-detail .report-row { border-radius: 10px; }
+.detail-evidence { margin-top: 22px; padding: 14px 16px; border: 1px solid #71809740; border-radius: 10px; background: #121b2870; }
+.detail-evidence>summary { cursor: pointer; color: #c8b8e6; font-size: 12px; font-weight: 600; }
+.detail-evidence .dialog-section { margin-top: 14px; padding-top: 14px; }
+.detail-evidence p, .detail-evidence li { overflow-wrap: anywhere; }
+.detail-disclaimer { margin: 20px 0 0; color: #8e9bb0; font-size: 10px; line-height: 1.7; }
+@media(max-width:560px) {
+ .facility-detail .dialog-top { padding: 11px 14px; }
+ .facility-detail #dialogContent { padding: 0 14px 18px; }
+ .detail-hero { padding-top: 19px; }
+ .detail-title-row .dialog-title { font-size: 27px; }
+ .detail-location { margin-left: 0; }
+ .detail-state .status-pill { font-size: 12px; padding: 6px 8px; }
+ .detail-media .gallery-slide img, .detail-media .gallery-slide video { max-height: 280px; }
+}
+
+.detail-claim { padding: 12px 14px; border: 1px solid #b9865366; border-radius: 9px; background: #35281d; margin: 8px 0; }
+.detail-claim.reopening-claim { border-color: #708b78; background: #26332c; color: #c1d0c4; }
+
+.gallery-telegram .telegram-message { font-size: 11px; color: #9aa9be; padding: 10px 12px; }
+.telegram-embed { width: 100%; min-width: 0; overflow: hidden; }
+.telegram-embed iframe { display: block; width: 100%; max-width: 100%; margin: 0 auto; border: 0; }
+.telegram-source { display: inline-block; font-size: 11px; margin: 10px 12px; color: #b7a4d8; }
+.gallery-telegram .telegram-load { margin: 10px; }

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-10-20",
+  "label": "Trusted sources & approval",
+  "summary": "A clear dated trusted-source report counts as verified reporting unless later corrected or revoked by trusted reporting. Russian-origin reopening claims remain explicitly unverified claims.",
+  "sources": [
+    {
+      "name": "The Kyiv Independent",
+      "url": "https://kyivindependent.com/",
+      "domains": [
+        "kyivindependent.com"
+      ],
+      "use": "News reporting; preserve attribution when reporting another party’s claim.",
+      "basis_url": "https://kyivindependent.com/about/"
+    },
+    {
+      "name": "Reuters",
+      "url": "https://www.reuters.com/",
+      "domains": [
+        "reuters.com"
+      ],
+      "use": "News reporting and clearly attributed original reporting.",
+      "basis_url": "https://reutersagency.com/about/standards-values/"
+    },
+    {
+      "name": "Associated Press",
+      "url": "https://apnews.com/",
+      "domains": [
+        "apnews.com"
+      ],
+      "use": "News reporting and original visual reporting.",
+      "basis_url": "https://www.ap.org/about/news-values-and-principles/"
+    },
+    {
+      "name": "Ukrainska Pravda",
+      "url": "https://www.pravda.com.ua/",
+      "domains": [
+        "pravda.com.ua"
+      ],
+      "use": "Basic incident reporting; retain attribution for government or military claims.",
+      "basis_url": "https://www.pravda.com.ua/eng/news/2026/08/05/8047305/"
+    },
+    {
+      "name": "The Moscow Times",
+      "url": "https://www.themoscowtimes.com/",
+      "domains": [
+        "themoscowtimes.com"
+      ],
+      "use": "Basic incident reporting; preserve links to the underlying reporting.",
+      "basis_url": "https://www.themoscowtimes.com/2026/08/13/ukrainian-drones-attack-wildberries-hub-and-oil-refinery-in-bashkortostan-a93480"
+    },
+    {
+      "name": "Interfax",
+      "url": "https://www.interfax.ru/",
+      "domains": [
+        "interfax.ru"
+      ],
+      "use": "Named operator or local-authority confirmation of basic incidents. Broader conflict attribution remains a separate claim.",
+      "basis_url": "https://www.interfax.ru/russia/1107674"
+    }
+  ],
+  "approval_routes": {
+    "trusted_reporting": "One clear dated report from a listed trusted source is sufficient for its facility/event/town assertions unless a later trusted-source correction or revocation invalidates them. No second source or independent claim fact-check is required. Preserve who made a quoted claim; do not expand the report into unstated damage, closure, precise location or present operation. Russian-origin reopening/running claims use the separate claim route below.",
+    "first_party": "Readable dated operator, emergency-service or local-authority statements can support their own facility/event facts. Russian government/operator assertions of reopening or running are displayed as Russian claims, not verified operational recovery.",
+    "matched_media": "An actual AI visual review may approve the basic incident when available photos/videos coherently establish the same identifiable facility in the town and the event date/context is supported. Record source links, specific matching observations and timing evidence; another publisher is not mandatory. Shared footage or duplicate reposts are one evidence chain.",
+    "russian_reopening_claim": "Keep Russian government, authority or operator assertions of restored/continued operation explicitly unverified with origin russia and a 🇷🇺 claim label, including when repeated by a trusted outlet. Record date, actor and source; preserve prior dated supported status. A trusted outlet’s own independently reported operating finding is distinct from merely quoting that assertion."
+  },
+  "holds": [
+    "Later trusted-source correction/revocation or an unresolved concrete identity/date contradiction",
+    "No source content establishing the claimed facility or town/event date",
+    "Generic media alone without a usable identity/date context; this does not block a clear trusted-source text report"
+  ],
+  "rules": [
+    "A clear trusted-source report qualifies as verified reporting after matching the relevant assertion, facility and date; list membership is not permission to invent details absent from the report.",
+    "No fixed source-count, photograph requirement or independent corroboration requirement.",
+    "Unknown cause, damage, operation or media authenticity does not block the reported basic incident.",
+    "Keep later corrections and revocations with dates and links; do not silently erase historical reports.",
+    "Actual source extraction/matching and exact-version gate provenance remain required, without an additional independent truth-check. Sol remains stopped under the current model override; queued candidates are not silently imported.",
+    "Russian-origin reopening/running assertions stay unverified claims and do not alone turn a closed facility into verified operating.",
+    "Flags mark a documented assertion origin, not nationality guessed from facility location or the publisher domain.",
+    "No incident recorded does not prove never attacked or operating. A hit does not establish outage; explicit dated operational reporting determines operating status.",
+    "Reopening needs explicit dated reporting; never infer it from silence or a repair forecast.",
+    "Supernova remains an accepted discovery/media source; source-linked matching media and the existing media route remain available."
+  ],
+  "policy_version": 2,
+  "claim_origin_labels": {
+    "russia": {
+      "flag": "🇷🇺",
+      "label": "Russian claimed"
+    },
+    "ukraine": {
+      "flag": "🇺🇦",
+      "label": "Ukrainian claimed"
+    },
+    "unknown": {
+      "flag": null,
+      "label": "Origin not established"
+    }
+  }
+}

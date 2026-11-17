@@ -1,0 +1,11 @@
+{
+  "name": "bingo-facility-observatory",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "check": "node --check app.js && node --check data.js",
+    "start": "python3 -m http.server 8080 --bind 127.0.0.1",
+    "build:pages": "python3 scripts/build-pages.py"
+  }
+}

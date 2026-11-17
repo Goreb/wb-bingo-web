@@ -1,0 +1,1924 @@
+{
+  "schema_version": 1,
+  "status": "partial",
+  "run_mode": "manual",
+  "last_run_at": "2026-11-17T07:18:21.663260Z",
+  "last_success_at": "2026-10-26T12:45:33Z",
+  "schedule": {
+    "id": "bingo-facility-updates",
+    "status": "ACTIVE",
+    "interval_hours": 4,
+    "verified_at": "2026-10-26T12:25:45Z",
+    "first_unattended_run_verified": true,
+    "first_unattended_run_at": "2026-10-19T16:50:41.004692+00:00"
+  },
+  "summary": "Source listing check failed for all seven sources; coverage unknown. Next review batch eligible 10:38:48 UTC.",
+  "checked_facility_ids": [],
+  "checked_sources": [
+    "The Kyiv Independent",
+    "Reuters",
+    "Associated Press",
+    "Ukrainska Pravda",
+    "The Moscow Times",
+    "Interfax",
+    "Supernova+"
+  ],
+  "approved_facilities": 658,
+  "pending_proposals": 35,
+  "next_category": "Continue exact source/candidate reviews; next scheduled listing poll not before2026-10-26T16:25:45Z.",
+  "errors": [
+    "All seven listing requests failed with URLError in sandbox; no source coverage established. Reuters diagnostic: sandbox DNS failure, direct request HTTP 401."
+  ],
+  "approved_this_run": 3,
+  "new_facilities_this_run": 3,
+  "original_entries_reviewed_this_run": 0,
+  "external_identity_links_approved": 0,
+  "external_identity_links_held": 0,
+  "unapproved_discovery_entries": 18,
+  "new_unapproved_this_run": 0,
+  "check_scope": "Reviewed and applied Snezhetskaya–Belye Berega section incident (review 724, new facility); Interfax source map for St. Petersburg Oil Terminal Oct. 18 (review 725, version 4); Nevinnomyssky Azot accidental substation fire July 5 2022 (review 727, version 3). Exact indexed-source limitation for Snezhetskaya and Nevinnomyssky retained. Repeated duplicate review 726 was held stale by gate and left approved terminal v4 unchanged. No source poll before scheduled due time 12:25:35Z.; approved exact Interfax Sevastopol substation snapshot r2 as review 729, preserving unknown status and attributed repair/outage statements; source listing poll not due before 12:25:35Z; approved Interfax r89 Susaninskoye and Rostov NPP snapshots as reviews 730–731; Rostov NPP locator remains at plant/oblast scope due search-index limitation; source poll not due before 12:25:35Z; approved KI Yug Rusi oil-loading terminal candidate as review 732, preserving the outlet’s verification and damage limits; no current operation or operator asserted; source poll not due before 12:25:35Z; approved KI Baryshovo, Unecha, and Kinel rail-infrastructure snapshots as reviews 733–735; exact source attribution and inability-to-verify caveats preserved; no current service/condition asserted; source poll not due before 12:25:35Z; exact revalidation restored current TG-REF-55630 overlay approval against raw Telegram post, current RU-REF-025 v6, incident TG-REF-55630 and mapped Interfax report; no photo or unit details approved; overlay rebuilt and preflight says already_approved_current; approved Interfax Chernogorsk non-public rail-track derailment candidate as review736; access_method search_index retained; no cause/current service inferred; source poll not due before12:25:35Z",
+  "cursor": {
+    "next_pending_facility_id": "RU-WH-OZON-002",
+    "existing_checked": [
+      "DISC-LH-GORKY-OIL-PUMPING-STATION"
+    ],
+    "new_candidates_checked": 3,
+    "next_existing_category": "warehouse",
+    "next_legacy_facility_id": "WB-006",
+    "next_live_listing_scan_not_before": "2026-10-28T12:58:06.851119Z",
+    "last_run_mode": "manual_review",
+    "next_category": "Continue from saved Luna source/review cursors; no user-set usage cap.",
+    "checked_report_ids": [
+      "TG-REF-5882",
+      "TG-REF-34477"
+    ],
+    "next_source_check_not_before": "2026-10-28T12:58:06.851119Z"
+  },
+  "checked_report_ids": [
+    "TG-REF-31511",
+    "TG-REF-36801",
+    "TG-REF-50770",
+    "TG-REF-50987",
+    "TG-REF-59086"
+  ],
+  "unapproved_incident_report_groups": 96,
+  "unapproved_source_updates": 905,
+  "photo_previews": 67,
+  "report_review": {
+    "approved": 163,
+    "scope": "TG-REF-59086 exact-revalidated against raw report bytes, local captions and RU-REF-023 v5; TG-REF-57970 exact-revalidated against raw report hash and RU-REF-025 v6 incident/source mapping. Other unbound items remain fail-closed.",
+    "last_revalidation_audit": "pipeline/runtime/restart-20261026/reviewer-interfax-petrov-val-20261026T1120Z.json"
+  },
+  "approval_policy": {
+    "path": "data/trusted-sources.json",
+    "updated_at": "2026-10-19T18:42:51.621477+00:00",
+    "minimum": "One clear trusted report, direct confirmation or reviewed matching media; actual exact-version AI review required."
+  },
+  "source_checker": {
+    "status": "failed",
+    "status_file": "data/source-check-status.json",
+    "checked_at": "2026-10-28T08:58:06.851119+00:00",
+    "next_check_at": "2026-10-28T12:58:06.851119Z",
+    "pending_leads": 2,
+    "pending_before_triage": 2,
+    "configured_sources": 6,
+    "direct_successful_sources": 0,
+    "direct_blocked_sources": 0,
+    "direct_limited_sources": 0,
+    "new_leads": 0,
+    "new_matched_leads": 0,
+    "catchup_complete": false,
+    "coverage": "Five non-Reuters trusted-source listings plus Supernova attempted; all six failed with URLError before page reads. Reuters excluded; no source absence or catch-up inference.",
+    "triage_status": "all_attempted_sources_unavailable",
+    "triage_assessment": "pipeline/runtime/restart-20261028/reviewer-source-poll-20261028T0900Z.json",
+    "excluded_sources": [
+      "Reuters"
+    ],
+    "error": "URLError for all six attempted listings; Reuters was not requested."
+  },
+  "media_integration": {
+    "incident_photos": 113,
+    "facility_photos": 23,
+    "facilities_with_photos": 43,
+    "telegram_video_references": 691,
+    "local_video_files": 0,
+    "reviewed_on": "2026-10-19"
+  },
+  "inventory_reuse": {
+    "new_unapproved_entries": 14,
+    "new_approved_entries": 0,
+    "facility_count": 173,
+    "datacenters": 40,
+    "refineries": 49,
+    "assessment": "data/import-assessments/wiki-inventory-20261019.json"
+  },
+  "continuous_review": {
+    "last_round_at": "2026-10-28T09:02:07Z",
+    "round_artifact": "pipeline/runtime/restart-20261028/reviewer-interfax-r507-serpukhov-20261028T0901Z.json",
+    "approved_this_round": 1,
+    "held_this_round": 0,
+    "new_facilities_this_round": 1,
+    "updated_facilities_this_round": 0,
+    "reports_revalidated_this_round": 0,
+    "next_scheduled_listing_poll_not_before": "2026-10-28T12:58:06.851119Z",
+    "last_candidate_outcome": "Review1082 approved/imported the exact Interfax Mar11 2025 Serpukhov oil-depot fire as new facility v1; current operation, exact site and operator remain unknown."
+  },
+  "verification_followup": {
+    "at": "2026-10-24T05:12:50Z",
+    "reported_by": "luna_reviewer_resumed",
+    "result": "Seven leads triaged. Two airport operation claims were preserved in status-claims.json with Russian origin and verified=false; canonical unknown status and Oct23 incident history remain unchanged. No DB changes. Six leads rejected; two prior Tambov holds remain pending."
+  },
+  "held_report_ids": [],
+  "refreshed_report_ids": [
+    "TG-REF-31511",
+    "TG-REF-36801",
+    "TG-REF-50770",
+    "TG-REF-50987"
+  ],
+  "queue_relevance_triage": {
+    "at": "2026-10-19T23:01:02.310731+00:00",
+    "rejected": 17,
+    "pending": 11,
+    "assessment": "data/import-assessments/sol-listing-relevance-triage-20261019.json"
+  },
+  "last_context_review_at": "2026-10-28T09:02:07Z",
+  "source_lead_states": {
+    "reviewed": 1,
+    "rejected": 0,
+    "pending": 2,
+    "assessment": "research/associated-press-archive/ap-votkinsk-machine-building-plant-20260221-20261026-r1.json",
+    "historical_candidates_approved": 0,
+    "current_batch_approved": 1
+  },
+  "last_source_check_at": "2026-10-28T08:58:06.851119Z",
+  "next_source_check_at": "2026-10-28T12:58:06.851119Z",
+  "scout_research": {
+    "observed_at": "2026-10-20T07:49:59Z",
+    "assessment": "data/import-assessments/luna-report-rounds-after-35905-20261020.json",
+    "report_ids": [
+      "TG-REF-35195",
+      "TG-REF-34477",
+      "TG-REF-33649",
+      "TG-REF-33141",
+      "TG-REF-33004",
+      "TG-REF-31511"
+    ],
+    "candidate_path": "data/candidates/luna-20261020-taneco-jan11-disputed-r1.json",
+    "queue_path": "pipeline/runtime/continuous-review/queue/luna-20261020-taneco-jan11-disputed-r1.json",
+    "disposition": "one_disputed_report_candidate_prepared; three_exact_current_approvals_skipped; two_existing_holds_retained",
+    "note": "TG-REF-35195 dated Jan11 2025 has same-day UP likely-hit account and VM/Tatmedia-reported local denial. Candidate preserves contradiction and unknown operation. Other rows exact-preflighted; no unchanged source retrieval. Next TG-REF-29148."
+  },
+  "source_retrieval_round": {
+    "at": "2026-10-20T07:09:16Z",
+    "kind": "due four-hour retrieval-only scan",
+    "result": "partial_all_direct_requests_URLError_one_readable_homepage_diagnostic",
+    "source_status_reference": "data/source-check-status.json",
+    "usage_used_percent_before": 2,
+    "usage_used_percent_after": 2,
+    "database_or_approval_changes": false,
+    "historical_report_cursor_unchanged": "TG-REF-44376",
+    "own_lock_acquired_and_released": true
+  },
+  "fallback_screen_round": {
+    "at": "2026-10-20T07:11:04Z",
+    "sources_screened": 7,
+    "new_leads_added": 0,
+    "known_queue_items": [
+      "27ebdbbf0cb14f60d89cbab5bf457295f210a240751a58f1d220c2164ae11519",
+      "a9ac4a52245181bf63e85b3f7f26dcb5903530dda59e3d37c1022d19da688b63"
+    ],
+    "database_or_approval_changes": false,
+    "usage_used_percent_before": 2,
+    "usage_used_percent_after": 2,
+    "historical_report_cursor_unchanged": "TG-REF-44376"
+  },
+  "usage_guard": {
+    "used_percent": 20,
+    "remaining_percent": 80,
+    "stop_when_used_percent_at_least": 35,
+    "observed_at": "2026-10-26T12:45:33Z",
+    "source": "Actual Codex usage tool; shared account",
+    "last_checked_at": "2026-10-28T09:20:39Z",
+    "last_used_percent": 1,
+    "last_remaining_percent": 99,
+    "user_usage_cap_enabled": false
+  },
+  "source_policy_erratum": "data/import-assessments/luna-20261020-source-registry-wording-erratum.json",
+  "notes": "Current Luna review batch: the Dmitrievsky plant’s attack report is attributed only to local residents; oblast-level location retained without assigning the adjacent Kineshma context as a confirmed plant address.",
+  "round4_note": "RFE/RL full page was also read but is not in the configured data/trusted-sources.json registry; AP full page is the configured source supporting the candidate.",
+  "source_check_last_run": "2026-10-28T08:58:06.851119Z",
+  "application_run": {
+    "round": 43,
+    "mode": "user_requested_prepared_review_application",
+    "manifest_group_indices": [
+      47,
+      26,
+      65
+    ],
+    "database_proposals": 446,
+    "database_reviews": 444,
+    "database_publications": 406,
+    "approved_facilities": 248,
+    "pending_proposals": 8,
+    "new_incident_ids": 3,
+    "new_facilities": 0,
+    "effective_import_reviews": [
+      443,
+      444
+    ],
+    "backup": "pipeline/runtime/backups/facilities-round43-before.sqlite3",
+    "usage_used_percent": 33,
+    "report_approvals": 166,
+    "completed_manifest_groups": 85,
+    "total_manifest_groups": 85,
+    "active_queue_refs_to_frozen_paths": 0,
+    "completed_at": "2026-10-20T20:34:31Z"
+  },
+  "report_review_followup": {
+    "at": "2026-10-20T15:22:38+00:00",
+    "model": "gpt-6-luna",
+    "rechecked_report_groups": 6,
+    "valid_approvals_before": 152,
+    "valid_approvals_after": 158,
+    "source_review_paths": [
+      "data/report-reviews/luna-recheck-tg-ref-61065-20261020.json",
+      "data/report-reviews/luna-recheck-tg-ref-51174-20261020.json",
+      "data/report-reviews/luna-recheck-tg-ref-56871-20261020.json",
+      "data/report-reviews/luna-recheck-tg-ref-58466-20261020.json",
+      "data/report-reviews/luna-recheck-tg-ref-55630-20261020.json",
+      "data/report-reviews/luna-recheck-tg-ref-57970-20261020.json"
+    ],
+    "usage_used_percent_after": 25,
+    "usage_remaining_percent_after": 75
+  },
+  "reviewed_status_revisions_this_run": 0,
+  "new_incidents_this_run": 1,
+  "budget_stop": {
+    "observed_at": "2026-10-28T09:02:07Z",
+    "used_percent": 0,
+    "remaining_percent": 100,
+    "stop_at_used_percent": null,
+    "minimum_remaining_percent": null,
+    "source": "Actual Codex usage tool; no user-set Luna usage stop under 2026-10-28 override",
+    "reason": "Usage recorded for this bounded round; platform limits still apply."
+  },
+  "bounded_finish_authorization": "pipeline/runtime/continuous-review/finish-round-authorization.json completed",
+  "historical_budget_stop_before_prepared_resume": {
+    "observed_at": "2026-10-20T16:47:41.203512+00:00",
+    "used_percent": 30,
+    "remaining_percent": 70,
+    "source": "Actual Codex usage tool; shared account",
+    "reason": "User stop at70% remaining reached",
+    "manual_resume_required": true
+  },
+  "historical_corrections_this_run": [],
+  "report_approvals": {
+    "count": 167,
+    "last_built_at": "2026-10-26T07:33:15Z",
+    "status": "Existing overlay has167 approvals; no report-binding changes in these rounds."
+  },
+  "new_discovery_entries_this_run": 0,
+  "external_identity_links_approved_this_run": 0,
+  "external_identity_links_held_this_run": 0,
+  "unverified_status_claims_this_run": 0,
+  "status_claim_updates_this_run": 0,
+  "last_maintenance_checkpoint_at": "2026-10-26T12:25:45.634903+00:00",
+  "checker_skipped_not_due_at": null,
+  "checker_skip_reason": null,
+  "pending_after_triage": 2,
+  "manual_reuters_review": {
+    "round_id": "reuters-resume-20261025-r4-r5",
+    "at": "2026-10-25T16:01:01Z",
+    "status": "completed_with_identity_hold",
+    "reviewed_candidates": 1,
+    "approved_this_round": 1,
+    "held_this_round": 1,
+    "facility_id": "RU-REF-001",
+    "published_version": 11,
+    "incident_id_corrected": "TG-REF-52414",
+    "current_operational_status": "temporarily_closed",
+    "current_status_as_of": "2026-10-02",
+    "review_artifact": "pipeline/runtime/reviewer-reuters-volgograd-may29-20261025.json",
+    "round_artifact": "pipeline/runtime/restart-20261025/reviewer-reuters-rounds4-5.json",
+    "note": "R4 Yaroslavl regional fuel-storage report remains identity-unresolved (one search result; direct page 404). R5 Volgograd source was a Reuters-attributed Ukrinform search result; no full article body access is claimed. Scheduled listing-poll timestamps/counters above are unchanged."
+  },
+  "manual_archive_review": {
+    "round_id": "ap-enyem-oil-depot-source-map-20261026",
+    "at": "2026-10-26T06:01:25Z",
+    "status": "completed",
+    "candidates_reviewed": 1,
+    "approved_this_round": 1,
+    "held_this_round": 0,
+    "new_facilities_this_round": 0,
+    "updated_facilities_this_round": 1,
+    "review_ids": [
+      604
+    ],
+    "artifact": "pipeline/runtime/restart-20261026/reviewer-ap-enyem-source-map-0601.json",
+    "candidate_paths": [
+      "data/candidates/luna-ap-archive-enyem-oil-depot-20240620-source-map-r1.json"
+    ],
+    "candidate_file_hashes": [
+      "fb0c43d19210497a7aa2ddab0ab19726a35e5dbc71908b232ba2a5ab27626a9a"
+    ],
+    "candidate_gate_hashes": [
+      "f209faaecd46b73e3aec9df120b26c12016f51af8d95971481b8e5ec046c40e0"
+    ],
+    "usage_used_percent_before": 0,
+    "usage_used_percent_after": 0,
+    "database_after": {
+      "proposals": 603,
+      "reviews": 604,
+      "publications": 552,
+      "approved_facilities": 356,
+      "pending_proposals": 11
+    },
+    "backup": "pipeline/runtime/backups/facilities-before-ap-enyem-20261026T0601Z.sqlite3",
+    "tests": "npm test 76/76; pipeline unittest 16/16; both SQLite integrity checks ok, foreign_key_check empty; export has 356 unique facility IDs.",
+    "lock_released": true,
+    "source_review": "AP full page read; Adygea head attributed the oil-depot fire in Enem to a Ukrainian drone attack and said it was extinguished. Mapped to the existing KI-supported June 20 incident; distinct from Ozon logistics hub. Current operation unknown."
+  },
+  "report_revalidation": {
+    "round_id": "report-revalidation-20261025-batch1",
+    "at": "2026-10-25T16:14:07.000957+00:00",
+    "reviewed": 10,
+    "restored": 9,
+    "held": 1,
+    "artifact": "pipeline/runtime/restart-20261025/reviewer-report-revalidation-batch1.json",
+    "database_mutated": false,
+    "source_fetches": 0
+  },
+  "report_revalidation_volgograd": {
+    "round_id": "report-revalidation-20261025-volgograd",
+    "at": "2026-10-25T16:14:54.428400+00:00",
+    "reviewed": 9,
+    "restored": 9,
+    "held": 0,
+    "artifact": "pipeline/runtime/restart-20261025/reviewer-report-revalidation-volgograd.json",
+    "database_mutated": false,
+    "source_fetches": 0
+  },
+  "manual_expanded_scope_review": {
+    "round_id": "expanded-scope-and-source-map-20261025",
+    "at": "2026-10-25T16:19:37.764292+00:00",
+    "candidates_reviewed": 5,
+    "approved": 5,
+    "new_facilities": 4,
+    "revisions": 1,
+    "facility_versions": {
+      "DISC-FS-tula_logistics_centre_20230917": 1,
+      "RU-REF-022": 11,
+      "DISC-IND-AVISMA-BEREZNIKI-001": 1,
+      "DISC-MIL-SOLTSY-AIRFIELD": 1,
+      "DISC-MIL-PSKOV-KRESTY-AIRBASE": 1
+    },
+    "status_changes": 0,
+    "artifact": "pipeline/runtime/restart-20261025/reviewer-expanded-scope-batch.json",
+    "limitations": "Avisma: search-index only. Pskov aircraft-damage count/model omitted under scope; current operation unknown for new facilities. No source media pixels reviewed."
+  },
+  "report_revalidation_final": {
+    "round_id": "report-revalidation-20261025-final",
+    "at": "2026-10-25T16:19:37.764292+00:00",
+    "affected_reports": 19,
+    "current_approved": 19,
+    "current_overlay_count": 166,
+    "mapping_repair": "RU-REF-022 v10→v11 restored the exact Jan1 KI and Moscow Times evidence IDs to the full incidents assertion; reviewed all Ilsky bindings at v11."
+  },
+  "manual_archive_review_history": [
+    {
+      "round_id": "moscow-times-archive-sverdlov-nlmk-20261025",
+      "at": "2026-10-25T16:35:32.839429+00:00",
+      "status": "completed",
+      "candidates_reviewed": 2,
+      "approved_this_round": 2,
+      "held_this_round": 0,
+      "facilities": {
+        "DISC-DEF-SVERDLOV-DZERZHINSK": 1,
+        "DISC-IND-NLMK-LIPETSK": 1
+      },
+      "review_ids": [
+        468,
+        469
+      ],
+      "artifact": "pipeline/runtime/restart-20261025/reviewer-mt-expanded-2024-first2.json",
+      "candidate_paths": [
+        "data/candidates/luna-mt-archive-sverdlov-20241020-r1.json",
+        "data/candidates/luna-mt-archive-nlmk-20240224-r1.json"
+      ],
+      "usage_used_percent_before": 2,
+      "usage_used_percent_after": 2,
+      "tests": "npm test 75/75 passed."
+    },
+    {
+      "round_id": "moscow-times-archive-rosneft-alabuga-20261025",
+      "at": "2026-10-25T16:38:43.000000+00:00",
+      "status": "completed",
+      "candidates_reviewed": 3,
+      "approved_this_round": 3,
+      "held_this_round": 0,
+      "facilities": {
+        "DISC-IND-ROSNEFT-YARTSEVO": 1,
+        "DISC-IND-ROSNEFT-ROZDOROVO": 1,
+        "DISC-DRONE-ALABUGA-YELABUGA": 1
+      },
+      "review_ids": [
+        470,
+        471,
+        472
+      ],
+      "artifact": "pipeline/runtime/restart-20261025/reviewer-mt-rosneft-alabuga-20261025.json",
+      "candidate_paths": [
+        "data/candidates/luna-mt-archive-rosneft-yartsevo-20240424-r2.json",
+        "data/candidates/luna-mt-archive-rosneft-rozdorovo-20240424-r2.json",
+        "data/candidates/luna-mt-archive-alabuga-drone-site-20240402-r3.json"
+      ],
+      "usage_used_percent_before": 2,
+      "usage_used_percent_after": 2,
+      "tests": "npm test 75/75; pipeline unittest 16/16 passed."
+    },
+    {
+      "round_id": "moscow-times-archive-plastmass-20261025",
+      "at": "2026-10-25T16:40:03.000000+00:00",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "facilities": {
+        "DISC-DEF-PLASTMASS-KOPEYSK": 1
+      },
+      "review_ids": [
+        473
+      ],
+      "artifact": "pipeline/runtime/restart-20261025/reviewer-mt-plastmass-20261025.json",
+      "candidate_paths": [
+        "data/candidates/luna-mt-archive-plastmass-20251022-r1.json"
+      ],
+      "usage_used_percent_before": 2,
+      "usage_used_percent_after": 2,
+      "tests": "npm test 75/75; pipeline unittest 16/16 passed."
+    },
+    {
+      "round_id": "moscow-times-archive-perm-powder-20261025",
+      "at": "2026-10-25T16:43:40.000000+00:00",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "facilities": {
+        "DISC-DEF-PERM-POWDER-PLANT": 1
+      },
+      "review_ids": [
+        474
+      ],
+      "artifact": "pipeline/runtime/restart-20261025/reviewer-mt-perm-powder-20261025.json",
+      "candidate_paths": [
+        "data/candidates/luna-mt-archive-perm-powder-plant-20220501-r2.json"
+      ],
+      "usage_used_percent_before": 2,
+      "usage_used_percent_after": 2,
+      "tests": "npm test 75/75; pipeline unittest 16/16 passed."
+    },
+    {
+      "round_id": "moscow-times-archive-tver-aerospace-institute-20261025",
+      "at": "2026-10-25T16:45:02.000000+00:00",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "facilities": {
+        "DISC-MIL-TVER-AEROSPACE-DEFENSE-INSTITUTE": 1
+      },
+      "review_ids": [
+        475
+      ],
+      "artifact": "pipeline/runtime/restart-20261025/reviewer-mt-tver-aerospace-institute-20261025.json",
+      "candidate_paths": [
+        "data/candidates/luna-mt-archive-tver-aero-institute-20220421-r1.json"
+      ],
+      "usage_used_percent_before": 2,
+      "usage_used_percent_after": 2,
+      "tests": "npm test 75/75; pipeline unittest 16/16 passed."
+    },
+    {
+      "round_id": "moscow-times-archive-tambov-gunpowder-20261025",
+      "at": "2026-10-25T16:46:08.000000+00:00",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "facilities": {
+        "DISC-DEF-TAMBOV-GUNPOWDER-PLANT": 1
+      },
+      "review_ids": [
+        476
+      ],
+      "artifact": "pipeline/runtime/restart-20261025/reviewer-mt-tambov-gunpowder-20261025.json",
+      "candidate_paths": [
+        "data/candidates/luna-mt-archive-tambov-gunpowder-20231111-14-r1.json"
+      ],
+      "usage_used_percent_before": 2,
+      "usage_used_percent_after": 2,
+      "tests": "npm test 75/75; pipeline unittest 16/16 passed."
+    },
+    {
+      "round_id": "moscow-times-archive-tambov-june-20261025",
+      "at": "2026-10-25T16:52:39.000000+00:00",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "facilities": {
+        "DISC-DEF-TAMBOV-GUNPOWDER-PLANT": 2
+      },
+      "review_ids": [
+        477
+      ],
+      "artifact": "pipeline/runtime/restart-20261025/reviewer-mt-tambov-june-20261025.json",
+      "candidate_paths": [
+        "data/candidates/luna-mt-archive-tambov-gunpowder-20231111-14-r2.json"
+      ],
+      "usage_used_percent_before": 2,
+      "usage_used_percent_after": 2,
+      "tests": "npm test 75/75; pipeline unittest 16/16; status tests 6/6 passed."
+    },
+    {
+      "round_id": "moscow-times-archive-enikmash-fire-20261025",
+      "at": "2026-10-25T16:54:08.000000+00:00",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "facilities": {
+        "DISC-IND-ENIKMASH-VORONEZH": 1
+      },
+      "review_ids": [
+        478
+      ],
+      "artifact": "pipeline/runtime/restart-20261025/reviewer-mt-enikmash-20261025.json",
+      "candidate_paths": [
+        "data/candidates/luna-mt-archive-enikmash-fire-20240422-r1.json"
+      ],
+      "usage_used_percent_before": 2,
+      "usage_used_percent_after": 2,
+      "tests": "npm test 75/75; pipeline unittest 16/16 passed."
+    },
+    {
+      "round_id": "moscow-times-archive-bryansk-teysin-timonovo-20261025",
+      "at": "2026-10-25T17:01:33.000000+00:00",
+      "status": "completed",
+      "candidates_reviewed": 3,
+      "approved_this_round": 3,
+      "held_this_round": 0,
+      "facilities": {
+        "DISC-FS-bryansk_transneft_storage": 2,
+        "DISC-MIL-TEYSIN-BASE": 1,
+        "DISC-MIL-BELGOROD-TIMONOVO-AMMO-DEPOT": 1
+      },
+      "review_ids": [
+        480,
+        481,
+        482
+      ],
+      "artifact": "pipeline/runtime/restart-20261025/reviewer-mt-bryansk-teysin-timonovo-20261025.json",
+      "candidate_paths": [
+        "data/candidates/luna-mt-archive-bryansk-transneft-fire-20220425-r2.json",
+        "data/candidates/luna-mt-archive-teysin-military-base-explosion-20220512-r1.json",
+        "data/candidates/luna-mt-archive-timonovo-ammunition-depot-fire-20220818-r1.json"
+      ],
+      "usage_used_percent_before": 2,
+      "usage_used_percent_after": 2,
+      "tests": "pipeline unittest 16/16; npm test 75/75 passed."
+    },
+    {
+      "round_id": "moscow-times-krasnozavodsk-kuzmin-location-20261026",
+      "at": "2026-10-26T02:51:45.982572+00:00",
+      "status": "completed",
+      "candidates_reviewed": 2,
+      "approved_this_round": 2,
+      "held_this_round": 0,
+      "candidate_paths": [
+        "data/candidates/luna-mt-archive-krasnozavodsk-2025-2026-r3.json",
+        "data/candidates/luna-mt-archive-kuzmin-location-near-golovinka-r1.json"
+      ],
+      "review_ids": [
+        499,
+        500
+      ],
+      "backup": "pipeline/runtime/backups/reviewer-20261026-krasnozavodsk-kuzmin-before.sqlite3",
+      "tests": {
+        "pipeline_unittest": "16/16 passed",
+        "npm_test": "75/75 passed",
+        "kuzmin_displayLocation": "📍 Near Golovinka, Rostov · 🇷🇺"
+      },
+      "usage_used_percent_before": 3,
+      "usage_used_percent_after": 3,
+      "facilities": {
+        "DISC-DEF-KRASNOZAVODSK-CHEMICAL-PLANT": 1,
+        "DISC-MIL-KUZMIN-TRAINING-GROUND": 2
+      },
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-krasnozavodsk-kuzmin-20261026.json"
+    },
+    {
+      "round_id": "moscow-times-kazan-elastik-tsniimash-20261026",
+      "at": "2026-10-26T03:08:01.319662+00:00",
+      "status": "completed_with_hold",
+      "candidates_reviewed": 3,
+      "approved_this_round": 2,
+      "held_this_round": 1,
+      "candidate_paths": [
+        "data/candidates/luna-mt-archive-kazan-gunpowder-2026-04-14-r1.json",
+        "data/candidates/luna-mt-archive-elastik-lesnoy-2025-08-15-r1.json",
+        "data/candidates/luna-mt-archive-tsniimash-korolyov-2026-08-05-r1.json"
+      ],
+      "review_ids": [
+        501,
+        502,
+        503
+      ],
+      "backup": "pipeline/runtime/backups/reviewer-20261026-kazan-elastik-before.sqlite3",
+      "tests": {
+        "pipeline_unittest": "16/16 passed",
+        "npm_test": "76/76 passed",
+        "JSON_parse": "passed",
+        "displayLocation": "📍 Near Golovinka, Rostov · 🇷🇺"
+      },
+      "usage_used_percent_before": 3,
+      "usage_used_percent_after": 3,
+      "facilities": {
+        "DISC-DEF-KAZAN-GUNPOWDER-PLANT": 1,
+        "DISC-IND-ELASTIK-LESNOY": 1
+      },
+      "held_facilities": {
+        "DISC-IND-TSNIIMASH-KOROLYOV": 0
+      },
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-kazan-elastik-tsniimash-20261026.json"
+    },
+    {
+      "round_id": "moscow-times-seltso-tenet-mt-20261026",
+      "at": "2026-10-26T03:10:19.147189+00:00",
+      "status": "completed",
+      "candidates_reviewed": 2,
+      "approved_this_round": 2,
+      "held_this_round": 0,
+      "candidate_paths": [
+        "data/candidates/luna-mt-archive-seltso-chemical-plant-2025-01-14-r1.json",
+        "data/candidates/luna-mt-archive-tenet-kaluga-2026-01-28-r1.json"
+      ],
+      "review_ids": [
+        504,
+        505
+      ],
+      "backup": "pipeline/runtime/backups/reviewer-20261026-seltso-tenet-before.sqlite3",
+      "tests": {
+        "pipeline_unittest": "16/16 passed",
+        "npm_test": "76/76 passed",
+        "json_parse": "passed"
+      },
+      "usage_used_percent_before": 3,
+      "usage_used_percent_after": 3,
+      "facilities": {
+        "DISC-DEF-SELTSO-CHEMICAL-PLANT": 1,
+        "DISC-IND-TENET-KALUGA-PLANT": 1
+      },
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-seltso-tenet-20261026.json"
+    },
+    {
+      "round_id": "ki-archive-akhtubinsk-kalach-morozovsk-roboavia-20261026",
+      "at": "2026-10-26T03:19:54Z",
+      "status": "completed_four_approved_two_superseded_rejected",
+      "candidates_reviewed": 6,
+      "approved_this_round": 4,
+      "held_this_round": 0,
+      "rejected_superseded_this_round": 2,
+      "review_ids": [
+        506,
+        507,
+        508,
+        509,
+        510,
+        511
+      ],
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-ki-batch1-20261026.json",
+      "lock_released": true
+    },
+    {
+      "round_id": "ki-archive-atlas-klintsy-20261026",
+      "at": "2026-10-26T03:21:35Z",
+      "status": "completed_two_approved_one_superseded_rejected",
+      "candidates_reviewed": 3,
+      "approved_this_round": 2,
+      "held_this_round": 0,
+      "rejected_superseded_this_round": 1,
+      "review_ids": [
+        512,
+        513,
+        514
+      ],
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-ki-atlas-klintsy-20261026.json"
+    },
+    {
+      "round_id": "up-optic-fiber-saransk-20261026",
+      "at": "2026-10-26T05:03:06.454852Z",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "facilities": {
+        "DISC-IND-OPTIC-FIBER-SYSTEMS-SARANSK": 1
+      },
+      "review_ids": [
+        578
+      ],
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-optic-fiber-0502.json",
+      "candidate_paths": [
+        "data/candidates/luna-up-archive-optic-fiber-systems-saransk-20250506-07-r1.json"
+      ],
+      "candidate_file_hashes": [
+        "c30f805090884bf5901c8b985c2d65f229d51b53e5d5fd93d45dd878d7811765"
+      ],
+      "candidate_gate_hashes": [
+        "81187fab46839046de5c77eab5767d994704a4f0b293c976c96df389e031ca9f"
+      ],
+      "usage_used_percent_before": 6,
+      "usage_used_percent_after": 6,
+      "database_after": {
+        "proposals": 578,
+        "reviews": 578,
+        "publications": 528,
+        "approved_facilities": 346,
+        "pending_proposals": 10
+      },
+      "backup": "pipeline/runtime/backups/facilities-before-optic-fiber-20261026T0502Z.sqlite3",
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity ok.",
+      "lock_released": true
+    },
+    {
+      "round_id": "up-bazalt-krasnoarmeysk-20261026",
+      "at": "2026-10-26T05:04:11.175052Z",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "facilities": {
+        "DISC-DEF-BAZALT-KRASNOARMEYSK": 1
+      },
+      "review_ids": [
+        579
+      ],
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-bazalt-0503.json",
+      "candidate_paths": [
+        "data/candidates/luna-up-archive-bazalt-krasnoarmeysk-20250506-r1.json"
+      ],
+      "candidate_file_hashes": [
+        "2575a63eeb5b30455a0e11df9b3fa5c64ee6a042208dfe8ad5667e7fe0ada1b1"
+      ],
+      "candidate_gate_hashes": [
+        "40902ddb78d85fb9fceb04d49005ccafcf224d916c980cbae325ff7709fd0e00"
+      ],
+      "usage_used_percent_before": 6,
+      "usage_used_percent_after": 6,
+      "database_after": {
+        "proposals": 579,
+        "reviews": 579,
+        "publications": 529,
+        "approved_facilities": 347,
+        "pending_proposals": 10
+      },
+      "backup": "pipeline/runtime/backups/reviewer-bazalt-krasnoarmeysk-20261026-before.sqlite3",
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity ok.",
+      "lock_released": true
+    },
+    {
+      "round_id": "up-splav-tula-20261026",
+      "at": "2026-10-26T05:05:14.203739Z",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "facilities": {
+        "DISC-DEF-SPLAV-TULA": 1
+      },
+      "review_ids": [
+        580
+      ],
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-splav-0504.json",
+      "candidate_paths": [
+        "data/candidates/luna-up-archive-splav-tula-20250506-22-r2.json"
+      ],
+      "candidate_file_hashes": [
+        "e760882dd0fdb60d66bb0cadcb13cafc9a44a4cc9a9f860d7b1e4587c1710bd8"
+      ],
+      "candidate_gate_hashes": [
+        "6c1c8bd881442088697ecd8757f7abc14d33bb5e26cff955e0dec296ca9d6901"
+      ],
+      "usage_used_percent_before": 6,
+      "usage_used_percent_after": 6,
+      "database_after": {
+        "proposals": 580,
+        "reviews": 580,
+        "publications": 530,
+        "approved_facilities": 348,
+        "pending_proposals": 10
+      },
+      "backup": "pipeline/runtime/backups/reviewer-splav-tula-20261026-before.sqlite3",
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity ok.",
+      "lock_released": true
+    },
+    {
+      "round_id": "up-energiya-oct25-20261026",
+      "at": "2026-10-26T05:08:01.825396Z",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "facilities": {
+        "DISC-IND-ENERGIYA-YELETS": 2
+      },
+      "review_ids": [
+        581
+      ],
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-energiya-oct25-0507.json",
+      "candidate_paths": [
+        "data/candidates/luna-up-archive-energiya-yelets-20250522-23-20250702-03-20261025-r2.json"
+      ],
+      "candidate_file_hashes": [
+        "1d63b3246e45dde2d4f77388ddc5259b7dd87566f21f3d8a7595611956961c10"
+      ],
+      "candidate_gate_hashes": [
+        "f1cf540876860b8ba6068ad8c7158acc255f2493594b5c95d97f151f2fa26529"
+      ],
+      "usage_used_percent_before": 6,
+      "usage_used_percent_after": 6,
+      "database_after": {
+        "proposals": 581,
+        "reviews": 581,
+        "publications": 531,
+        "approved_facilities": 348,
+        "pending_proposals": 10
+      },
+      "backup": "pipeline/runtime/backups/reviewer-energiya-oct25-20261026-before.sqlite3",
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity ok.",
+      "lock_released": true
+    },
+    {
+      "round_id": "ap-toropets-source-map-20261026",
+      "at": "2026-10-26T05:24:41Z",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "facilities": {
+        "DISC-MIL-TOROPETS-ARSENAL": 2
+      },
+      "review_ids": [
+        588
+      ],
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-ap-toropets-0524.json",
+      "candidate_paths": [
+        "data/candidates/luna-ap-archive-toropets-military-arsenal-20240918-source-map-r1.json"
+      ],
+      "candidate_file_hashes": [
+        "b2c263330fdc18fa4f42ac4319528e3be85bf3317a8f0d589c78790a6e0b58db"
+      ],
+      "candidate_gate_hashes": [
+        "c19a2b8b509c1f4b6d5e91aa2743d5fab70f58fecdfd4c820a629c401e6d14ec"
+      ],
+      "usage_used_percent_before": 6,
+      "usage_used_percent_after": 6,
+      "database_after": {
+        "proposals": 588,
+        "reviews": 588,
+        "publications": 538,
+        "approved_facilities": 352,
+        "pending_proposals": 10
+      },
+      "backup": "pipeline/runtime/backups/facilities-before-ap-toropets-20261026T0524Z.sqlite3",
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity ok.",
+      "lock_released": true
+    },
+    {
+      "round_id": "ap-sverdlov-explosives-20261026",
+      "at": "2026-10-26T05:28:34Z",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "new_facilities_this_round": 0,
+      "updated_facilities_this_round": 1,
+      "review_ids": [
+        589
+      ],
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-ap-sverdlov-0528.json",
+      "candidate_paths": [
+        "data/candidates/luna-ap-archive-sverdlov-explosives-attack-20251006-r1.json"
+      ],
+      "candidate_file_hashes": [
+        "de4e3fcf5890da4069a4646e91bf36e2ccbc12b3c56c10370125eaf1ceed14db"
+      ],
+      "candidate_gate_hashes": [
+        "005f1adba716eb4ea2e6aac0efbbed7b00f8071cdbf860cdab0de2d0d8897bcb"
+      ],
+      "usage_used_percent_before": 6,
+      "usage_used_percent_after": 6,
+      "database_after": {
+        "proposals": 589,
+        "reviews": 589,
+        "publications": 539,
+        "approved_facilities": 352,
+        "pending_proposals": 10
+      },
+      "backup": "pipeline/runtime/backups/facilities-before-ap-sverdlov-20261026T0528Z.sqlite3",
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity ok.",
+      "lock_released": true
+    },
+    {
+      "round_id": "ap-alabuga-source-map-20261026",
+      "at": "2026-10-26T05:30:29Z",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "new_facilities_this_round": 0,
+      "updated_facilities_this_round": 1,
+      "review_ids": [
+        590
+      ],
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-ap-alabuga-0530.json",
+      "candidate_paths": [
+        "data/candidates/luna-ap-archive-alabuga-apr02-2024-source-map-r1.json"
+      ],
+      "candidate_file_hashes": [
+        "750d086b9614990985fda1114b72d2bf60d663695bb06c0ce071f57121e72195"
+      ],
+      "candidate_gate_hashes": [
+        "f9bb33fbf6f461dd95cec9ddf82861488c8ebdb861c4b73434a47bdc6a69662c"
+      ],
+      "usage_used_percent_before": 6,
+      "usage_used_percent_after": 7,
+      "database_after": {
+        "proposals": 590,
+        "reviews": 590,
+        "publications": 540,
+        "approved_facilities": 352,
+        "pending_proposals": 10
+      },
+      "backup": "pipeline/runtime/backups/facilities-before-ap-alabuga-20261026T0530Z.sqlite3",
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity ok.",
+      "lock_released": true
+    },
+    {
+      "round_id": "ap-salavat-source-map-20261026",
+      "at": "2026-10-26T05:34:51Z",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "new_facilities_this_round": 0,
+      "updated_facilities_this_round": 1,
+      "review_ids": [
+        591
+      ],
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-ap-salavat-0534.json",
+      "candidate_paths": [
+        "data/candidates/luna-ap-archive-salavat-20260813-source-map-r1.json"
+      ],
+      "candidate_file_hashes": [
+        "0d2ccf83dc242314d8f67237043220c80f6661c719e3edde3415e520cfabea50"
+      ],
+      "candidate_gate_hashes": [
+        "f19a84cceddb24b8438747cb129855d25888ec4ab09012041fd7b9e639e5d616"
+      ],
+      "usage_used_percent_before": 7,
+      "usage_used_percent_after": 7,
+      "database_after": {
+        "proposals": 591,
+        "reviews": 591,
+        "publications": 541,
+        "approved_facilities": 352,
+        "pending_proposals": 10
+      },
+      "backup": "pipeline/runtime/backups/facilities-before-ap-salavat-20261026T0534Z.sqlite3",
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity ok.",
+      "lock_released": true
+    },
+    {
+      "round_id": "ap-engels-dyagilevo-airbases-20261026",
+      "at": "2026-10-26T05:55:47Z",
+      "status": "completed",
+      "candidates_reviewed": 2,
+      "approved_this_round": 2,
+      "held_this_round": 0,
+      "new_facilities_this_round": 2,
+      "updated_facilities_this_round": 0,
+      "review_ids": [
+        599,
+        600
+      ],
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-ap-engels-dyagilevo-0555.json",
+      "candidate_paths": [
+        "data/candidates/luna-ap-archive-engels-airbase-20221205-r3.json",
+        "data/candidates/luna-ap-archive-dyagilevo-airbase-20221205-r3.json"
+      ],
+      "candidate_file_hashes": [
+        "3f31983e88e8c83ab3d110185844aab22bb853746dcbb6e8b3887ec57688007b",
+        "8876bb3280b00de0577de1641aaa328fc3a54bcca523197bf536193c6bffc28d"
+      ],
+      "candidate_gate_hashes": [
+        "1dffd1c3183689fec41679903eaf8770856ff107ec3f4759f05c848e019979d1",
+        "8a900d5c866ec138723050bca75fb4be21f9e1f481cda3f214c29d55cdca9e96"
+      ],
+      "usage_used_percent_before": 7,
+      "usage_used_percent_after": 7,
+      "database_after": {
+        "proposals": 599,
+        "reviews": 600,
+        "publications": 549,
+        "approved_facilities": 355,
+        "pending_proposals": 10
+      },
+      "backup": "pipeline/runtime/backups/facilities-before-ap-engels-dyagilevo-20261026T055409Z.sqlite3",
+      "tests": "npm test 76/76; pipeline unittest 16/16; both SQLite integrity checks ok, foreign_key_check empty.",
+      "lock_released": true,
+      "source_review": "AP-byline WHSV syndication full page read; article names both Dec. 5 attacks and attributes aircraft damage collectively, not to either specific base. Both records preserve unknown operation and do not assign damage site-specifically."
+    },
+    {
+      "round_id": "ap-oryol-electronics-20261026",
+      "at": "2026-10-26T05:56:56Z",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "new_facilities_this_round": 1,
+      "updated_facilities_this_round": 0,
+      "review_ids": [
+        601
+      ],
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-ap-oryol-electronics-0556.json",
+      "candidate_paths": [
+        "data/candidates/luna-ap-archive-oryol-electronics-20261024-r1.json"
+      ],
+      "candidate_file_hashes": [
+        "fabb1d915fcab2c8344636b2537c19702150f146d52eb746c00cfb7abdeb24bf"
+      ],
+      "candidate_gate_hashes": [
+        "2f46e9c6a3390e1dadf8ceb4db4f0a0a863b38d1eeba3beac1149bc5f40f9b82"
+      ],
+      "usage_used_percent_before": 7,
+      "usage_used_percent_after": 7,
+      "database_after": {
+        "proposals": 600,
+        "reviews": 601,
+        "publications": 550,
+        "approved_facilities": 356,
+        "pending_proposals": 10
+      },
+      "backup": "pipeline/runtime/backups/facilities-before-ap-oryol-20261026T0556Z.sqlite3",
+      "tests": "npm test 76/76; pipeline unittest 16/16; both SQLite integrity checks ok, foreign_key_check empty; exported JSON has 356 unique facility IDs.",
+      "lock_released": true,
+      "source_review": "AP full page read; local officials reported an industrial-plant strike in Oryol and General Staff identified an electronics plant there making missile components. Separate Oryol oil-depot records were not merged; damage at the identified plant and current operation remain unknown."
+    },
+    {
+      "round_id": "ap-tuapse-terminal-may01-20261026",
+      "at": "2026-10-26T05:58:33Z",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "new_facilities_this_round": 0,
+      "updated_facilities_this_round": 1,
+      "review_ids": [
+        602
+      ],
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-ap-tuapse-terminal-0558.json",
+      "candidate_paths": [
+        "data/candidates/luna-ap-archive-tuapse-terminal-20260501-r1.json"
+      ],
+      "candidate_file_hashes": [
+        "fb351565c182c67ffb1b022216da7ed5b4e2a68975f3e81f14edb50916321a78"
+      ],
+      "candidate_gate_hashes": [
+        "0f8801deacee8ac7751a1cb985a5b41abefa83768b50d31c3c6966139cf2efee"
+      ],
+      "usage_used_percent_before": 7,
+      "usage_used_percent_after": 7,
+      "database_after": {
+        "proposals": 601,
+        "reviews": 602,
+        "publications": 551,
+        "approved_facilities": 356,
+        "pending_proposals": 10
+      },
+      "backup": "pipeline/runtime/backups/facilities-before-ap-tuapse-terminal-20261026T0600Z.sqlite3",
+      "tests": "npm test 76/76; pipeline unittest 16/16; both SQLite integrity checks ok, foreign_key_check empty; export has 356 unique facility IDs.",
+      "lock_released": true,
+      "source_review": "AP full page independently read. It attributes the May 1 strike to Ukraine’s General Staff, reports explosions/fire at the terminal, and separately attributes the drone/blaze and no-casualty account to local Russian officials. Existing April terminal fire and nearby refinery remain distinct; current operation unknown."
+    },
+    {
+      "round_id": "ap-novoshakhtinsk-source-map-20261026",
+      "at": "2026-10-26T06:00:34Z",
+      "status": "held_by_gate",
+      "candidates_reviewed": 1,
+      "approved_this_round": 0,
+      "held_this_round": 1,
+      "new_facilities_this_round": 0,
+      "updated_facilities_this_round": 0,
+      "review_ids": [
+        603
+      ],
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-ap-novoshakhtinsk-0600.json",
+      "candidate_paths": [
+        "data/candidates/luna-ap-archive-novoshakhtinsk-20240606-source-map-r1.json"
+      ],
+      "candidate_file_hashes": [
+        "9facb83f34dd535e59291dfcb250095e591de44170a56f8cf6700c1585351cfe"
+      ],
+      "candidate_gate_hashes": [
+        "92633350cea4e6b18e5b78cc353a50b3b5e03834d8c889222cac22f7b2ad476d"
+      ],
+      "usage_used_percent_before": 7,
+      "usage_used_percent_after": 0,
+      "database_after": {
+        "proposals": 602,
+        "reviews": 603,
+        "publications": 551,
+        "approved_facilities": 356,
+        "pending_proposals": 11
+      },
+      "backup": "pipeline/runtime/backups/facilities-before-ap-novoshakhtinsk-20261026T0600Z.sqlite3",
+      "tests": "Gate correctly returned needs_review because carried-forward operational_status lacks a field-level evidence assertion; no canonical publication. SQLite integrity was last verified earlier this round before proposal stage; no export changes.",
+      "lock_released": true,
+      "gate_reason": "Missing field-level evidence: operational_status. Requested immutable r2 with existing status assertion/evidence; no source re-fetch."
+    },
+    {
+      "round_id": "ap-enyem-oil-depot-source-map-20261026",
+      "at": "2026-10-26T06:01:25Z",
+      "status": "completed",
+      "candidates_reviewed": 1,
+      "approved_this_round": 1,
+      "held_this_round": 0,
+      "new_facilities_this_round": 0,
+      "updated_facilities_this_round": 1,
+      "review_ids": [
+        604
+      ],
+      "artifact": "pipeline/runtime/restart-20261026/reviewer-ap-enyem-source-map-0601.json",
+      "candidate_paths": [
+        "data/candidates/luna-ap-archive-enyem-oil-depot-20240620-source-map-r1.json"
+      ],
+      "candidate_file_hashes": [
+        "fb0c43d19210497a7aa2ddab0ab19726a35e5dbc71908b232ba2a5ab27626a9a"
+      ],
+      "candidate_gate_hashes": [
+        "f209faaecd46b73e3aec9df120b26c12016f51af8d95971481b8e5ec046c40e0"
+      ],
+      "usage_used_percent_before": 0,
+      "usage_used_percent_after": 0,
+      "database_after": {
+        "proposals": 603,
+        "reviews": 604,
+        "publications": 552,
+        "approved_facilities": 356,
+        "pending_proposals": 11
+      },
+      "backup": "pipeline/runtime/backups/facilities-before-ap-enyem-20261026T0601Z.sqlite3",
+      "tests": "npm test 76/76; pipeline unittest 16/16; both SQLite integrity checks ok, foreign_key_check empty; export has 356 unique facility IDs.",
+      "lock_released": true,
+      "source_review": "AP full page read; Adygea head attributed the oil-depot fire in Enem to a Ukrainian drone attack and said it was extinguished. Mapped to the existing KI-supported June 20 incident; distinct from Ozon logistics hub. Current operation unknown."
+    }
+  ],
+  "updated_facilities_this_run": 0,
+  "held_this_run": 1,
+  "manual_interfax_review": {
+    "round_id": "interfax-soltsy-source-map-20261026",
+    "at": "2026-10-26T06:37:50Z",
+    "status": "completed",
+    "facility_id": "DISC-MIL-SOLTSY-AIRFIELD",
+    "facility_version": 3,
+    "proposal_id": "9485e84d0f7dbfc45065f0a7c3af51957d7204df7eb63fb304b2e0a331b43199",
+    "review_id": 623,
+    "candidate_file_sha256": "036954f723fae464061e47f39f7f83b816af87ecaa32ba78cfac0685661bdb02",
+    "decision": "approved",
+    "change": "Interfax update explicitly links the Novgorod governor’s account to the existing same-day Soltsy airfield incident; no profile/history/status edit.",
+    "source_context": "pipeline/runtime/source-checks/evidence/20261026-interfax-soltsy-airfield-20230819-context.json",
+    "usage_used_percent_before": 0,
+    "usage_used_percent_after": 1,
+    "database_after": {
+      "proposals": 622,
+      "reviews": 623,
+      "publications": 571,
+      "approved_facilities": 359,
+      "pending_proposals": 10
+    },
+    "export_facility_count": 359,
+    "report_approval_count": 118,
+    "backup": "pipeline/runtime/backups/facilities-before-interfax-soltsy-20261026T0637Z.sqlite3",
+    "backup_bytes": 5455872,
+    "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity_check ok; foreign_key_check empty; export has 359 unique facility IDs.",
+    "source_poll": "No poll this manual batch; last source check 2026-10-26T04:25:00.768855Z; next not before 2026-10-26T08:25:00.768855Z.",
+    "lock_released": true
+  },
+  "manual_interfax_review_history": [
+    {
+      "round_id": "interfax-window1-20261026",
+      "at": "2026-10-26T06:17:25Z",
+      "status": "completed",
+      "source_context": "pipeline/runtime/source-checks/evidence/20261026-interfax-window1-source-context.json",
+      "source_review": "Independent semantic review of exact staged snapshots and retained full-page Interfax extraction contexts. Volgograd sources match the two already-recorded incidents. Interfax 1043980 supports a distinct Novoshakhtinsk Aug. 21, 2025 incident, reported extinguished Aug. 26 on the governor’s account. No current-operation inference; prior histories retained.",
+      "usage_used_percent_before": 0,
+      "usage_used_percent_after": 0,
+      "database_after": {
+        "proposals": 608,
+        "reviews": 609,
+        "publications": 557,
+        "approved_facilities": 358,
+        "pending_proposals": 10
+      },
+      "export": "data/reviewed-facilities.json",
+      "export_facility_count": 358,
+      "report_approval_count": 135,
+      "backup": "pipeline/runtime/backups/facilities-before-interfax-volgograd-20261026T0614Z.sqlite3",
+      "backup_sha256": "0491254f2ec2c0333705767361b58c190af910577c3f198ec641026c3e60b127",
+      "tests": "npm test 76/76; python pipeline unittest 16/16; SQLite integrity_check ok; foreign_key_check empty.",
+      "source_poll": "No poll in this manual review batch. Last source poll remains 2026-10-26T04:25:00.768855Z; next not before 2026-10-26T08:25:00.768855Z.",
+      "known_note": "Volgograd candidate file hash differs from an older scout note; the exact current file/gate hashes were reconciled before review and are recorded in its review artifact and source context.",
+      "lock_released": true
+    },
+    {
+      "round_id": "interfax-window2-20261026",
+      "at": "2026-10-26T06:19:30Z",
+      "status": "completed",
+      "source_contexts": [
+        "pipeline/runtime/source-checks/evidence/20261026-interfax-tenet-oct09-context.json",
+        "pipeline/runtime/source-checks/evidence/20261026-interfax-kuibyshev-context.json"
+      ],
+      "source_review": "Independently reviewed exact candidates against retained full-page Interfax extractions. Tenet article 1121430 identifies the same Kaluga plant and carries AGR’s attributed debris/fire/injury/safety-suspension account; no current status inferred. Kuibyshev article 952039 identifies AO Kuibyshev Refinery and maps to the existing same-date fire/attack incident; governor claims remain attributed.",
+      "usage_used_percent_before": 0,
+      "usage_used_percent_after": 0,
+      "database_after": {
+        "proposals": 610,
+        "reviews": 611,
+        "publications": 559,
+        "approved_facilities": 358,
+        "pending_proposals": 10
+      },
+      "export": "data/reviewed-facilities.json",
+      "export_facility_count": 358,
+      "report_approval_count": 133,
+      "backup": "pipeline/runtime/backups/facilities-before-interfax-window2-20261026T0618Z.sqlite3",
+      "backup_bytes": 5251072,
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity_check ok; foreign_key_check empty; export has 358 unique facility IDs.",
+      "source_poll": "No source poll in this manual batch; last source check 2026-10-26T04:25:00.768855Z, next not before 2026-10-26T08:25:00.768855Z.",
+      "lock_released": true
+    },
+    {
+      "round_id": "interfax-ilsky-source-map-20261026",
+      "at": "2026-10-26T06:20:17Z",
+      "status": "completed",
+      "candidate_file_sha256": "42acb53a54fe638cb32309fcd9974ce5f2fd1d87cd72e624033f5ddf2370681b",
+      "candidate_gate_hash": "428d3e3cfe1b7fc94ac978506d013c89d859605f08769a4e0e0a6d6ebc537bff",
+      "facility_id": "RU-REF-022",
+      "facility_version": 12,
+      "review_id": 612,
+      "decision": "approved",
+      "change": "Maps exact Interfax May 5 page to the already recorded May 4 and May 5 Ilsky incidents; existing incident and facility payloads/status remain unchanged.",
+      "source_context": "pipeline/runtime/source-checks/evidence/20261026-interfax-ilsky-context.json",
+      "source_review": "Exact full-page Interfax article 900218 names Ilsky Refinery, reports May 5 explosion/fire, and separately recounts May 4 overnight explosions/reservoir fires. Both match existing dated records. No present operation inferred.",
+      "usage_used_percent_before": 0,
+      "usage_used_percent_after": 0,
+      "database_after": {
+        "proposals": 611,
+        "reviews": 612,
+        "publications": 560,
+        "approved_facilities": 358,
+        "pending_proposals": 10
+      },
+      "export_facility_count": 358,
+      "report_approval_count": 127,
+      "backup": "pipeline/runtime/backups/facilities-before-interfax-ilsky-20261026T0620Z.sqlite3",
+      "backup_bytes": 5275648,
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity_check ok; foreign_key_check empty; export has 358 unique facility IDs.",
+      "source_poll": "No poll in this manual batch; last source check 2026-10-26T04:25:00.768855Z; next not before 2026-10-26T08:25:00.768855Z.",
+      "lock_released": true
+    },
+    {
+      "round_id": "interfax-window3-20261026",
+      "at": "2026-10-26T06:23:57Z",
+      "status": "completed",
+      "source_contexts": [
+        "pipeline/runtime/source-checks/evidence/20261026-interfax-ru-ref-021-context.json",
+        "pipeline/runtime/source-checks/evidence/20261026-interfax-disc-ind-nlmk-lipetsk-context.json",
+        "pipeline/runtime/source-checks/evidence/20261026-interfax-disc-ind-sevastopol-marine-plant-context.json"
+      ],
+      "usage_used_percent_before": 0,
+      "usage_used_percent_after": 0,
+      "database_after": {
+        "proposals": 614,
+        "reviews": 615,
+        "publications": 563,
+        "approved_facilities": 359,
+        "pending_proposals": 10
+      },
+      "export_facility_count": 359,
+      "report_approval_count": 123,
+      "backup": "pipeline/runtime/backups/facilities-before-interfax-afipsky-nlmk-sevastopol-20261026T0623Z.sqlite3",
+      "backup_bytes": 5304320,
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity_check ok; foreign_key_check empty; export has 359 unique facility IDs.",
+      "source_poll": "No poll in this manual batch; last source check remains 2026-10-26T04:25:00.768855Z; next not before 2026-10-26T08:25:00.768855Z.",
+      "lock_released": true
+    },
+    {
+      "round_id": "interfax-window4-20261026",
+      "at": "2026-10-26T06:29:04Z",
+      "status": "completed",
+      "source_contexts": [
+        "pipeline/runtime/source-checks/evidence/20261026-interfax-novoshakhtinsk-20240313-context.json",
+        "pipeline/runtime/source-checks/evidence/20261026-interfax-korenevo-20240715-context.json",
+        "pipeline/runtime/source-checks/evidence/20261026-interfax-slavyansk-20240427-context.json"
+      ],
+      "usage_used_percent_before": 0,
+      "usage_used_percent_after": 0,
+      "database_after": {
+        "proposals": 617,
+        "reviews": 618,
+        "publications": 566,
+        "approved_facilities": 359,
+        "pending_proposals": 10
+      },
+      "export_facility_count": 359,
+      "report_approval_count": 120,
+      "backup": "pipeline/runtime/backups/facilities-before-interfax-novoshakhtinsk-korenevo-slavyansk-20261026T0628Z.sqlite3",
+      "backup_bytes": 5337088,
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity_check ok; foreign_key_check empty; export has 359 unique facility IDs.",
+      "source_poll": "No poll this manual batch; last source check 2026-10-26T04:25:00.768855Z; next not before 2026-10-26T08:25:00.768855Z.",
+      "lock_released": true
+    },
+    {
+      "round_id": "interfax-window5-20261026",
+      "at": "2026-10-26T06:32:38Z",
+      "status": "completed",
+      "source_contexts": [
+        "pipeline/runtime/source-checks/evidence/20261026-interfax-ilsky-20230531-context.json",
+        "pipeline/runtime/source-checks/evidence/20261026-interfax-kirishi-20250308-context.json"
+      ],
+      "usage_used_percent_before": 0,
+      "usage_used_percent_after": 0,
+      "database_after": {
+        "proposals": 619,
+        "reviews": 620,
+        "publications": 568,
+        "approved_facilities": 359,
+        "pending_proposals": 10
+      },
+      "export_facility_count": 359,
+      "report_approval_count": 118,
+      "backup": "pipeline/runtime/backups/facilities-before-interfax-ilsky-kirishi-20261026T0632Z.sqlite3",
+      "backup_bytes": 5386240,
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity_check ok; foreign_key_check empty; export has 359 unique facility IDs.",
+      "source_poll": "No poll in this manual batch; last source check 2026-10-26T04:25:00.768855Z; next not before 2026-10-26T08:25:00.768855Z.",
+      "lock_released": true
+    },
+    {
+      "round_id": "interfax-perm-powder-20261026",
+      "at": "2026-10-26T06:34:28Z",
+      "status": "completed",
+      "facility_id": "DISC-DEF-PERM-POWDER-PLANT",
+      "facility_version": 2,
+      "proposal_id": "5855e5dd657ad39979c147dda5a34827d8a14a946dfcfd983165f0d9dc169bec",
+      "review_id": 621,
+      "candidate_file_sha256": "ed5932d082ad7d1eea660e630b11c0404006d989b795f4dcc09f298ec9259d06",
+      "decision": "approved",
+      "change": "Added attributed report that fire at the Perm Powder Plant was extinguished on Mar3 2025; cause/damage/current operation unknown. Preserved May1 2022 history.",
+      "source_context": "pipeline/runtime/source-checks/evidence/20261026-interfax-perm-powder-20250303-context.json",
+      "usage_used_percent_before": 0,
+      "usage_used_percent_after": 0,
+      "database_after": {
+        "proposals": 620,
+        "reviews": 621,
+        "publications": 569,
+        "approved_facilities": 359,
+        "pending_proposals": 10
+      },
+      "export_facility_count": 359,
+      "report_approval_count": 118,
+      "backup": "pipeline/runtime/backups/facilities-before-interfax-perm-powder-20261026T0634Z.sqlite3",
+      "backup_bytes": 5431296,
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity_check ok; foreign_key_check empty; export has 359 unique facility IDs.",
+      "source_poll": "No poll in this manual batch; last source check 2026-10-26T04:25:00.768855Z; next not before 2026-10-26T08:25:00.768855Z.",
+      "lock_released": true
+    },
+    {
+      "round_id": "interfax-slavyansk-may19-source-map-20261026",
+      "at": "2026-10-26T06:36:37Z",
+      "status": "completed",
+      "facility_id": "DISC-FS-slavyansk_refinery",
+      "facility_version": 6,
+      "proposal_id": "4eee517e8525410705f15ed68b21cc25c65724e70a575b167ef832ea2df288f6",
+      "review_id": 622,
+      "candidate_file_sha256": "58277939e1fd5251d85d66ed0f7195fd75baaa7fbb8c7a067208d8dff2013bf2",
+      "decision": "approved",
+      "change": "Interfax source mapped to existing May19, 2024 attack/fire incident; no incident text/status change. Differing attributed accounts retained.",
+      "source_context": "pipeline/runtime/source-checks/evidence/20261026-interfax-slavyansk-20240519-context.json",
+      "usage_used_percent_before": 0,
+      "usage_used_percent_after": 0,
+      "database_after": {
+        "proposals": 621,
+        "reviews": 622,
+        "publications": 570,
+        "approved_facilities": 359,
+        "pending_proposals": 10
+      },
+      "export_facility_count": 359,
+      "report_approval_count": 118,
+      "backup": "pipeline/runtime/backups/facilities-before-interfax-slavyansk-may19-20261026T0636Z.sqlite3",
+      "backup_bytes": 5435392,
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity_check ok; foreign_key_check empty; export has 359 unique facility IDs.",
+      "source_poll": "No poll this manual batch; last source check 2026-10-26T04:25:00.768855Z; next not before 2026-10-26T08:25:00.768855Z.",
+      "lock_released": true
+    },
+    {
+      "round_id": "interfax-soltsy-source-map-20261026",
+      "at": "2026-10-26T06:37:50Z",
+      "status": "completed",
+      "facility_id": "DISC-MIL-SOLTSY-AIRFIELD",
+      "facility_version": 3,
+      "proposal_id": "9485e84d0f7dbfc45065f0a7c3af51957d7204df7eb63fb304b2e0a331b43199",
+      "review_id": 623,
+      "candidate_file_sha256": "036954f723fae464061e47f39f7f83b816af87ecaa32ba78cfac0685661bdb02",
+      "decision": "approved",
+      "change": "Interfax update explicitly links the Novgorod governor’s account to the existing same-day Soltsy airfield incident; no profile/history/status edit.",
+      "source_context": "pipeline/runtime/source-checks/evidence/20261026-interfax-soltsy-airfield-20230819-context.json",
+      "usage_used_percent_before": 0,
+      "usage_used_percent_after": 1,
+      "database_after": {
+        "proposals": 622,
+        "reviews": 623,
+        "publications": 571,
+        "approved_facilities": 359,
+        "pending_proposals": 10
+      },
+      "export_facility_count": 359,
+      "report_approval_count": 118,
+      "backup": "pipeline/runtime/backups/facilities-before-interfax-soltsy-20261026T0637Z.sqlite3",
+      "backup_bytes": 5455872,
+      "tests": "npm test 76/76; pipeline unittest 16/16; SQLite integrity_check ok; foreign_key_check empty; export has 359 unique facility IDs.",
+      "source_poll": "No poll this manual batch; last source check 2026-10-26T04:25:00.768855Z; next not before 2026-10-26T08:25:00.768855Z.",
+      "lock_released": true
+    }
+  ],
+  "report_revalidation_slavyansk_v6": {
+    "at": "2026-10-26T07:26:50Z",
+    "reviewed": 2,
+    "restored": 2,
+    "held": 0,
+    "facility_id": "DISC-FS-slavyansk_refinery",
+    "facility_version": 6,
+    "artifact": "pipeline/runtime/restart-20261026/reviewer-report-revalidation-slavyansk-v6.json",
+    "database_mutated": false,
+    "source_fetches": 0,
+    "prior_approval_count": 118,
+    "current_approval_count": 120
+  },
+  "report_revalidation_slavyansk_54634_v6": {
+    "at": "2026-10-26T07:28:00Z",
+    "reviewed": 1,
+    "restored": 1,
+    "held": 0,
+    "facility_id": "DISC-FS-slavyansk_refinery",
+    "facility_version": 6,
+    "artifact": "pipeline/runtime/restart-20261026/reviewer-report-revalidation-slavyansk-54634-v6.json",
+    "database_mutated": false,
+    "source_fetches": 1,
+    "prior_approval_count": 120,
+    "current_approval_count": 121
+  },
+  "report_revalidation_novoshakhtinsk_v8": {
+    "at": "2026-10-26T07:31:28Z",
+    "reviewed": 1,
+    "restored": 1,
+    "held": 0,
+    "facility_id": "DISC-FS-novoshakhtinsk_refinery",
+    "facility_version": 8,
+    "artifact": "pipeline/runtime/restart-20261026/reviewer-report-revalidation-novoshakhtinsk-v8.json",
+    "database_mutated": false,
+    "source_fetches": 1,
+    "prior_approval_count": 121,
+    "current_approval_count": 122
+  },
+  "report_revalidation_novoshakhtinsk_5882_34477_v8": {
+    "at": "2026-10-26T07:33:15Z",
+    "reviewed": 2,
+    "restored": 2,
+    "held": 0,
+    "facility_id": "DISC-FS-novoshakhtinsk_refinery",
+    "facility_version": 8,
+    "artifact": "pipeline/runtime/restart-20261026/reviewer-report-revalidation-novoshakhtinsk-5882-34477-v8.json",
+    "database_mutated": false,
+    "source_fetches": 2,
+    "prior_approval_count": 122,
+    "current_approval_count": 124
+  },
+  "reviewer_interfax_svecha_avangard_0735": {
+    "at": "2026-10-26T07:35:26Z",
+    "reviewed": 2,
+    "approved": 2,
+    "held": 0,
+    "facility_ids": [
+      "DISC-IND-SVECHA-SALAVAT",
+      "DISC-IND-AVANGARD-STERLITAMAK"
+    ],
+    "artifact": "pipeline/runtime/restart-20261026/reviewer-interfax-svecha-avangard-0735.json",
+    "source_fetches": 0,
+    "report_approval_count": 124
+  },
+  "reviewer_interfax_kaluga_fsb_kazan_0736": {
+    "at": "2026-10-26T07:36:55Z",
+    "reviewed": 3,
+    "approved": 3,
+    "held": 0,
+    "facility_ids": [
+      "DISC-GOV-KALUGA-MILITARY-COMMISSARIAT-20230731",
+      "DISC-GOV-ROSTOV-ON-DON-FSB-BORDER-DIRECTORATE",
+      "DISC-MIL-KAZAN-HIGHER-TANK-COMMAND-SCHOOL"
+    ],
+    "artifact": "pipeline/runtime/restart-20261026/reviewer-interfax-kaluga-fsb-kazan-0736.json",
+    "source_fetches": 1,
+    "report_approval_count": 124
+  },
+  "reviewer_interfax_salavat_sourcemap_0738": {
+    "at": "2026-10-26T07:38:17Z",
+    "reviewed": 1,
+    "approved": 1,
+    "held": 0,
+    "facility_id": "RU-REF-025",
+    "facility_version": 6,
+    "artifact": "pipeline/runtime/restart-20261026/reviewer-interfax-salavat-sourcemap-0738.json",
+    "source_fetches": 1,
+    "report_approval_count": 124
+  },
+  "reviewer_interfax_railway_stations_0739": {
+    "at": "2026-10-26T07:39:34Z",
+    "reviewed": 3,
+    "approved": 3,
+    "held": 0,
+    "facility_ids": [
+      "DISC-LH-BRYANSK-I-RAILWAY-STATION-20230908",
+      "DISC-LH-GLUSHKOVO-RAILWAY-STATION",
+      "DISC-LH-KURSK-RAILWAY-STATION"
+    ],
+    "artifact": "pipeline/runtime/restart-20261026/reviewer-interfax-railway-stations-0739.json",
+    "source_fetches": 0,
+    "report_approval_count": 124
+  },
+  "report_revalidation_ilsky_v13": {
+    "at": "2026-10-26T07:57:00Z",
+    "reviewed": 3,
+    "restored": 3,
+    "held": 0,
+    "facility_id": "RU-REF-022",
+    "facility_version": 13,
+    "artifact": "pipeline/runtime/restart-20261026/reviewer-report-revalidation-ilsky-v13.json",
+    "database_mutated": false,
+    "source_fetches": 0,
+    "prior_approval_count": 124,
+    "current_approval_count": 127
+  },
+  "report_revalidation_novokuibyshevsk_v10": {
+    "at": "2026-10-26T07:57:10Z",
+    "reviewed": 3,
+    "restored": 3,
+    "held": 0,
+    "facility_id": "RU-REF-009",
+    "facility_version": 10,
+    "artifact": "pipeline/runtime/restart-20261026/reviewer-report-revalidation-novokuibyshevsk-v10.json",
+    "database_mutated": false,
+    "source_fetches": 0,
+    "prior_approval_count": 127,
+    "current_approval_count": 130
+  },
+  "report_revalidation_ru_ref_008_ru_ref_001": {
+    "at": "2026-10-26T08:08:41Z",
+    "reviewed": 3,
+    "restored": 3,
+    "held": 0,
+    "facility_ids": [
+      "RU-REF-008",
+      "RU-REF-001"
+    ],
+    "artifact": "pipeline/runtime/restart-20261026/reviewer-report-revalidation-ru-ref-008-ru-ref-001.json",
+    "database_mutated": false,
+    "source_pages_opened": 5,
+    "prior_approval_count": 136,
+    "current_approval_count": 139,
+    "backup": "pipeline/runtime/backups/facilities-before-report-revalidation-ru-ref-008-ru-ref-001-20261026T0805Z.sqlite3",
+    "backup_bytes": 5775360,
+    "usage_used_percent_before": 3,
+    "usage_used_percent_after": 3
+  },
+  "report_revalidation_volgograd_v12c": {
+    "at": "2026-10-26T08:09:52Z",
+    "reviewed": 1,
+    "restored": 1,
+    "held": 0,
+    "facility_id": "RU-REF-001",
+    "facility_version": 12,
+    "artifact": "pipeline/runtime/restart-20261026/reviewer-report-revalidation-volgograd-v12c.json",
+    "database_mutated": false,
+    "source_pages_opened": 1,
+    "prior_approval_count": 139,
+    "current_approval_count": 140,
+    "backup": "pipeline/runtime/backups/facilities-before-report-revalidation-ru-ref-008-ru-ref-001-20261026T0805Z.sqlite3",
+    "backup_bytes": 5775360,
+    "usage_used_percent_before": 3,
+    "usage_used_percent_after": 3
+  },
+  "last_usage_checkpoint": {
+    "at": "2026-10-28T09:02:07Z",
+    "used_percent": 0,
+    "remaining_percent": 100,
+    "source": "get_usage_limits",
+    "user_configured_cap": null
+  },
+  "reviewer_sofyino_sst_warehouse_fire": {
+    "round_id": "sofyino-sst-warehouse-fire-20261026",
+    "at": "2026-10-26T10:58:51Z",
+    "status": "completed",
+    "facility_id": "DISC-WH-SST-SOFYINO-20260920",
+    "facility_version": 1,
+    "proposal_id": "144d53938b5103f643a7a669aedbb6cc8cc4f506baa54b5b0aa027c0bd50711f",
+    "candidate_file_sha256": "e3ccbd8df2c17a5d5775d85c3e30441ff423981aa6141cc7eeaa6b6ed00336b9",
+    "gate_hash": "144d53938b5103f643a7a669aedbb6cc8cc4f506baa54b5b0aa027c0bd50711f",
+    "decision": "approved",
+    "review_id": 704,
+    "review_artifact": "pipeline/runtime/reviewer/sofyino-sst-warehouse-fire-20260920-review2-20261026.json",
+    "initial_review_id": 703,
+    "initial_review_disposition": "needs_review; first artifact incorrectly put the source-identity caveat in conflicts; second review records it accurately in rationale with conflicts empty",
+    "source_context": "pipeline/runtime/source-checks/evidence/20261026-sofyino-sst-warehouse-fire-context.json",
+    "source_assessment": "research/source-scout/assessments/sofyino-sst-warehouse-fire-20260920-r1.json",
+    "backup": "pipeline/runtime/backups/facilities-before-sofyino-sst-20261026T1058Z.sqlite3",
+    "backup_bytes": 6180864,
+    "backup_sha256": "87c5e05a09d7958f9e3144e4ad4b2a2fe7f8d5521267a8c8683a9fe0e85905bd",
+    "backup_integrity": "ok; foreign_key_check empty",
+    "export_facility_count": 406,
+    "report_approval_count": 161,
+    "tests": "pipeline unittest 16/16; npm test 83/83; SQLite integrity_check ok; foreign_key_check empty; export contains 406 facility records and SST v1 with one incident and operational_status unknown.",
+    "media": "Held privately: local Supernova photo pixels do not uniquely identify the SST complex; 12 video references have placeholders without bytes/frames. Existing public media schema has no safe source-only, not-yet-report gallery route for this new record.",
+    "wildberries_crosswalk": "No merge with WB-021 or WB-053; no source establishes same or different physical site.",
+    "usage_used_percent_before": 12,
+    "usage_used_percent_after": 12
+  },
+  "reviewer_vk_dc_location_conflict": {
+    "round_id": "vk-stpetersburg-dc-location-conflict-20261026",
+    "at": "2026-10-26T11:02:03Z",
+    "status": "held",
+    "facility_id": "DISC-DC-VK-STPETERSBURG",
+    "candidate": "data/candidates/luna-vk-stpetersburg-dc-attack-20261018-r1.json",
+    "candidate_file_sha256": "791af2e663db36f83f9c25c50395527d155204a61137e893b29665d458cd1698",
+    "proposal_id": "6649b0daec640d0eef91e5696f3aca82ea6c0daa72680db8fa4545a2031fe845",
+    "review_id": 705,
+    "decision": "needs_review",
+    "review_artifact": "pipeline/runtime/reviewer/vk-stpetersburg-dc-location-conflict-review-20261026.json",
+    "source_context": "pipeline/runtime/source-checks/evidence/20261026-vk-stpetersburg-dc-attack-context.json",
+    "assessment": "research/source-scout/assessments/vk-stpetersburg-dc-attack-20261018-r1.json",
+    "backup": "pipeline/runtime/backups/facilities-before-vk-dc-location-hold-20261026T1101Z.sqlite3",
+    "backup_bytes": 6193152,
+    "backup_sha256": "aa6b6c17e6ce6b7a2da4d06f9edac00666c815f454e02612d958e7b3e6094f50",
+    "reason": "KI/AP identify St Petersburg; Interfax identifies Leningrad Oblast. Same VK/date is suggestive but no source bridges the locators to one physical site. Supernova post is a placeholder only.",
+    "export_count": 406,
+    "exported": false,
+    "usage_used_percent_before": 12,
+    "usage_used_percent_after": 12,
+    "database_integrity": "ok",
+    "foreign_key_check": "empty"
+  },
+  "reviewer_novotrans_ustluga_20261026": {
+    "at": "2026-10-26T11:40:22Z",
+    "status": "completed",
+    "facility_id": "DISC-LH-NOVOTRANS-UST-LUGA-TERMINAL",
+    "facility_version": 1,
+    "proposal_id": "da21ee782c9ec7e71ac1219c0445b493a331b1cb359def383977ae5622727678",
+    "review_id": 721,
+    "candidate_file_sha256": "e9e5bb06c39164bcc615ef302ebb93876532e3db18c9554126c8e0e56d0a6169",
+    "decision": "approved",
+    "source_context": "pipeline/runtime/source-checks/evidence/20261026-ki-novotrans-ustluga-context.json",
+    "backup_before": "pipeline/runtime/backups/facilities-before-ki-novotrans-20261026T114100Z.sqlite3",
+    "backup_before_sha256": "9fbb06586b7d038e371e3cf7e616ba7ac66347e3ec57d7f9eaefa7a1104bbb4e",
+    "backup_after": "pipeline/runtime/backups/facilities-after-ki-novotrans-20261026T114000Z.sqlite3",
+    "backup_after_sha256": "1c6746637bef7edd4b7eb4fd341651dc704338c1047b086762331a1190c7d914",
+    "database_after": {
+      "proposals": 716,
+      "reviews": 721,
+      "publications": 658,
+      "approved_facilities": 416,
+      "pending_proposals": 12
+    },
+    "export_facility_count": 416,
+    "sqlite_integrity": "ok",
+    "foreign_key_check": [],
+    "usage_used_percent_before": 18,
+    "usage_used_percent_after": 18
+  },
+  "reviewer_interfax_port_olya_20250814": {
+    "at": "2026-10-26T11:42:26Z",
+    "status": "completed",
+    "facility_id": "DISC-LH-PORT-OLYA-ASTRAKHAN-20250814",
+    "facility_version": 1,
+    "proposal_id": "4269d6875d3b66f17a4f1ea060e02c30909685304b797a9c59fed092e89b0a26",
+    "review_id": 722,
+    "candidate_file_sha256": "2dbf4bc8bffeae909b556bffec98fbf6497830f8ed7ee538255d859b1a59f30f",
+    "superseded_r1": "data/candidates/luna-interfax-port-olya-drone-attack-20250814-r1.json",
+    "decision": "approved",
+    "source_context": "pipeline/runtime/source-checks/evidence/20261026-interfax-port-olya-context.json",
+    "backup_before": "pipeline/runtime/backups/facilities-before-port-olya-20261026T114200Z.sqlite3",
+    "backup_before_sha256": "1c6746637bef7edd4b7eb4fd341651dc704338c1047b086762331a1190c7d914",
+    "backup_after": "pipeline/runtime/backups/facilities-after-port-olya-20261026T114300Z.sqlite3",
+    "backup_after_sha256": "14e3f9859f0f7c4eca641f79189f5191fee0867f3939f6a9c0da36941fa212d3",
+    "database_after": {
+      "proposals": 717,
+      "reviews": 722,
+      "publications": 659,
+      "approved_facilities": 417,
+      "pending_proposals": 12
+    },
+    "export_facility_count": 417,
+    "sqlite_integrity": "ok",
+    "foreign_key_check": [],
+    "usage_used_percent_before": 18,
+    "usage_used_percent_after": 18
+  },
+  "reviewer_ki_primorsk_sep12_2025": {
+    "at": "2026-10-26T11:45:20Z",
+    "status": "completed",
+    "facility_id": "DISC-FS-primorsk_oil_terminal",
+    "facility_version": 3,
+    "proposal_id": "8d86d4fed1d708a2f3dba0869b74decf32c60240af2deea3b447e5a9fd15c2b6",
+    "review_id": 723,
+    "candidate_file_sha256": "6d4c1e4fd3fa9f6912a17c067833da47d79eacb49d452a91731c818a45f25639",
+    "superseded_r1": "data/candidates/luna-ki-primorsk-port-attack-20250912-r1.json",
+    "superseded_r2": "data/candidates/luna-ki-primorsk-port-attack-20250912-r2.json",
+    "decision": "approved",
+    "source_context": "pipeline/runtime/source-checks/evidence/20261026-ki-primorsk-context.json",
+    "backup_before": "pipeline/runtime/backups/facilities-before-primorsk-sep2025-20261026T114500Z.sqlite3",
+    "backup_before_sha256": "14e3f9859f0f7c4eca641f79189f5191fee0867f3939f6a9c0da36941fa212d3",
+    "backup_after": "pipeline/runtime/backups/facilities-after-primorsk-sep2025-20261026T114600Z.sqlite3",
+    "backup_after_sha256": "f1f466e081a82e3128e4b50f0d33f2132328572a3f3267cc654beebcd5d48923",
+    "database_after": {
+      "proposals": 718,
+      "reviews": 723,
+      "publications": 660,
+      "approved_facilities": 417,
+      "pending_proposals": 12
+    },
+    "export_facility_count": 417,
+    "sqlite_integrity": "ok",
+    "foreign_key_check": [],
+    "usage_used_percent_before": 18,
+    "usage_used_percent_after": 18
+  },
+  "last_review_checkpoint": "pipeline/runtime/restart-20261028/reviewer-ki-ufa-sourcemap-hold-reconciled-20261028T0922Z.json",
+  "reviewer_last_snapshot": {
+    "at": "2026-10-28T09:22:00Z",
+    "status": "held_needs_review_existing_review1027",
+    "checkpoint": "pipeline/runtime/restart-20261028/reviewer-ki-ufa-sourcemap-hold-reconciled-20261028T0922Z.json"
+  },
+  "reviewer_sergiev_posad_20261026": {
+    "at": "2026-10-26T12:43:04Z",
+    "status": "completed",
+    "facility_id": "DISC-POWER-SERGIEV-POSAD-SUBSTATION-20250704",
+    "facility_version": 1,
+    "proposal_id": "5b651b0061100438702eb90831856194fd1e7a249bd650914bb7ce844cabe397",
+    "review_id": 751,
+    "candidate_file_sha256": "564971cc5157a67c9e07da197de200b66b1f110c34b1f4836239e1f8d78dcc03",
+    "candidate_gate_hash": "5b651b0061100438702eb90831856194fd1e7a249bd650914bb7ce844cabe397",
+    "decision": "approved",
+    "source_context": "pipeline/runtime/source-checks/evidence/20261026-interfax-sergiev-posad-substation-context.json",
+    "review_artifact": "pipeline/runtime/reviewer/interfax-sergiev-posad-substation-damage-20250704-review-20261026.json",
+    "review_artifact_sha256": "e734ccf7e86b383ac80d5f1b4d5224bea8a57cc1e1300cc3d1167d9b1db6089f",
+    "backup_before": "pipeline/runtime/backups/reviewer-sergiev-substation-20261026T1341Z-before.sqlite3",
+    "backup_before_sha256": "bfc46560b70af40df853e04604f28a9d78b485434a04aade363feda82b1e4f69",
+    "backup_after": "pipeline/runtime/backups/reviewer-sergiev-substation-20261026T1240Z-after.sqlite3",
+    "backup_after_sha256": "44db557cf611436d6bf924f31c7c24cd154e06428f989f562b96683c4bb2ab99",
+    "usage_used_percent_before": 20,
+    "usage_used_percent_after": 20
+  },
+  "reviewer_yaroslavl_warehouse_20261026": {
+    "at": "2026-10-26T12:43:04Z",
+    "status": "completed",
+    "facility_id": "DISC-LH-YAROSLAVL-PRINT-PAINT-WAREHOUSE-20240729",
+    "facility_version": 1,
+    "proposal_id": "49bd0d04804ce7e53050f4c9adb581e0a7f4fc646230375706b2e6aeae05a3b9",
+    "review_id": 752,
+    "candidate_file_sha256": "983ce837841972b72b30689941fc55b2509f44feb151fd2b91a77c7859578869",
+    "candidate_gate_hash": "49bd0d04804ce7e53050f4c9adb581e0a7f4fc646230375706b2e6aeae05a3b9",
+    "decision": "approved",
+    "source_context": "pipeline/runtime/source-checks/evidence/20261026-interfax-yaroslavl-warehouse-context.json",
+    "review_artifact": "pipeline/runtime/reviewer/interfax-yaroslavl-print-paint-warehouse-fire-20240729-review-20261026.json",
+    "review_artifact_sha256": "f083bb05a86c6e1a22c2396d18c899c234c64e49f5d928bedaad15504fdc1344",
+    "backup_before": "pipeline/runtime/backups/reviewer-yaroslavl-print-paint-warehouse-20261026T1242Z-before.sqlite3",
+    "backup_before_sha256": "44db557cf611436d6bf924f31c7c24cd154e06428f989f562b96683c4bb2ab99",
+    "backup_after": "pipeline/runtime/backups/reviewer-yaroslavl-print-paint-warehouse-20261026T1242Z-after.sqlite3",
+    "backup_after_sha256": "4cb8b985b455426264157fb256395f379c52423fea7de4be22411ac9550617eb",
+    "usage_used_percent_before": 20,
+    "usage_used_percent_after": 20
+  },
+  "reviewer_shchyolkovo_warehouse_20261026": {
+    "at": "2026-10-26T12:43:04Z",
+    "status": "completed",
+    "facility_id": "DISC-LH-SHCHELKOVO-PLASTICS-WAREHOUSE-20260909",
+    "facility_version": 1,
+    "proposal_id": "8a08fccc92a4eaccb0ff71ad08967585b93d32503ef0e1637fc1225247454a84",
+    "review_id": 753,
+    "candidate_file_sha256": "8965fcb4fc94bc733ee48fe6b0725058f56dc09b9668e99f96b648ed9a160dde",
+    "candidate_gate_hash": "8a08fccc92a4eaccb0ff71ad08967585b93d32503ef0e1637fc1225247454a84",
+    "decision": "approved",
+    "source_context": "pipeline/runtime/source-checks/evidence/20261026-interfax-shchyolkovo-warehouse-context.json",
+    "review_artifact": "pipeline/runtime/reviewer/interfax-shchyolkovo-plastics-warehouse-fire-20260909-review-20261026.json",
+    "review_artifact_sha256": "ba8b01a14e5511727907f020e64005a07816e3b118d75884ad9bed21af7fa5bb",
+    "backup_before": "pipeline/runtime/backups/reviewer-shchyolkovo-warehouse-20261026T1243Z-before.sqlite3",
+    "backup_before_sha256": "4cb8b985b455426264157fb256395f379c52423fea7de4be22411ac9550617eb",
+    "backup_after": "pipeline/runtime/backups/reviewer-shchyolkovo-warehouse-20261026T1243Z-after.sqlite3",
+    "backup_after_sha256": "153ce532e96371fb5b30ca95c7f0a4125c831914ad3396cdc4d5dc24b2ce960f",
+    "usage_used_percent_before": 20,
+    "usage_used_percent_after": 20,
+    "database_after": {
+      "proposals": 747,
+      "reviews": 753,
+      "publications": 689,
+      "approved_facilities": 443,
+      "pending_proposals": 12
+    },
+    "export_facility_count": 443,
+    "export_sha256": "6af50f3a6f733eb881ce0e6d6d69591a3906c8371bcffe323f7d739d2b8c2ad5",
+    "sqlite_integrity": "ok",
+    "foreign_key_check": [],
+    "publication": "Local only; no deployment."
+  },
+  "reviewer_sochi_oil_depot_interfax_sourcemap_20261026": {
+    "at": "2026-10-26T12:44:15Z",
+    "status": "completed",
+    "facility_id": "DISC-AP-SOCHI-OIL-DEPOT",
+    "facility_version": 2,
+    "proposal_id": "8af75b4fbe16f7b304e1da34f7969de47b38b9818f9332ad1c4c8bbd5f47616e",
+    "review_id": 754,
+    "candidate_file_sha256": "fde1bd97778234fc7fb60700996264f3375da62fe32e799c7f9365215bd64ede",
+    "candidate_gate_hash": "8af75b4fbe16f7b304e1da34f7969de47b38b9818f9332ad1c4c8bbd5f47616e",
+    "decision": "approved",
+    "source_context": "pipeline/runtime/source-checks/evidence/20261026-interfax-sochi-oil-depot-context.json",
+    "review_artifact": "pipeline/runtime/reviewer/interfax-sochi-oil-depot-sourcemap-20250803-review-20261026.json",
+    "review_artifact_sha256": "29816342f2df7cb0019f1a566fc16d82fbf78de6a1d9ad502dc46893fd6760ef",
+    "backup_before": "pipeline/runtime/backups/reviewer-sochi-oil-depot-interfax-sourcemap-20261026T1244Z-before.sqlite3",
+    "backup_before_sha256": "153ce532e96371fb5b30ca95c7f0a4125c831914ad3396cdc4d5dc24b2ce960f",
+    "backup_after": "pipeline/runtime/backups/reviewer-sochi-oil-depot-interfax-sourcemap-20261026T1244Z-after.sqlite3",
+    "backup_after_sha256": "8dda43b2fa8d1b48868b69a2e3f40316a749b3b4c3e614e2890577a1130648a3",
+    "database_after": {
+      "proposals": 748,
+      "reviews": 754,
+      "publications": 690,
+      "approved_facilities": 443,
+      "pending_proposals": 12
+    },
+    "export_facility_count": 443,
+    "export_sha256": "65d32df5e48dd21f1b22a9cc536396a8fb13e170e10e0ce6d278441c68a34608",
+    "sqlite_integrity": "ok",
+    "foreign_key_check": [],
+    "usage_used_percent_before": 20,
+    "usage_used_percent_after": 20,
+    "publication": "Local only; no deployment."
+  },
+  "reviewer_taman_port_20240522_20261026": {
+    "at": "2026-10-26T12:45:33Z",
+    "status": "completed",
+    "facility_id": "DISC-FS-taman_port",
+    "facility_version": 3,
+    "proposal_id": "395b2cadd1a71b0bab5023084f0b6293c24105bf04a58aca401d6a559cb24583",
+    "review_id": 756,
+    "candidate_file_sha256": "76ad19bf27f989e69f2bb98357061560d4cb07f717aeab1ad5a5206b56c15127",
+    "candidate_gate_hash": "395b2cadd1a71b0bab5023084f0b6293c24105bf04a58aca401d6a559cb24583",
+    "decision": "approved",
+    "initial_review_id": 755,
+    "initial_review_decision": "needs_review",
+    "initial_review_reason": "Review did not cover every asserted evidence item; preserved exact audit record.",
+    "source_context": "pipeline/runtime/source-checks/evidence/20261026-interfax-taman-port-fire-context.json",
+    "review_artifact": "pipeline/runtime/reviewer/interfax-taman-port-plastic-pipe-fire-20240522-review2-20261026.json",
+    "review_artifact_sha256": "34016b5b32f7a8eca1bc0fe97ee149705382c07cb51efa8d6890840ee16a7ef7",
+    "backup_before": "pipeline/runtime/backups/reviewer-taman-port-plastic-pipe-20240522-20261026T1245Z-before.sqlite3",
+    "backup_before_sha256": "8dda43b2fa8d1b48868b69a2e3f40316a749b3b4c3e614e2890577a1130648a3",
+    "backup_after": "pipeline/runtime/backups/reviewer-taman-port-plastic-pipe-20240522-20261026T1245Z-after.sqlite3",
+    "backup_after_sha256": "d49054c445264e954a978db269747626777b39abd8f35bbeb1a6eaec02c3d3bd",
+    "database_after": {
+      "proposals": 749,
+      "reviews": 756,
+      "publications": 691,
+      "approved_facilities": 443,
+      "pending_proposals": 12
+    },
+    "export_facility_count": 443,
+    "export_sha256": "df7ebb3f5b66ad05ad58d859a9333bb7068cbe6a3e3992784cfee0d46c69c14c",
+    "sqlite_integrity": "ok",
+    "foreign_key_check": [],
+    "usage_used_percent_before": 20,
+    "usage_used_percent_after": 20,
+    "publication": "Local only; no deployment."
+  },
+  "approved_count": 0,
+  "held_count": 0
+}

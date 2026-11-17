@@ -1,0 +1,7 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+/*.json
+  Cache-Control: no-cache
+/data/*.json
+  Cache-Control: no-cache

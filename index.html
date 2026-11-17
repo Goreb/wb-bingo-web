@@ -3,45 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wildberries Logistics Hubs Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Explore facilities, documented incidents, and the evidence behind each record.">
+  <meta name="color-scheme" content="dark">
+  <meta name="referrer" content="strict-origin">
+  <title>Bingo — Facility Observatory</title>
+  <link rel="stylesheet" href="third_party/leaflet/leaflet.css">
+  <link rel="stylesheet" href="styles.css?v=inline-telegram-20261026">
+  <link rel="stylesheet" href="card-design.css?v=inline-telegram-20261026">
+  <script defer src="third_party/leaflet/leaflet.js"></script>
+  <script type="module" src="app.js?v=inline-telegram-20261026"></script>
 </head>
 <body>
-
-  <header>
-    <div class="title-area">
-    <h1><span>Wildberries</span> Logistics Tracking Bingo</h1>
-    <div class="last-update" id="lastUpdate">Loading last update...</div>
+  <a class="skip-link" href="#explorer">Skip to facilities</a>
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Bingo home"><span class="brand-mark" aria-hidden="true">▦</span> BINGO<span class="brand-divider"></span><span class="brand-context">FACILITY OBSERVATORY</span></a>
+      <button class="button subtle" id="aboutButton" type="button">Data &amp; sources <span aria-hidden="true">↗</span></button>
+    </header>
+    <main>
+      <section class="intro workspace-intro" aria-labelledby="pageTitle">
+        <div><p class="eyebrow"><span class="signal-dot"></span> FACILITY OBSERVATORY</p><h1 id="pageTitle">Facility overview</h1><p class="intro-copy">Facilities, incident history and the evidence behind them.</p></div>
+        <span class="scope-tag" id="updateBadge">Curated collection · Not a live feed</span>
+      </section>
+      <nav id="workspaceTabs" class="workspace-tabs" aria-label="Workspace views" role="tablist">
+        <button id="tabOverview" type="button" role="tab" data-view="overview" aria-selected="false" aria-controls="overviewPanel" tabindex="-1">Overview</button>
+        <button id="tabFacilities" type="button" role="tab" data-view="facilities" aria-selected="true" aria-controls="explorer">Facilities</button>
+        <button id="tabIncidents" type="button" role="tab" data-view="incidents" aria-selected="false" aria-controls="explorer" tabindex="-1">Incidents</button>
+        <button id="tabFavorites" type="button" role="tab" data-view="favorites" aria-selected="false" aria-controls="explorer" tabindex="-1">Favorites</button>
+        <button id="tabSettings" type="button" role="tab" data-view="settings" aria-selected="false" aria-controls="settingsPanel" tabindex="-1">Settings</button>
+      </nav>
+      <section class="stats" aria-label="Collection overview">
+        <div><span class="stat-number" id="totalCount">—</span><span class="stat-label">Facility records in collection</span></div>
+        <div><span class="stat-number" id="typeCount">—</span><span class="stat-label">Categories with records</span></div>
+        <div><span class="stat-number" id="incidentCount">—</span><span class="stat-label">With recorded incidents</span></div>
+        <div><span class="stat-number" id="sourceCount">—</span><span class="stat-label">Source references</span></div>
+      </section>
+      <section id="overviewPanel" class="workspace-panel" role="tabpanel" aria-labelledby="tabOverview" hidden>
+        <div class="overview-layout">
+          <section class="overview-map-card" aria-labelledby="mapTitle">
+            <div class="panel-heading"><div><h2 id="mapTitle">Facility map</h2><p id="mapCoverage" role="status">Loading geographic coverage…</p></div><span class="small-label">RECORDED LOCATIONS</span></div>
+            <div id="overviewMap" class="overview-map" aria-label="Map of recorded facility locations"></div>
+            <div id="mapLegend" class="map-legend" aria-label="Map legend"></div>
+          </section>
+          <section class="overview-feed" aria-labelledby="overviewIncidentTitle"><div class="panel-heading"><div><h2 id="overviewIncidentTitle">Incident dashboard</h2><p>Recorded events and source updates. Publication dates may differ from event dates.</p></div></div><div id="overviewReportMetrics" class="overview-report-metrics"></div><div id="overviewIncidentList" class="overview-incident-list" aria-live="polite"><p class="panel-note">Loading incident reports…</p></div></section>
+        </div>
+      </section>
+      <section id="explorer" class="explorer" role="tabpanel" aria-labelledby="tabFacilities">
+        <div class="section-heading"><h2 id="explorerTitle">Explore the collection</h2></div>
+        <div id="categoryFilters" class="categories" role="group" aria-label="Facility type"></div>
+        <div class="filter-panel standalone-search">
+          <div class="search-wrap"><label for="searchInput">Search facilities</label><div class="search-field"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Name, operator, region or ID…" autocomplete="off"></div></div>
+        </div>
+        <details id="advancedFilters" class="advanced-filters">
+          <summary>Filters</summary>
+          <div class="advanced-filter-grid">
+          <div class="filter-field"><label for="operatorFilter">Operator</label><select id="operatorFilter"><option value="">All operators</option></select></div>
+          <div class="filter-field"><label for="regionFilter">Region</label><select id="regionFilter"><option value="">All regions</option></select></div>
+          <div class="filter-field"><label for="attackStatusFilter">Incident status</label><select id="attackStatusFilter"><option value="">All incident statuses</option><option value="never_attacked">No attack recorded</option><option value="targeted">Targeted</option><option value="attacked">Attacked</option><option value="multiple_attacks">Multiple attacks</option><option value="destroyed">Destroyed</option><option value="unknown">Other / unclear</option></select></div>
+          <div class="filter-field"><label for="incidentFilter">Incident history</label><select id="incidentFilter"><option value="">All records</option><option value="reported">Incident recorded</option><option value="none">No incident recorded</option></select></div>
+            <div class="filter-field"><label for="groupFilter">Infrastructure group</label><select id="groupFilter"><option value="">All infrastructure</option><option value="logistics">Warehouses &amp; transport</option><option value="energy">Oil &amp; energy</option><option value="digital">Digital infrastructure</option><option value="defence">Military &amp; defence production</option><option value="government">Government buildings</option><option value="industry">Industrial, drone &amp; robotics production</option></select></div>
+            <div class="filter-field"><label for="reviewFilter">Review state</label><select id="reviewFilter"><option value="">All review states</option><option value="approved">Approved</option><option value="pending">Needs review</option></select></div>
+            <div class="filter-field"><label for="statusFilter">Operating status</label><select id="statusFilter"><option value="">All operating statuses</option><option value="unaffected_history">No recorded attack / targeted only</option><option value="online">Online</option><option value="offline">Offline</option><option value="affected">Affected</option><option value="closed">Closed</option><option value="operator_claim">Operator claim</option><option value="unknown">?</option></select></div>
+            <div class="filter-field"><label for="mediaFilter">Source media</label><select id="mediaFilter"><option value="">All media states</option><option value="photos">Photos available</option><option value="video">Video referenced</option><option value="text_only">Text only</option><option value="missing">Media preview unavailable</option></select></div>
+            <div class="filter-field"><label for="sourceFilter">Source</label><select id="sourceFilter"><option value="">All sources</option></select></div>
+            <div class="filter-field"><label for="dateFrom">Incident / source date from</label><input id="dateFrom" type="date"></div>
+            <div class="filter-field"><label for="dateTo">Incident / source date to</label><input id="dateTo" type="date"></div>
+            <div class="filter-field"><label for="damageFilter">Inherited damage label</label><select id="damageFilter"><option value="">All inherited labels</option><option value="0">0 · No damage</option><option value="1">1 · Targeted</option><option value="2">2 · Small Fire</option><option value="3">3 · Medium Fire</option><option value="4">4 · Large Fire</option><option value="5">5 · Fully uploaded to Cloud</option></select></div>
+            <div class="filter-field"><label for="missingFilter">Missing information</label><select id="missingFilter"><option value="">Any completeness</option><option value="operator">Operator not recorded</option><option value="region">Region not recorded</option><option value="footprint">Footprint not recorded</option><option value="status">Operating status not established</option></select></div>
+          </div>
+          <div class="filter-switches">
+        <div class="approval-control"><label for="incidentsOnly"><input id="incidentsOnly" type="checkbox" role="switch"><span>Incidents only</span></label><span>Hide facilities without recorded incidents.</span></div>
+        <div class="approval-control"><label for="approvedOnly"><input id="approvedOnly" type="checkbox" role="switch"><span>Approved only</span></label><span>Show approved facilities and incidents.</span></div>
+          </div>
+          <p class="filter-hint">Inherited damage labels come from the original dataset and are not AI approval. Reports without an event date use their source posting date.</p>
+          <div class="filter-preset-bar"><div class="filter-field"><label for="savedFilterName">Save current filters as</label><input id="savedFilterName" type="text" maxlength="80" placeholder="Preset name"></div><button id="saveFilterPreset" type="button" class="button">Save preset</button><div class="filter-field"><label for="filterPresetSelect">Saved filters</label><select id="filterPresetSelect"><option value="">Choose a preset</option></select></div><button id="deleteFilterPreset" type="button" class="button">Delete preset</button><button id="clearAdvanced" type="button" class="text-button">Clear advanced filters</button></div>
+        </details>
+        <div id="dataNotice" class="data-notice"><span class="notice-mark" aria-hidden="true">i</span><p>Loading collection and source information…</p></div>
+        <details id="reportSection" class="report-section" open hidden><summary id="reportCount">Unapproved incident reports</summary><div id="reportList"></div><div id="reportSentinel" class="auto-load-sentinel" aria-hidden="true" hidden></div></details>
+        <div class="results-bar"><p id="resultCount" role="status" aria-live="polite">Loading facilities…</p><div class="view-controls"><button id="resetButton" type="button" class="text-button" hidden>Clear filters</button><label class="sort-label" for="sortSelect">Sort</label><select id="sortSelect"><option value="name">Name A–Z</option><option value="recent">Latest recorded incident</option><option value="area">Largest known footprint</option></select><button id="compactButton" class="button" type="button" aria-pressed="false">Compact view</button></div></div>
+        <div id="loadingState" class="state-panel" role="status"><span class="loader" aria-hidden="true"></span><h3>Opening the collection</h3><p>Loading facilities and source references.</p></div>
+        <div id="errorState" class="state-panel" hidden role="alert"><h3>The collection couldn’t be loaded</h3><p id="errorMessage"></p><button id="retryButton" class="button primary" type="button">Try again</button></div>
+        <div id="emptyState" class="state-panel" hidden><span class="empty-symbol" aria-hidden="true">▦</span><h3 id="emptyTitle">No matching facilities</h3><p id="emptyMessage">Try another search or clear your filters.</p><button id="emptyReset" class="button" type="button">Clear filters</button></div>
+        <div id="facilitiesGrid" class="grid" aria-label="Facility results" aria-busy="true"></div>
+        <div id="loadMore" class="auto-load-sentinel" aria-hidden="true" hidden></div>
+      </section>
+      <section id="settingsPanel" class="workspace-panel settings-panel" role="tabpanel" aria-labelledby="tabSettings" hidden>
+        <div class="section-heading"><div><h2>Workspace settings</h2><p class="panel-note">Saved in this browser. Changes apply immediately.</p></div></div>
+        <div class="settings-grid">
+          <fieldset class="settings-group"><legend>Reading &amp; appearance</legend>
+            <label class="setting-row" for="settingDefaultView"><span>Start view</span><select id="settingDefaultView"><option value="overview">Overview</option><option value="facilities">Facilities</option><option value="incidents">Incidents</option><option value="favorites">Favorites</option></select></label>
+            <label class="setting-row" for="settingDensity"><span>Card density</span><select id="settingDensity"><option value="comfortable">Comfortable</option><option value="compact">Compact</option></select></label>
+            <label class="setting-row" for="settingFontSize"><span>Text size</span><select id="settingFontSize"><option value="standard">Standard</option><option value="large">Large</option></select></label>
+            <label class="setting-row" for="settingContrast"><span>Contrast</span><select id="settingContrast"><option value="high">High</option><option value="standard">Standard</option></select></label>
+            <label class="setting-row" for="settingDateFormat"><span>Date format</span><select id="settingDateFormat"><option value="european">DD.MM.YYYY</option></select></label>
+            <label class="setting-toggle"><input id="settingReduceMotion" type="checkbox"><span>Reduce motion<small>Disable interface animation and smooth scrolling.</small></span></label>
+          </fieldset>
+          <fieldset class="settings-group"><legend>Cards &amp; evidence</legend>
+            <label class="setting-row evidence-mode-row" for="settingEvidenceMode"><span>Evidence mode<small>Cautious keeps the current review labels. Bold assumes hit reports are truthful, counts them as approved hits and hides uncertainty badges.</small></span><span class="evidence-slider"><span>Cautious</span><input id="settingEvidenceMode" type="range" min="0" max="1" step="1" value="0" aria-label="Evidence mode" aria-valuetext="Cautious"><span>Bold</span></span></label>
+            <label class="setting-toggle"><input id="settingShowBanners" type="checkbox" checked><span>Show card images<small>Source media remains available in record galleries.</small></span></label>
+            <label class="setting-toggle"><input id="settingShowSourceDetails" type="checkbox"><span>Expand source details<small>Open the source timeline when viewing an incident.</small></span></label>
+            <label class="setting-toggle"><input id="settingRememberFilters" type="checkbox"><span>Remember filters<small>Restore this browser’s last filter selection on return.</small></span></label>
+          </fieldset>
+          <fieldset class="settings-group"><legend>Map &amp; refresh</legend>
+            <label class="setting-toggle"><input id="settingMapTiles" type="checkbox" checked><span>Show map background<small>Load geographic tiles from the map provider. Recorded locations remain visible when switched off.</small></span></label>
+            <label class="setting-row" for="settingMapZoom"><span>Initial map extent</span><select id="settingMapZoom"><option value="regional">Recorded locations</option><option value="country">Country overview</option></select></label>
+            <label class="setting-row" for="settingAutoRefresh"><span>Refresh collection</span><select id="settingAutoRefresh"><option value="0">Manually</option><option value="5">Every 5 minutes</option><option value="15">Every 15 minutes</option><option value="60">Every hour</option></select></label>
+            <p class="setting-hint">Refresh loads the published collection again. It does not run research or review sources.</p>
+          </fieldset>
+          <fieldset class="settings-group"><legend>Local preferences</legend>
+            <p class="setting-hint">Export your settings and favorite IDs to move them to another browser. Import replaces those local preferences.</p>
+            <div class="settings-actions"><button id="exportPreferences" class="button" type="button">Export preferences</button><label class="button import-preferences" for="importPreferences">Import preferences<input id="importPreferences" type="file" accept="application/json,.json"></label><button id="resetSettings" class="button" type="button">Reset settings</button></div>
+            <p class="setting-hint">Reset restores settings defaults. Your favorites are kept.</p>
+          </fieldset>
+        </div>
+        <p id="settingsMessage" class="settings-message" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+    <footer><p><strong>BINGO</strong> AI-reviewed source reporting · Coverage may be incomplete.</p><p>Based on <a href="https://github.com/DrArroway/wb-bingo-web" target="_blank" rel="noopener noreferrer">WB Bingo Web</a> · <a href="LICENSE">Licence</a></p></footer>
   </div>
-    
-  <div class="controls">
-   <button id="minifyBtn" class="minify-btn" type="button">Minify</button>
-
-  <div class="control-group">
-      <label for="sortSelect" data-hint="Choose property to order tiles">Sort By:</label>
-        <select id="sortSelect">
-          <option value="footprint_desc">Footprint (Largest First)</option>
-          <option value="footprint_asc">Footprint (Smallest First)</option>
-          <option value="damage_desc">Damage Intensity (Most Damaged)</option>
-          <option value="damage_asc">Damage Intensity (Least Damaged)</option>
-          <option value="distance_asc">Distance (Nearer to Ukraine)</option>
-          <option value="distance_desc">Distance (Further from Ukraine)</option>
-          <option value="date_desc">Last Strike (Most Recent)</option>
-          <option value="id_asc">Facility ID</option>
-        </select>
-      </div>
-
-      <div class="control-group">
-        <label for="searchInput">Search:</label>
-        <input type="text" id="searchInput" placeholder="Filter facility name or region...">
-      </div>
-    </div>
-  </header>
-
-  <main class="grid" id="facilitiesGrid">
-    <!-- Dynamic grid tiles injected via app.js -->
-  </main>
-
-  <script src="app.js"></script>
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Back to top" title="Back to top" hidden><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M12 20V4m-7 7 7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <dialog id="detailDialog" aria-labelledby="dialogTitle"><div class="dialog-top"><span id="dialogEyebrow" class="eyebrow">FACILITY RECORD</span><button id="closeDialog" class="icon-button" type="button" aria-label="Close details" autofocus>×</button></div><div id="dialogContent"></div></dialog>
+  <noscript><p class="noscript">Enable JavaScript to browse this collection. The source dataset is available in <a href="facilities.json">facilities.json</a>.</p></noscript>
 </body>
 </html>
